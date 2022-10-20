@@ -1,0 +1,21 @@
+{
+  "name": "StyleDictionaryDarkMode",
+  "version": "0.0.1",
+  "summary": "A short description of StyleDictionaryDarkMode.",
+  "description": "Dark Mode Design Tokens!",
+  "homepage": "http://EXAMPLE/StyleDictionaryDarkMode",
+  "license": "MIT",
+  "authors": {
+    "Danny Banks": "djb@amazon.com"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source": {
+    "git": "https://github.com/dbanksdesign/sytle-dictionary-dark-mode.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "ios/dist/**/*.{h,m,swift}",
+  "public_header_files": "ios/dist/**/*.h",
+  "resources": "ios/dist/StyleDictionary.xcassets"
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Do not edit directly
+  Generated on Wed, 19 Oct 2022 13:55:35 GMT
+-->
+<resources>
+  <color name="color_background_secondary">#ff152828</color>
+  <color name="color_background_tertiary">#ff293d3d</color>
+  <color name="color_background_danger">#ff992222</color>
+  <color name="color_background_warning">#ff944c0c</color>
+  <color name="color_background_success">#ff006b40</color>
+  <color name="color_background_info">#ff0c5689</color>
+  <color name="color_background_primaryy">#ff001a1a</color>
+  <color name="color_border_primary">#ff688080</color>
+  <color name="color_border_secondary">#ff293d3d</color>
+  <color name="color_border_tertiary">#ff152828</color>
+  <color name="color_border_danger">#ffff7f6e</color>
+  <color name="color_border_warning">#ffffd943</color>
+  <color name="color_border_success">#ff75dd66</color>
+  <color name="color_border_info">#ff56adf5</color>
+  <color name="color_brand_primary_0">#fffbd0e2</color>
+  <color name="color_brand_primary_1">#ffff99c3</color>
+  <color name="color_brand_primary_2">#ffff66a6</color>
+  <color name="color_brand_primary_3">#fff20d6c</color>
+  <color name="color_brand_primary_4">#ffab0047</color>
+  <color name="color_brand_primary_base">#ffff66a6</color>
+  <color name="color_brand_primary_dark">#ffab0047</color>
+  <color name="color_brand_secondary_0">#ffeaeaf9</color>
+  <color name="color_brand_secondary_1">#ffc1c1f7</color>
+  <color name="color_brand_secondary_2">#ff9180f4</color>
+  <color name="color_brand_secondary_3">#ff6f5ed3</color>
+  <color name="color_brand_secondary_4">#ff483a9c</color>
+  <color name="color_brand_secondary_base">#ff9180f4</color>
+  <color name="color_brand_secondary_dark">#ff483a9c</color>
+  <color name="color_font_primary">#fff3f4f4</color>
+  <color name="color_font_secondary">#ffe4e7e7</color>
+  <color name="color_font_tertiary">#ffafb8b8</color>
+  <color name="color_font_danger">#ffffcccc</color>
+  <color name="color_font_warning">#fffdefcd</color>
+  <color name="color_font_success">#ffd7f4d7</color>
+  <color name="color_font_info">#ffdcf2ff</color>
+  <color name="color_font_inverse">#ff001a1a</color>
+  <color name="component_button_primary_background_color">#ff9180f4</color>
+  
+</resources>

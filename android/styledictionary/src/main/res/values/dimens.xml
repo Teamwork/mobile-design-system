@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Do not edit directly
+  Generated on Wed, 19 Oct 2022 13:55:35 GMT
+-->
+<resources>
+  <dimen name="component_badge_border_radius">48.00dp</dimen>
+  <dimen name="component_badge_padding_vertical">8.00dp</dimen>
+  <dimen name="component_badge_padding_horizontal">16.00dp</dimen>
+  <dimen name="component_button_padding">16.00dp</dimen>
+  <dimen name="component_button_border_radius">4.00dp</dimen>
+  <dimen name="component_button_outline_border_width">2.00dp</dimen>
+  <dimen name="size_border_width_small">1.00dp</dimen>
+  <dimen name="size_border_width_medium">2.00dp</dimen>
+  <dimen name="size_border_width_large">4.00dp</dimen>
+  <dimen name="size_border_radius_small">4.00dp</dimen>
+  <dimen name="size_border_radius_medium">16.00dp</dimen>
+  <dimen name="size_border_radius_large">48.00dp</dimen>
+  <dimen name="size_padding_xs">4.00dp</dimen>
+  <dimen name="size_padding_small">8.00dp</dimen>
+  <dimen name="size_padding_medium">16.00dp</dimen>
+  <dimen name="size_padding_large">24.00dp</dimen>
+  <dimen name="size_padding_xl">32.00dp</dimen>
+  <dimen name="size_padding_xxl">64.00dp</dimen>
+  
+</resources>
