@@ -1,181 +1,128 @@
-# Basic Style Dictionary
+# Style Dictionary Dark Mode Example
 
-This example code is bare-bones to show you what this framework can do. If you have the style-dictionary module installed globally, you can `cd` into this directory and run:
-```bash
-style-dictionary build
-```
+This is the example project that goes along with the blog post [Dark Mode with Style Dictionary](https://dbanks.design/blog/dark-mode-with-style-dictionary) This repository has 3 branches: 
 
-You should see something like this output:
-```
-Copying starter files...
+* [main](https://github.com/dbanksdesign/style-dictionary-dark-mode/tree/main): the project before any dark mode stuff
+* [single-token](https://github.com/dbanksdesign/style-dictionary-dark-mode/tree/single-token): the full implementation using the single-token approach
+* [multi-file](https://github.com/dbanksdesign/style-dictionary-dark-mode/tree/multi-file): the full implementation using the multi-file approach with file extensions. 
 
-Source style dictionary starter files created!
+Both single-token and multi-file branches should have the same end result, but arrive there in different ways. Both methods have their pros and cons, so I will leave it up to you to decide which is best for your scenario. Also, there might be other methods that might work better for you (or modifications to either of these methods). That is what I love about design tokens and Style Dictionary is there is no single right way to do things. Please create issues or let me know if you think of other methods or modifications to these methods.
 
-Running `style-dictionary build` for the first time to generate build artifacts.
+This project assumes you have some understanding of [Design Tokens](https://www.designtokens.org/) and [Style Dictionary](https://amzn.github.io/style-dictionary/). Both of the methods in this demo use new features in the [3.0 release of Style Dictionary](https://amzn.github.io/style-dictionary/#/version_3).
 
+## Project setup
 
-scss
-✔︎  build/scss/_variables.scss
+1. Grab this repository code: `git clone https://github.com/dbanksdesign/style-dictionary-dark-mode.git`
+1. Get the branch you want to use: `git fetch && git checkout multi-file` or `git fetch && git checkout single-token`
+1. Install dependencies: `npm ci`
+1. Run Style Dictionary: `npm run build`
+1. You should see Style Dictionary run and generate some files.
+1. `npm run build` will run Style Dictionary and generate the artifacts for Android, iOS, and web
+1. `npm start` will run the build command and start a watcher to watch for changes and rebuild
 
-android
-✔︎  build/android/font_dimens.xml
-✔︎  build/android/colors.xml
+### Running the iOS demo
 
-compose
-✔︎ build/compose/StyleDictionaryColor.kt
-✔︎ build/compose/StyleDictionarySize.kt
+1. Make sure you have Xcode 12 or greater installed
+1. You will need [CocoaPods](https://cocoapods.org/) installed
+1. Go into the **ios/demo** directory with `cd ios/demo`
+1. Run `pod install` to install the style dictionary CocoaOod
+1. Open the Xcode workspace: `open StyleDictionaryDarkModeDemo.xcworkspace`
+1. Click the ▶️ button to build and run the demo
 
-ios
-✔︎  build/ios/StyleDictionaryColor.h
-✔︎  build/ios/StyleDictionaryColor.m
-✔︎  build/ios/StyleDictionarySize.h
-✔︎  build/ios/StyleDictionarySize.m
+*Note: if you add new files in the Style Dictionary configuration, you will need to run `pod install` in the `ios/demo` directory again so CocoaPods can link the newly generated files into Xcode*
 
-ios-swift
-✔︎  build/ios-swift/StyleDictionary.swift
+### Running the Android demo
 
-ios-swift-separate-enums
-✔︎  build/ios-swift/StyleDictionaryColor.swift
-✔︎  build/ios-swift/StyleDictionarySize.swift
-```
+1. Open Android Studio
+1. Click on **Open an existing project**
+1. Navigate to the folder you cloned the repository into and select the **android** folder
+1. Android Studio should run for a bit syncing dependencies and whatnot
+1. Click the ▶️ button at the top to build and run the app in an emulator (you will need to have an emulator downloaded already)
 
-Good for you! You have now built your first style dictionary! Moving on, take a look at what we have built. This should have created a build directory and it should look like this:
-```
-├── README.md
-├── config.json
-├── tokens/
-│   ├── color/
-│       ├── base.json
-│       ├── font.json
-│   ├── size/
-│       ├── font.json
-├── build/
-│   ├── android/
-│      ├── font_dimens.xml
-│      ├── colors.xml
-│   ├── compose/
-│      ├── StyleDictionaryColor.kt
-│      ├── StyleDictionarySize.kt
-│   ├── scss/
-│      ├── _variables.scss
-│   ├── ios/
-│      ├── StyleDictionaryColor.h
-│      ├── StyleDictionaryColor.m
-│      ├── StyleDictionarySize.h
-│      ├── StyleDictionarySize.m
-│   ├── ios-swift/
-│      ├── StyleDictionary.swift
-│      ├── StyleDictionaryColor.swift
-│      ├── StyleDictionarySize.swift
-```
+After you make any changes to the design tokens, you just need to rebuild Style Dictionary with `npm run build` in the root directory. Or you can use `npm start` which will watch for changes. After Style Dictionary builds, you can rebuild the Android application by clicking the ▶️ button in Android Studio.
 
-If you open `config.json` you will see there are 5 platforms defined: scss, android, compose, ios, and ios-swift. Each platform has a transformGroup, buildPath, and files. The buildPath and files of the platform should match up to the files what were built. The files built should look like these:
+### Running the Web demo
 
-**Android**
-```xml
-<!-- font_dimens.xml -->
-<resources>
-  <dimen name="size_font_small">12.00sp</dimen>
-  <dimen name="size_font_medium">16.00sp</dimen>
-  <dimen name="size_font_large">32.00sp</dimen>
-  <dimen name="size_font_base">16.00sp</dimen>
-</resources>
+1. Go into the **web/demo** directory with `cd web/demo`
+1. Run `npm install` to install dependencies. *This will also create a local dependency on our style dictionary package with a symlink using `npm link`*
+1. Run `npm start` to start [11ty](https://www.11ty.dev/)
+1. Open **http://localhost:8080** in your browser
 
-<!-- colors.xml -->
-<resources>
-  <color name="color_base_gray_light">#ffcccccc</color>
-  <color name="color_base_gray_medium">#ff999999</color>
-  <color name="color_base_gray_dark">#ff111111</color>
-  <color name="color_base_red">#ffff0000</color>
-  <color name="color_base_green">#ff00ff00</color>
-  <color name="color_font_base">#ffff0000</color>
-  <color name="color_font_secondary">#ff00ff00</color>
-  <color name="color_font_tertiary">#ffcccccc</color>
-</resources>
-```
+*Note: if you make any changes you will need to restart the 11ty server because it passes through the generated files from Style Dictionary*
 
-**Compose**
-```kotlin
-object StyleDictionaryColor {
-  val colorBaseGrayDark = Color(0xff111111)
-  val colorBaseGrayLight = Color(0xffcccccc)
-  val colorBaseGrayMedium = Color(0xff999999)
-  val colorBaseGreen = Color(0xff00ff00)
-  val colorBaseRed = Color(0xffff0000)
-  val colorFontBase = Color(0xffff0000)
-  val colorFontSecondary = Color(0xff00ff00)
-  val colorFontTertiary = Color(0xffcccccc)
-}
+## Project structure
 
-object StyleDictionarySize {
-  /** the base size of the font */
-  val sizeFontBase = 16.00.sp
-  /** the large size of the font */
-  val sizeFontLarge = 32.00.sp
-  /** the medium size of the font */
-  val sizeFontMedium = 16.00.sp
-  /** the small size of the font */
-  val sizeFontSmall = 12.00.sp
+Design token source:
+* **tokens/** Source design token files. The source token files are written in [JSON5](https://json5.org/) so that I can include comments
+* **assets/** SVG graphics that use design tokens.
+
+Custom Style Dictionary code:
+* **actions/** custom [Style Dictionary action](https://amzn.github.io/style-dictionary/#/actions) code
+* **formats/** custom [Style Dictionary format](https://amzn.github.io/style-dictionary/#/formats) code
+* **transforms/** custom [Style Dictionary transforms](https://amzn.github.io/style-dictionary/#/transforms)
+
+Output and demo directories:
+* **android/designtokens** Generated Style Dictionary files for Android. This doesn't follow the same pattern as the other platforms because directory structure matters for Android.
+* **android/demo** Android demo
+* **ios/dist** Generated Style Dictionary files for iOS
+* **ios/demo** iOS demo using [CocoaPods](https://cocoapods.org/) and [SwiftUI](https://developer.apple.com/xcode/swiftui/)
+* **web/dist** Generated Style Dictionary files for web
+* **web/demo** Web demo using [Eleventy](https://www.11ty.dev/)
+
+## How this works
+
+The main branch of this repository does **NOT** have dark mode implemented. Instead, it is the project setup before the dark mode implementation. The branches, multi-file and single-token are the implementations in 2 different methods. You can take a look at the pull requests to see how each method works. Or you can check out the 
+
+## Multi-file method
+
+`git fetch && git checkout multi-file`
+
+The multi-file method is based on the [multi-brand-multi-platform example](https://github.com/amzn/style-dictionary/tree/main/examples/advanced/multi-brand-multi-platform) built by [Cristiano Rastelli](https://twitter.com/areaweb). This method also resembles how Android handles color modes: selectively using different resource files based on context. The main idea with this method is to run Style Dictionary multiple times with varying sets of token files and outputting different sets of artifacts, one for each color mode: light and dark. Style Dictionary takes all the source token files it finds from the config and does a deep merge  to create one big object. Therefore you can run Style Dictionary with one set of source files and rerun it with some additional files that override specific tokens to generate a collection of artifacts for light mode and dark mode.
+
+```json
+// color/background.json
+{
+  "color": {
+    "background": {
+      "primary": { "value": "{color.core.neutral.0.value}" }
+    }
+  }
 }
 ```
 
-**SCSS**
-```scss
-// variables.scss
-$color-base-gray-light: #cccccc;
-$color-base-gray-medium: #999999;
-$color-base-gray-dark: #111111;
-$color-base-red: #ff0000;
-$color-base-green: #00ff00;
-$color-font-base: #ff0000;
-$color-font-secondary: #00ff00;
-$color-font-tertiary: #cccccc;
-$size-font-small: 0.75rem;
-$size-font-medium: 1rem;
-$size-font-large: 2rem;
-$size-font-base: 1rem;
+```json
+// color-dark/background.json
+{
+  "color": {
+    "background": {
+      "primary": { "value": "{color.core.neutral.1000.value}" }
+    }
+  }
+}
 ```
 
-**iOS**
-```objc
-#import "StyleDictionaryColor.h"
+Notice that the object structure of the token files is the same for both light/default and dark mode. We are only overriding the value. Then we run Style Dictionary once with the only light/default token file and once with the dark token file to generate a set of light-mode outputs and dark-mode outputs.
 
-@implementation StyleDictionaryColor
+## Single-token method
 
-+ (UIColor *)color:(StyleDictionaryColorName)colorEnum{
-  return [[self values] objectAtIndex:colorEnum];
+`git fetch && git checkout single-token`
+
+In this method we include a separate dark value in the token itself, rather than having a separate set of dark token files like in the multi-file method. The single-token method resembles how iOS organizes different color modes inside a single color or image asset rather than having separate folders with all colors or images of a single mode. Here is what a token would look like in the single-token method:
+
+```json
+// tokens/color/background.json5
+{
+  "color": {
+    "background": {
+      "primary": {
+        "value": "{color.core.neutral.0.value}",
+        "darkValue": "{color.core.neutral.1000.value}"
+      }
+    }
+  }
 }
-
-+ (NSArray *)values {
-  static NSArray* colorArray;
-  static dispatch_once_t onceToken;
-
-  dispatch_once(&onceToken, ^{
-    colorArray = @[
-[UIColor colorWithRed:0.800f green:0.800f blue:0.800f alpha:1.000f],
-[UIColor colorWithRed:0.600f green:0.600f blue:0.600f alpha:1.000f],
-[UIColor colorWithRed:0.067f green:0.067f blue:0.067f alpha:1.000f],
-[UIColor colorWithRed:1.000f green:0.000f blue:0.000f alpha:1.000f],
-[UIColor colorWithRed:0.000f green:1.000f blue:0.000f alpha:1.000f],
-[UIColor colorWithRed:1.000f green:0.000f blue:0.000f alpha:1.000f],
-[UIColor colorWithRed:0.000f green:1.000f blue:0.000f alpha:1.000f],
-[UIColor colorWithRed:0.800f green:0.800f blue:0.800f alpha:1.000f]
-    ];
-  });
-
-  return colorArray;
-}
-
-@end
 ```
 
-Pretty nifty! This shows a few things happening:
-1. The build system does a deep merge of all the token JSON files defined in the `source` attribute of `config.json`. This allows you to split up the token JSON files however you want. There are 2 JSON files with `color` as the top level key, but they get merged properly.
-1. The build system resolves references to other design tokens. `{size.font.medium.value}` gets resolved properly.
-1. The build system handles references to token values in other files as well as you can see in `tokens/color/font.json`.
+## Special thanks
 
-Now let's make a change and see how that affects things. Open up `tokens/color/base.json` and change `"#111111"` to `"#000000"`. After you make that change, save the file and re-run the build command `style-dictionary build`. Open up the build files and take a look.
-
-**Huzzah!**
-
-Now go forth and create! Take a look at all the built-in [transforms](https://amzn.github.io/style-dictionary/#/transforms?id=pre-defined-transforms) and [formats](https://amzn.github.io/style-dictionary/#/formats?id=pre-defined-formats).
+* SVG graphics from [undraw.co](https://undraw.co/)

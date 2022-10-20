@@ -1,0 +1,30 @@
+/**
+ * Do not edit directly
+ * Generated on Wed, 19 Oct 2022 13:55:35 GMT
+ */
+
+:root {
+  --color-font-tertiary: var(--color-core-neutral-100);
+  --color-font-secondary: var(--color-core-neutral-0);
+  --color-font-primary: var(--color-core-white);
+  --color-brand-secondary-4: var(--color-core-purple-1000);
+  --color-brand-secondary-3: var(--color-core-purple-700);
+  --color-brand-secondary-2: var(--color-core-purple-400);
+  --color-brand-secondary-1: var(--color-core-purple-200);
+  --color-brand-secondary-0: var(--color-core-purple-0);
+  --color-brand-primary-4: var(--color-core-pink-1000);
+  --color-brand-primary-3: var(--color-core-pink-700);
+  --color-brand-primary-2: var(--color-core-pink-400);
+  --color-brand-primary-1: var(--color-core-pink-200);
+  --color-brand-primary-0: var(--color-core-pink-0);
+  --color-border-tertiary: var(--color-core-neutral-800);
+  --color-border-secondary: var(--color-core-neutral-600);
+  --color-border-primary: var(--color-core-neutral-400);
+  --color-background-tertiary: var(--color-core-neutral-600);
+  --color-background-secondary: var(--color-core-neutral-800);
+  --color-background-primary: var(--color-core-black);
+  --color-brand-secondary-dark: var(--color-brand-secondary-4);
+  --color-brand-secondary-base: var(--color-brand-secondary-2);
+  --color-brand-primary-dark: var(--color-brand-primary-4);
+  --color-brand-primary-base: var(--color-brand-primary-2);
+}
