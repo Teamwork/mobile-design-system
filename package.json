@@ -1,5 +1,5 @@
 {
-  "name": "style-dictionary-dark-mode",
+  "name": "mobile-design-system",
   "version": "1.0.0",
   "description": "",
   "main": "dist/tokens.js",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dbanksdesign/style-dictionary-dark-mode.git"
+    "url": "git+https://https://github.com/Teamwork/mobile-design-system.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dbanksdesign/style-dictionary-dark-mode/issues"
+    "url": "https://https://github.com/Teamwork/mobile-design-system/issues"
   },
-  "homepage": "https://github.com/dbanksdesign/style-dictionary-dark-mode#readme",
+  "homepage": "https://https://github.com/Teamwork/mobile-design-system#readme",
   "devDependencies": {
     "chokidar-cli": "^2.1.0",
     "fs-extra": "^9.1.0",

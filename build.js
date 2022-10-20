@@ -14,6 +14,14 @@ fs.removeSync(androidPath);
 console.log(`cleaning ${webPath}...`);
 fs.removeSync(webPath);
 
+// Custom parser
+styleDictionary.registerParser({
+  pattern: /\.json$/,
+  parse: ({contents, filePath}) => {
+    return JSON.parse(contents);
+  }
+})
+
 // Adding custom actions, transforms, and formats
 const styleDictionary = StyleDictionary.extend({
   // custom actions
@@ -54,8 +62,8 @@ console.log(`☀️ Building light mode...`);
 styleDictionary.extend({
   source: [
     // this is saying find any files in the tokens folder
-    // that does not have .dark or .light, but ends in .json5
-    `tokens/**/!(*.${modes.join(`|*.`)}).json5`
+    // that does not have .dark or .light, but ends in .json
+    `tokens/tokens.json`
   ],
 
   platforms: {
@@ -148,10 +156,10 @@ styleDictionary.extend({
   // Using the include array so that theme token overrides don't show
   // warnings in the console. 
   include: [
-    `tokens/**/!(*.${modes.join(`|*.`)}).json5`
+    `tokens/**/!(*.${modes.join(`|*.`)}).json`
   ],
   source: [
-    `tokens/**/*.dark.json5`
+    `tokens/**/*.dark.json`
   ],
   platforms: {
     css: {
@@ -194,10 +202,10 @@ styleDictionary.extend({
 console.log(`\n\n🌈🌙 Building high-contrast dark mode...`);
 styleDictionary.extend({
   include: [
-    `tokens/**/!(*.${modes.join(`|*.`)}).json5`
+    `tokens/**/!(*.${modes.join(`|*.`)}).json`
   ],
   source: [
-    `tokens/**/*.hcDark.json5`
+    `tokens/**/*.hcDark.json`
   ],
   
   platforms: {
@@ -231,10 +239,10 @@ styleDictionary.extend({
 console.log(`\n\n🌈☀️ Building high-contrast light mode...`);
 styleDictionary.extend({
   include: [
-    `tokens/**/!(*.${modes.join(`|*.`)}).json5`
+    `tokens/**/!(*.${modes.join(`|*.`)}).json`
   ],
   source: [
-    `tokens/**/*.hc.json5`
+    `tokens/**/*.hc.json`
   ],
   
   platforms: {
