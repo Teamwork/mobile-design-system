@@ -13,8 +13,8 @@
 module.exports = function({ dictionary, options }) {
   return `import SwiftUI
 
-class DarkModeDesignTokens {}
-let bundle = Bundle(for: DarkModeDesignTokens.self)
+class MobileDesignSystemTokens {}
+let bundle = Bundle(for: MobileDesignSystemTokens.self)
 
 extension Color {\n` +
   dictionary.allProperties.map(token => {

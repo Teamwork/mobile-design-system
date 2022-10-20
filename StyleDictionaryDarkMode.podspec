@@ -107,7 +107,7 @@ Pod::Spec.new do |spec|
   # spec.resource  = "icon.png"
   spec.resources = "ios/dist/StyleDictionary.xcassets"
   # spec.resource_bundles = {
-  #   'DarkModeDesignTokens' => [
+  #   'MobileDesignSystemTokens' => [
   #     'ios/dist/StyleDictionary.xcassets'
   #   ]
   # }

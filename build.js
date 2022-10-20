@@ -14,14 +14,6 @@ fs.removeSync(androidPath);
 console.log(`cleaning ${webPath}...`);
 fs.removeSync(webPath);
 
-// Custom parser
-styleDictionary.registerParser({
-  pattern: /\.json$/,
-  parse: ({contents, filePath}) => {
-    return JSON.parse(contents);
-  }
-})
-
 // Adding custom actions, transforms, and formats
 const styleDictionary = StyleDictionary.extend({
   // custom actions
@@ -39,6 +31,7 @@ const styleDictionary = StyleDictionary.extend({
   format: {
     swiftColor: require('./formats/swiftColor'),
     swiftImage: require('./formats/swiftImage'),
+    swiftUIColor: require('./formats/swiftUIColor'),
   },
 });
 
@@ -63,7 +56,7 @@ styleDictionary.extend({
   source: [
     // this is saying find any files in the tokens folder
     // that does not have .dark or .light, but ends in .json
-    `tokens/tokens.json`
+    `tokens/**/!(*.${modes.join(`|*.`)}).json`
   ],
 
   platforms: {
@@ -103,6 +96,13 @@ styleDictionary.extend({
       files: [{
         destination: `Color.swift`,
         format: `swiftColor`,
+        filter: (token) => token.attributes.category === `color`,
+        options: {
+          outputReferences: true
+        }
+      },{
+        destination: `UIColor.swift`,
+        format: `swiftUIColor`,
         filter: (token) => token.attributes.category === `color`,
         options: {
           outputReferences: true
