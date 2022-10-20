@@ -1,3 +1,0 @@
-include ':styledictionary'
-include ':demo'
-rootProject.name = "StyleDictionaryDarkMode"
