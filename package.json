@@ -8,9 +8,9 @@
     "build.js"
   ],
   "scripts": {
-    "build-transform-global": "npx token-transformer tokens.json tokens/global.json global",
-    "build-transform-light": "npx token-transformer tokens.json tokens/light.json global,light,theme global",
-    "build-transform-dark": "npx token-transformer tokens.json tokens/dark.json global,dark,theme global",
+    "build-transform-global": "npx token-transformer figmaTokens.json tokens/global.json global",
+    "build-transform-light": "npx token-transformer figmaTokens.json tokens/light.json global,light,theme global",
+    "build-transform-dark": "npx token-transformer figmaTokens.json tokens/dark.json global,dark,theme global",
     "build-transform": "npm run build-transform-global && npm run build-transform-light && npm run build-transform-dark",
     "build-sd": "node build.js",
     "build": "npm run build-transform && npm run build-sd"
