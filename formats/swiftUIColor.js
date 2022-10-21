@@ -9,7 +9,7 @@
 class MobileDesignSystemTokens {}
 let bundle = Bundle(for: MobileDesignSystemTokens.self)
   
-extension Color {\n` +
+extension UIColor {\n` +
   dictionary.allProperties.map(token => {
     return `  public static var ${token.name}: Color {
     return UIColor(named: "${token.name}", in: bundle, compatibleWith: nil)

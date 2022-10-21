@@ -62,27 +62,6 @@ function hcFormatWrapper(format) {
   }
 }
 
-function hcDarkFormatWrapper(format) {
-  return function(args) {
-    const dictionary = Object.assign({}, args.dictionary);
-    // Override each token's `value` with `hcDarkValue`
-    dictionary.allProperties = dictionary.allProperties.map(token => {
-      const {hcDarkValue} = token;
-      if (hcDarkValue) {
-        return Object.assign({}, token, {
-          value: token.hcDarkValue
-        });
-      } else {
-        return token;
-      }
-    });
-    
-    // Use the built-in format but with our customized dictionary object
-    // so it will output the hcValue instead of the value
-    return StyleDictionary.format[format]({ ...args, dictionary })
-  }
-}
-
 ['global', 'light', 'dark'].map(function (theme) {
   console.log(`\n\n🌈 Building ${theme} mode...`);
 
@@ -103,10 +82,7 @@ function hcDarkFormatWrapper(format) {
       swiftColor: require('./formats/swiftColor'),
       swiftImage: require('./formats/swiftImage'),
       swiftUIColor: require('./formats/swiftUIColor'),
-      androidDark: darkFormatWrapper(`android/resources`),
-      cssDark: darkFormatWrapper(`css/variables`),
-      cssHcDark: hcDarkFormatWrapper(`css/variables`),
-      cssHc: hcFormatWrapper(`css/variables`),
+      // androidDark: darkFormatWrapper(`android/resources`),
     },
     
     source: [
@@ -184,7 +160,7 @@ function hcDarkFormatWrapper(format) {
         files: [{
           destination: `values/colors.xml`,
           format: `android/resources`,
-          filter: (token) => token.attributes.category === `color`,
+          filter: (token) => token.type === `color`,
           options: {
             // this is important!
             // this will keep token references intact so that we don't need
@@ -198,17 +174,17 @@ function hcDarkFormatWrapper(format) {
           // from the above file will properly reference
           // these colors if the OS is set to night mode.
           destination: `values-night/colors.xml`,
-          format: `androidDark`,
-          filter: (token) => token.darkValue && token.attributes.category === `color`
+          format: `android/resources`,
+          filter: (token) => token.type === `color` && token.filePath === `tokens/dark.json`
         },{
           destination: `values/font_dimens.xml`,
-          filter: (token) => token.attributes.category === `size` &&
-            token.attributes.type === `font`,
+          filter: (token) => token.type === `size` &&
+            token.type === `font`,
           format: `android/resources`
         },{
           destination: `values/dimens.xml`,
-          filter: (token) => token.attributes.category === `size` &&
-            token.attributes.type !== `font`,
+          filter: (token) => token.type === `size` &&
+            token.type !== `font`,
           format: `android/resources`
         }]
       }

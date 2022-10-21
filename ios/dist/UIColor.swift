@@ -3,7 +3,7 @@ import UIKit
 class MobileDesignSystemTokens {}
 let bundle = Bundle(for: MobileDesignSystemTokens.self)
   
-extension Color {
+extension UIColor {
   public static var bgDefault: Color {
     return UIColor(named: "bgDefault", in: bundle, compatibleWith: nil)
   }
