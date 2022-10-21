@@ -8,8 +8,12 @@
     "build.js"
   ],
   "scripts": {
-    "build": "node build.js",
-    "start": "npm run build && chokidar \"tokens/**/*\" -c \"npm run build\""
+    "build-transform-global": "npx token-transformer tokens.json tokens/global.json global",
+    "build-transform-light": "npx token-transformer tokens.json tokens/light.json global,light,theme global",
+    "build-transform-dark": "npx token-transformer tokens.json tokens/dark.json global,dark,theme global",
+    "build-transform": "npm run build-transform-global && npm run build-transform-light && npm run build-transform-dark",
+    "build-sd": "node build.js",
+    "build": "npm run build-transform && npm run build-sd"
   },
   "repository": {
     "type": "git",
@@ -29,8 +33,5 @@
     "style-dictionary": "^3.0.0-rc.8",
     "svg2vectordrawable": "^2.6.26",
     "tinycolor2": "^1.4.2"
-  },
-  "dependencies": {
-    "token-transformer": "^0.0.27"
   }
 }

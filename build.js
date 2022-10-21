@@ -20,7 +20,7 @@ fs.removeSync(webPath);
  * @param {String} format - the name of the built-in format
  * @returns {Function}
  */
-function darkFormatWrapper(format) {
+ function darkFormatWrapper(format) {
   return function(args) {
     const dictionary = Object.assign({}, args.dictionary);
     // Override each token's `value` with `darkValue`
@@ -83,135 +83,134 @@ function hcDarkFormatWrapper(format) {
   }
 }
 
-StyleDictionary.extend({
-  // custom actions
-  action: {
-    generateColorsets: require('./actions/ios/colorsets'),
-    generateGraphics: require('./actions/generateGraphics'),
-  },
-  // custom transforms
-  transform: {
-    'attribute/cti': require('./transforms/attributeCTI'),
-    'colorRGB': require('./transforms/colorRGB'),
-    'size/remToFloat': require('./transforms/remToFloat')
-  },
-  // custom formats
-  format: {
-    swiftColor: require('./formats/swiftColor'),
-    swiftImage: require('./formats/swiftImage'),
-    androidDark: darkFormatWrapper(`android/resources`),
-    cssDark: darkFormatWrapper(`css/variables`),
-    cssHcDark: hcDarkFormatWrapper(`css/variables`),
-    cssHc: hcFormatWrapper(`css/variables`),
-  },
-  
-  source: [
-    `tokens/tokens.json`
-  ],
-  
-  platforms: {
-    css: {
-      transformGroup: `css`,
-      buildPath: webPath,
-      files: [{
-        destination: `variables.css`,
-        format: `css/variables`,
-        options: {
-          outputReferences: true
-        }
-      },{
-        destination: `variables-dark.css`,
-        format: `cssDark`,
-        filter: (token) => token.darkValue && token.attributes.category === `color`
-      },{
-        destination: `variables-hc.css`,
-        format: `cssHc`,
-        filter: (token) => token.hcValue && token.attributes.category === `color`
-      },{
-        destination: `variables-hc-dark.css`,
-        format: `cssHcDark`,
-        filter: (token) => token.hcDarkValue && token.attributes.category === `color`
-      }]
+
+['global', 'dark', 'light'].map(function (theme) {
+  StyleDictionary.extend({
+    // custom actions
+    action: {
+      generateColorsets: require('./actions/ios/colorsets'),
+      generateGraphics: require('./actions/generateGraphics'),
+    },
+    // custom transforms
+    transform: {
+      'attribute/cti': require('./transforms/attributeCTI'),
+      'colorRGB': require('./transforms/colorRGB'),
+      'size/remToFloat': require('./transforms/remToFloat')
+    },
+    // custom formats
+    format: {
+      swiftColor: require('./formats/swiftColor'),
+      swiftImage: require('./formats/swiftImage'),
+      swiftUIColor: require('./formats/swiftUIColor'),
+      androidDark: darkFormatWrapper(`android/resources`),
+      cssDark: darkFormatWrapper(`css/variables`),
+      cssHcDark: hcDarkFormatWrapper(`css/variables`),
+      cssHc: hcFormatWrapper(`css/variables`),
     },
     
-    js: {
-      transformGroup: `web`,
-      buildPath: webPath,
-      files: [{
-        destination: `tokens.json`,
-        format: `json/flat`
-      }]
-    },
+    source: [
+      `tokens/${theme}.json`
+    ],
     
-    assets: {
-      transforms: [`attribute/cti`,`color/hex`,`size/remToFloat`,`name/ti/camel`],
-      buildPath: `${webPath}/images/`,
-      iosPath,
-      androidPath,
-      actions: [`generateGraphics`]
-    },
-    
-    iosColors: {
-      buildPath: iosPath,
-      transforms: [`attribute/cti`,`colorRGB`,`name/ti/camel`],
-      actions: [`generateColorsets`]
-    },
-    
-    iOS: {
-      buildPath: iosPath,
-      transforms: [`attribute/cti`,`name/ti/camel`,`size/swift/remToCGFloat`],
-      files: [{
-        destination: `Color.swift`,
-        format: `swiftColor`,
-        filter: (token) => token.attributes.category === `color`,
-        options: {
-          outputReferences: true
-        }
-      },{
-        destination: `Size.swift`,
-        filter: (token) => token.attributes.category === `size`,
-        className: `Size`,
-        format: `ios-swift/class.swift`
-      },{
-        destination: `Image.swift`,
-        filter: (token) => token.attributes.category === `image`,
-        format: `swiftImage`
-      }]
-    },
-    
-    android: {
-      transformGroup: `android`,
-      buildPath: androidPath,
-      files: [{
-        destination: `values/colors.xml`,
-        format: `android/resources`,
-        filter: (token) => token.attributes.category === `color`,
-        options: {
-          // this is important!
-          // this will keep token references intact so that we don't need
-          // to generate *all* color resources for dark mode, only
-          // the specific ones that change
-          outputReferences: true
-        },
-      },{
-        // Here we are outputting a 'night' resource file that only has
-        // the colors that have dark values. All the references
-        // from the above file will properly reference
-        // these colors if the OS is set to night mode.
-        destination: `values-night/colors.xml`,
-        format: `androidDark`,
-        filter: (token) => token.darkValue && token.attributes.category === `color`
-      },{
-        destination: `values/font_dimens.xml`,
-        filter: (token) => token.attributes.category === `size` &&
-          token.attributes.type === `font`,
-        format: `android/resources`
-      },{
-        destination: `values/dimens.xml`,
-        filter: (token) => token.attributes.category === `size` &&
-          token.attributes.type !== `font`,
-        format: `android/resources`
-      }]
+    platforms: {
+      css: {
+        transformGroup: `css`,
+        buildPath: webPath,
+        files: [{
+          destination: `${theme}.css`,
+          format: `css/variables`,
+          options: {
+            outputReferences: true
+          }
+        }]
+      },
+      
+      js: {
+        transformGroup: `web`,
+        buildPath: webPath,
+        files: [{
+          destination: `${theme}.json`,
+          format: `json/flat`
+        }]
+      },
+      
+      assets: {
+        transforms: [`attribute/cti`,`color/hex`,`size/remToFloat`,`name/ti/camel`],
+        buildPath: `${webPath}/images/`,
+        iosPath,
+        androidPath,
+        actions: [`generateGraphics`]
+      },
+      
+      iosColors: {
+        buildPath: iosPath,
+        transforms: [`attribute/cti`,`colorRGB`,`name/ti/camel`],
+        actions: [`generateColorsets`]
+      },
+      
+      iOS: {
+        buildPath: iosPath,
+        transforms: [`attribute/cti`,`name/ti/camel`,`size/swift/remToCGFloat`],
+        files: [{
+          destination: `Color.swift`,
+          format: `swiftColor`,
+          filter: (token) => token.attributes.category === `color`,
+          options: {
+            outputReferences: true
+          }
+        },{
+          destination: `Color.swift`,
+          format: `swiftUIColor`,
+          filter: (token) => token.attributes.category === `color`,
+          options: {
+            outputReferences: true
+          }
+        },{
+          destination: `Size.swift`,
+          filter: (token) => token.attributes.category === `size`,
+          className: `Size`,
+          format: `ios-swift/class.swift`
+        },{
+          destination: `Image.swift`,
+          filter: (token) => token.attributes.category === `image`,
+          format: `swiftImage`
+        }]
+      },
+      
+      android: {
+        transformGroup: `android`,
+        buildPath: androidPath,
+        files: [{
+          destination: `values/colors.xml`,
+          format: `android/resources`,
+          filter: (token) => token.attributes.category === `color`,
+          options: {
+            // this is important!
+            // this will keep token references intact so that we don't need
+            // to generate *all* color resources for dark mode, only
+            // the specific ones that change
+            outputReferences: true
+          },
+        },{
+          // Here we are outputting a 'night' resource file that only has
+          // the colors that have dark values. All the references
+          // from the above file will properly reference
+          // these colors if the OS is set to night mode.
+          destination: `values-night/colors.xml`,
+          format: `androidDark`,
+          filter: (token) => token.darkValue && token.attributes.category === `color`
+        },{
+          destination: `values/font_dimens.xml`,
+          filter: (token) => token.attributes.category === `size` &&
+            token.attributes.type === `font`,
+          format: `android/resources`
+        },{
+          destination: `values/dimens.xml`,
+          filter: (token) => token.attributes.category === `size` &&
+            token.attributes.type !== `font`,
+          format: `android/resources`
+        }]
+      }
     }
-  }
-}).buildAllPlatforms();
+  }).buildAllPlatforms();
+})
