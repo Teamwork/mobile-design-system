@@ -23,6 +23,7 @@ fs.removeSync(webPath);
  function darkFormatWrapper(format) {
   return function(args) {
     const dictionary = Object.assign({}, args.dictionary);
+
     // Override each token's `value` with `darkValue`
     dictionary.allProperties = dictionary.allProperties.map(token => {
       const {darkValue} = token;
@@ -44,6 +45,7 @@ fs.removeSync(webPath);
 function hcFormatWrapper(format) {
   return function(args) {
     const dictionary = Object.assign({}, args.dictionary);
+
     // Override each token's `value` with `hcValue`
     dictionary.allProperties = dictionary.allProperties.map(token => {
       const {hcValue} = token;
@@ -160,7 +162,7 @@ function hcFormatWrapper(format) {
         files: [{
           destination: `values/colors.xml`,
           format: `android/resources`,
-          filter: (token) => token.type === `color`,
+          filter: (token) => token.type === `color` && token.filePath !== `tokens/dark.json`,
           options: {
             // this is important!
             // this will keep token references intact so that we don't need
@@ -184,7 +186,7 @@ function hcFormatWrapper(format) {
         },{
           destination: `values/dimens.xml`,
           filter: (token) => token.type === `size` &&
-            token.type !== `font`,
+            token.type !== `custom-fontStyle`,
           format: `android/resources`
         }]
       }
