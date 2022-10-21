@@ -10,10 +10,7 @@ module.exports = {
   // This is going to run once per theme.
   do: (dictionary, platform) => {
     const assetPath = `${platform.buildPath}/StyleDictionary.xcassets`;
-    console.log(`⭐️ AssetPath ${assetPath}...`);
     
-    const allprop = JSON.stringify(dictionary, null, 4);
-    console.log(`⭐️ dictionary all properties ${allprop}...`);
     fs.ensureDirSync(assetPath)
     fs.writeFileSync(`${assetPath}/Contents.json`, JSON.stringify(contents, null, 2));
     
@@ -21,8 +18,6 @@ module.exports = {
       .filter(token => token.type === `color`)
       .forEach(token => {
         const colorsetPath = `${assetPath}/${token.name}.colorset`;
-        const newToken = JSON.stringify(token, null, 4);
-        console.log(`⭐️ New token ${newToken}...`);
         fs.ensureDirSync(colorsetPath);
         
         // The colorset might already exist because Style Dictionary is run multiple

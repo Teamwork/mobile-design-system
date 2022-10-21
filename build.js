@@ -83,7 +83,6 @@ function hcDarkFormatWrapper(format) {
   }
 }
 
-
 ['global', 'light', 'dark'].map(function (theme) {
   console.log(`\n\n🌈 Building ${theme} mode...`);
 
@@ -156,25 +155,25 @@ function hcDarkFormatWrapper(format) {
         files: [{
           destination: `Color.swift`,
           format: `swiftColor`,
-          filter: (token) => token.attributes.category === `color`,
+          filter: (token) => token.type === `color`,
           options: {
             outputReferences: true
           }
         },{
-          destination: `Color.swift`,
+          destination: `UIColor.swift`,
           format: `swiftUIColor`,
-          filter: (token) => token.attributes.category === `color`,
+          filter: (token) => token.type === `color`,
           options: {
             outputReferences: true
           }
         },{
           destination: `Size.swift`,
-          filter: (token) => token.attributes.category === `size`,
+          filter: (token) => token.type === `size`,
           className: `Size`,
           format: `ios-swift/class.swift`
         },{
           destination: `Image.swift`,
-          filter: (token) => token.attributes.category === `image`,
+          filter: (token) => token.type === `image`,
           format: `swiftImage`
         }]
       },
