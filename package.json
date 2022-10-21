@@ -33,5 +33,8 @@
     "style-dictionary": "^3.0.0-rc.8",
     "svg2vectordrawable": "^2.6.26",
     "tinycolor2": "^1.4.2"
+  },
+  "dependencies": {
+    "debug": "^4.3.4"
   }
 }

@@ -10,13 +10,19 @@ module.exports = {
   // This is going to run once per theme.
   do: (dictionary, platform) => {
     const assetPath = `${platform.buildPath}/StyleDictionary.xcassets`;
+    console.log(`⭐️ AssetPath ${assetPath}...`);
+    
+    const allprop = JSON.stringify(dictionary, null, 4);
+    console.log(`⭐️ dictionary all properties ${allprop}...`);
     fs.ensureDirSync(assetPath)
     fs.writeFileSync(`${assetPath}/Contents.json`, JSON.stringify(contents, null, 2));
     
     dictionary.allProperties
-      .filter(token => token.attributes.category === `color`)
+      .filter(token => token.type === `color`)
       .forEach(token => {
         const colorsetPath = `${assetPath}/${token.name}.colorset`;
+        const newToken = JSON.stringify(token, null, 4);
+        console.log(`⭐️ New token ${newToken}...`);
         fs.ensureDirSync(colorsetPath);
         
         // The colorset might already exist because Style Dictionary is run multiple
@@ -34,15 +40,15 @@ module.exports = {
           }
         };
         
-        if (platform.mode === `dark`) {
+        if (token.filePath === `tokens/dark.json`) {
           color.appearances = [darkAppearance];
         }
         
-        if (platform.mode === `hc`) {
+        if (token.filePath === `tokens/hc.json`) {
           color.appearances = [hcAppearance];
         }
         
-        if (platform.mode === `hcDark`) {
+        if (token.filePath === `tokens/hcDark.json`) {
           color.appearances = [darkAppearance, hcAppearance];
         }
         

@@ -7,11 +7,11 @@ const webPath = `web/dist/`;
 
 // before this runs we should clean the directories we are generating files in
 // to make sure they are ✨clean✨
-console.log(`cleaning ${iosPath}...`);
+console.log(`🧹 Cleaning ${iosPath}...`);
 fs.removeSync(iosPath);
-console.log(`cleaning ${androidPath}...`);
+console.log(`🧹 Cleaning ${androidPath}...`);
 fs.removeSync(androidPath);
-console.log(`cleaning ${webPath}...`);
+console.log(`🧹 Cleaning ${webPath}...`);
 fs.removeSync(webPath);
 
 /**
@@ -84,7 +84,9 @@ function hcDarkFormatWrapper(format) {
 }
 
 
-['global', 'dark', 'light'].map(function (theme) {
+['global', 'light', 'dark'].map(function (theme) {
+  console.log(`\n\n🌈 Building ${theme} mode...`);
+
   StyleDictionary.extend({
     // custom actions
     action: {
