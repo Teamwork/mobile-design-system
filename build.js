@@ -14,8 +14,76 @@ fs.removeSync(androidPath);
 console.log(`cleaning ${webPath}...`);
 fs.removeSync(webPath);
 
-// Adding custom actions, transforms, and formats
-const styleDictionary = StyleDictionary.extend({
+/**
+ * This function will wrap a built-in format and replace `.value` with `.darkValue`
+ * if a token has a `.darkValue`.
+ * @param {String} format - the name of the built-in format
+ * @returns {Function}
+ */
+function darkFormatWrapper(format) {
+  return function(args) {
+    const dictionary = Object.assign({}, args.dictionary);
+    // Override each token's `value` with `darkValue`
+    dictionary.allProperties = dictionary.allProperties.map(token => {
+      const {darkValue} = token;
+      if (darkValue) {
+        return Object.assign({}, token, {
+          value: token.darkValue
+        });
+      } else {
+        return token;
+      }
+    });
+    
+    // Use the built-in format but with our customized dictionary object
+    // so it will output the darkValue instead of the value
+    return StyleDictionary.format[format]({ ...args, dictionary })
+  }
+}
+
+function hcFormatWrapper(format) {
+  return function(args) {
+    const dictionary = Object.assign({}, args.dictionary);
+    // Override each token's `value` with `hcValue`
+    dictionary.allProperties = dictionary.allProperties.map(token => {
+      const {hcValue} = token;
+      if (hcValue) {
+        return Object.assign({}, token, {
+          value: token.hcValue
+        });
+      } else {
+        return token;
+      }
+    });
+    
+    // Use the built-in format but with our customized dictionary object
+    // so it will output the hcValue instead of the value
+    return StyleDictionary.format[format]({ ...args, dictionary })
+  }
+}
+
+function hcDarkFormatWrapper(format) {
+  return function(args) {
+    const dictionary = Object.assign({}, args.dictionary);
+    // Override each token's `value` with `hcDarkValue`
+    dictionary.allProperties = dictionary.allProperties.map(token => {
+      const {hcDarkValue} = token;
+      if (hcDarkValue) {
+        return Object.assign({}, token, {
+          value: token.hcDarkValue
+        });
+      } else {
+        return token;
+      }
+    });
+    
+    // Use the built-in format but with our customized dictionary object
+    // so it will output the hcValue instead of the value
+    return StyleDictionary.format[format]({ ...args, dictionary })
+  }
+}
+
+StyleDictionary.extend({
   // custom actions
   action: {
     generateColorsets: require('./actions/ios/colorsets'),
@@ -31,34 +99,16 @@ const styleDictionary = StyleDictionary.extend({
   format: {
     swiftColor: require('./formats/swiftColor'),
     swiftImage: require('./formats/swiftImage'),
-    swiftUIColor: require('./formats/swiftUIColor'),
+    androidDark: darkFormatWrapper(`android/resources`),
+    cssDark: darkFormatWrapper(`css/variables`),
+    cssHcDark: hcDarkFormatWrapper(`css/variables`),
+    cssHc: hcFormatWrapper(`css/variables`),
   },
-});
-
-const modes = [`light`, `dark`, `hc`, `hcDark`];
-
-const assets = {
-  transforms: [`attribute/cti`,`color/hex`,`size/remToFloat`,`name/ti/camel`],
-  buildPath: `${webPath}/images/`,
-  iosPath,
-  androidPath,
-  actions: [`generateGraphics`]
-};
-
-const iosColors = {
-  buildPath: iosPath,
-  transforms: [`attribute/cti`,`colorRGB`,`name/ti/camel`],
-  actions: [`generateColorsets`]
-};
-
-console.log(`☀️ Building light mode...`);
-styleDictionary.extend({
+  
   source: [
-    // this is saying find any files in the tokens folder
-    // that does not have .dark or .light, but ends in .json
-    `tokens/**/!(*.${modes.join(`|*.`)}).json`
+    `tokens/tokens.json`
   ],
-
+  
   platforms: {
     css: {
       transformGroup: `css`,
@@ -69,6 +119,18 @@ styleDictionary.extend({
         options: {
           outputReferences: true
         }
+      },{
+        destination: `variables-dark.css`,
+        format: `cssDark`,
+        filter: (token) => token.darkValue && token.attributes.category === `color`
+      },{
+        destination: `variables-hc.css`,
+        format: `cssHc`,
+        filter: (token) => token.hcValue && token.attributes.category === `color`
+      },{
+        destination: `variables-hc-dark.css`,
+        format: `cssHcDark`,
+        filter: (token) => token.hcDarkValue && token.attributes.category === `color`
       }]
     },
     
@@ -80,15 +142,20 @@ styleDictionary.extend({
         format: `json/flat`
       }]
     },
-
-    assets: Object.assign(assets, {
-      // mode lets the custom actions know which color mode they are being run on
-      mode: `light`
-    }),
     
-    iosColors: Object.assign(iosColors, {
-      mode: `light`
-    }),
+    assets: {
+      transforms: [`attribute/cti`,`color/hex`,`size/remToFloat`,`name/ti/camel`],
+      buildPath: `${webPath}/images/`,
+      iosPath,
+      androidPath,
+      actions: [`generateGraphics`]
+    },
+    
+    iosColors: {
+      buildPath: iosPath,
+      transforms: [`attribute/cti`,`colorRGB`,`name/ti/camel`],
+      actions: [`generateColorsets`]
+    },
     
     iOS: {
       buildPath: iosPath,
@@ -96,13 +163,6 @@ styleDictionary.extend({
       files: [{
         destination: `Color.swift`,
         format: `swiftColor`,
-        filter: (token) => token.attributes.category === `color`,
-        options: {
-          outputReferences: true
-        }
-      },{
-        destination: `UIColor.swift`,
-        format: `swiftUIColor`,
         filter: (token) => token.attributes.category === `color`,
         options: {
           outputReferences: true
@@ -134,6 +194,14 @@ styleDictionary.extend({
           outputReferences: true
         },
       },{
+        // Here we are outputting a 'night' resource file that only has
+        // the colors that have dark values. All the references
+        // from the above file will properly reference
+        // these colors if the OS is set to night mode.
+        destination: `values-night/colors.xml`,
+        format: `androidDark`,
+        filter: (token) => token.darkValue && token.attributes.category === `color`
+      },{
         destination: `values/font_dimens.xml`,
         filter: (token) => token.attributes.category === `size` &&
           token.attributes.type === `font`,
@@ -145,126 +213,5 @@ styleDictionary.extend({
         format: `android/resources`
       }]
     }
-  }
-}).buildAllPlatforms();
-
-
-// Dark Mode
-// we will only build the files we need to, we don't need to rebuild all the files
-console.log(`\n\n🌙 Building dark mode...`);
-styleDictionary.extend({
-  // Using the include array so that theme token overrides don't show
-  // warnings in the console. 
-  include: [
-    `tokens/**/!(*.${modes.join(`|*.`)}).json`
-  ],
-  source: [
-    `tokens/**/*.dark.json`
-  ],
-  platforms: {
-    css: {
-      transformGroup: `css`,
-      buildPath: webPath,
-      files: [{
-        destination: `variables-dark.css`,
-        format: `css/variables`,
-        // only putting in the tokens from files with '.dark' in the filepath
-        filter: (token) => token.filePath.indexOf(`.dark`) > -1,
-        options: {
-          outputReferences: true
-        }
-      }]
-    },
-    
-    assets: Object.assign(assets, {
-      mode: `dark`
-    }),
-    
-    iosColors: Object.assign(iosColors, {
-      mode: `dark`
-    }),
-    
-    android: {
-      transformGroup: `android`,
-      buildPath: androidPath,
-      files: [{
-        destination: `values-night/colors.xml`,
-        format: `android/resources`,
-        // only outputting the tokens from files with '.dark' in the filepath
-        filter: (token) => token.filePath.indexOf(`.dark`) > -1
-      }]
-    }
-  }
-}).buildAllPlatforms();
-
-// High-Contrast Dark Mode
-// we will only build the files we need to, we don't need to rebuild all the files
-console.log(`\n\n🌈🌙 Building high-contrast dark mode...`);
-styleDictionary.extend({
-  include: [
-    `tokens/**/!(*.${modes.join(`|*.`)}).json`
-  ],
-  source: [
-    `tokens/**/*.hcDark.json`
-  ],
-  
-  platforms: {
-    css: {
-      transformGroup: `css`,
-      buildPath: webPath,
-      files: [{
-        destination: `variables-hc-dark.css`,
-        format: `css/variables`,
-        filter: (token) => token.filePath.indexOf(`.hcDark`) > -1,
-        options: {
-          outputReferences: true
-        }
-      }]
-    },
-    
-    // Because iOS only has good support for high-contrast modes
-    // we will only build the necessary files for iOS:
-    assets: Object.assign(assets, {
-      mode: `hcDark`
-    }),
-    
-    iosColors: Object.assign(iosColors, {
-      mode: `hcDark`
-    }),
-  }
-}).buildAllPlatforms();
-
-// High-Contrast Light Mode
-// we will only build the files we need to, we don't need to rebuild all the files
-console.log(`\n\n🌈☀️ Building high-contrast light mode...`);
-styleDictionary.extend({
-  include: [
-    `tokens/**/!(*.${modes.join(`|*.`)}).json`
-  ],
-  source: [
-    `tokens/**/*.hc.json`
-  ],
-  
-  platforms: {
-    css: {
-      transformGroup: `css`,
-      buildPath: webPath,
-      files: [{
-        destination: `variables-hc.css`,
-        format: `css/variables`,
-        filter: (token) => token.filePath.indexOf(`.hc`) > -1,
-        options: {
-          outputReferences: true
-        }
-      }]
-    },
-    
-    assets: Object.assign(assets, {
-      mode: `hc`
-    }),
-    
-    iosColors: Object.assign(iosColors, {
-      mode: `hc`
-    }),
   }
 }).buildAllPlatforms();
