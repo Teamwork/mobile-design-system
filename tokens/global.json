@@ -1,4 +1,10 @@
 {
+  "sizing": {
+    "large": {
+      "type": "sizing",
+      "value": 12
+    }
+  },
   "colors": {
     "black": {
       "value": "#171717",

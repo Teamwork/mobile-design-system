@@ -16,7 +16,7 @@ module.exports = function({ dictionary, options }) {
 class MobileDesignSystemTokens {}
 let bundle = Bundle(for: MobileDesignSystemTokens.self)
 
-extension Color {\n` +
+extension Color {\n\n` +
   dictionary.allProperties.map(token => {
     return `  public static var ${token.name}: Color {
     return Color.init("${token.name}", bundle: bundle)

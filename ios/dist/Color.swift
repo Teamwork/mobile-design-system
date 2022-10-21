@@ -4,6 +4,7 @@ class MobileDesignSystemTokens {}
 let bundle = Bundle(for: MobileDesignSystemTokens.self)
 
 extension Color {
+
   public static var bgDefault: Color {
     return Color.init("bgDefault", bundle: bundle)
   }

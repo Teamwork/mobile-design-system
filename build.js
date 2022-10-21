@@ -84,6 +84,7 @@ function hcFormatWrapper(format) {
       swiftColor: require('./formats/swiftColor'),
       swiftImage: require('./formats/swiftImage'),
       swiftUIColor: require('./formats/swiftUIColor'),
+      swiftSize: require('./formats/swiftSize'),
       // androidDark: darkFormatWrapper(`android/resources`),
     },
     
@@ -146,9 +147,9 @@ function hcFormatWrapper(format) {
           }
         },{
           destination: `Size.swift`,
-          filter: (token) => token.type === `size`,
+          filter: (token) => token.type === `sizing`,
           className: `Size`,
-          format: `ios-swift/class.swift`
+          format: `swiftSize`
         },{
           destination: `Image.swift`,
           filter: (token) => token.type === `image`,

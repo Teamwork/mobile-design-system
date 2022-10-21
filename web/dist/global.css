@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 21 Oct 2022 15:07:32 GMT
+ * Generated on Fri, 21 Oct 2022 15:35:26 GMT
  */
 
 :root {
@@ -39,4 +39,5 @@
   --colors-red-50: #FFF5F7;
   --colors-white: #ffffff;
   --colors-black: #171717;
+  --sizing-large: 12;
 }
