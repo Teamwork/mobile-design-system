@@ -17,7 +17,7 @@ module.exports = {
     dictionary.allProperties
       .filter(token => token.type === `color`)
       .forEach(token => {
-        const colorsetPath = `${assetPath}/${token.name}.colorset`;
+        const colorsetPath = `${assetPath}/${token.attributes.category}${capitalizeFirstLetter(token.name)}.colorset`;
         fs.ensureDirSync(colorsetPath);
         
         // The colorset might already exist because Style Dictionary is run multiple
@@ -55,4 +55,8 @@ module.exports = {
   undo: function(dictionary, platform) {
     // no undo
   }
+}
+
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
 }
