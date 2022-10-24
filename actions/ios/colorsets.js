@@ -17,7 +17,7 @@ module.exports = {
     dictionary.allProperties
       .filter(token => token.type === `color`)
       .forEach(token => {
-        const colorsetPath = `${assetPath}/$${token.name}.colorset`;
+        const colorsetPath = `${assetPath}/${token.name}.colorset`;
         fs.ensureDirSync(colorsetPath);
         
         // The colorset might already exist because Style Dictionary is run multiple

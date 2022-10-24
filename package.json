@@ -4,7 +4,6 @@
   "description": "",
   "main": "dist/tokens.js",
   "files": [
-    "web/dist",
     "build.js"
   ],
   "scripts": {
