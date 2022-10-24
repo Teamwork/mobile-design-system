@@ -40,5 +40,4 @@ enum DesignSystem {
   public static let 15 = CGFloat(112)
   public static let 16 = CGFloat(128)
  }
-
 }
