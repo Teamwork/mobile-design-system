@@ -23,8 +23,8 @@
         "components": {
           "alpha": "1.0000",
           "blue": "0.8627",
-          "red": "0.6549",
-          "green": "0.6941"
+          "red": "0.3529",
+          "green": "0.4549"
         }
       },
       "appearances": [

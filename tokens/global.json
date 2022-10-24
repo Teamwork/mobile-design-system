@@ -402,7 +402,7 @@
     }
   },
   "border-radius": {
-    "0": {
+    "none": {
       "value": 0,
       "type": "borderRadius"
     },
@@ -431,70 +431,18 @@
       "type": "borderRadius"
     }
   },
-  "space": {
-    "1": {
-      "value": 2,
-      "type": "spacing"
-    },
-    "2": {
-      "value": 4,
-      "type": "spacing"
-    },
-    "3": {
-      "value": 8,
-      "type": "spacing"
-    },
-    "4": {
-      "value": 12,
-      "type": "spacing"
-    },
-    "5": {
-      "value": 16,
-      "type": "spacing"
-    },
-    "6": {
-      "value": 24,
-      "type": "spacing"
-    },
-    "7": {
-      "value": 32,
-      "type": "spacing"
-    },
-    "8": {
-      "value": 40,
-      "type": "spacing"
-    },
-    "9": {
-      "value": 44,
-      "type": "spacing"
-    },
-    "10": {
-      "value": 48,
-      "type": "spacing"
-    },
-    "11": {
-      "value": 56,
-      "type": "spacing"
-    },
-    "12": {
-      "value": 64,
-      "type": "spacing"
-    },
-    "13": {
-      "value": 72,
-      "type": "spacing"
-    },
-    "14": {
-      "value": 80,
-      "type": "spacing"
-    },
-    "15": {
-      "value": 112,
-      "type": "spacing"
-    },
-    "16": {
-      "value": 128,
-      "type": "spacing"
+  "text": {
+    "display": {
+      "large": {
+        "value": {
+          "fontFamily": "Poppins",
+          "fontWeight": "regular",
+          "lineHeight": 64,
+          "letterSpacing": "-4%",
+          "paragraphSpacing": 0
+        },
+        "type": "typography"
+      }
     }
   }
 }
