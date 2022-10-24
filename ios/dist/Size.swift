@@ -1,6 +1,6 @@
 import Foundation
 
-enum Sizes {
+enum Size {
  enum BorderRadius {
 
   public static let 0 = CGFloat(0)
