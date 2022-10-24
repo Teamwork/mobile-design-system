@@ -18,13 +18,9 @@ let bundle = Bundle(for: MobileDesignSystemTokens.self)
 
 extension Color {\n\n` +
   dictionary.allProperties.map(token => {
-    return `  public static var ${token.attributes.category}${capitalizeFirstLetter(token.name)}: Color {
-    return Color.init("${token.attributes.category}${capitalizeFirstLetter(token.name)}", bundle: bundle)
+    return `  public static var ${token.name}: Color {
+    return Color.init("${token.name}", bundle: bundle)
   }`
   }).join(`\n`) +
   `\n}`
-}
-
-function capitalizeFirstLetter(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1);
 }

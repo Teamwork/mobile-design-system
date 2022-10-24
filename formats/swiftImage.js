@@ -11,7 +11,7 @@
 module.exports = function({ dictionary, options }) {
   return `import SwiftUI
 
-extension Image {\n\n` +
+extension Image {\n` +
   dictionary.allProperties.map(token => {
     return `  public static var ${token.name}: Image {
     return Image.init("${token.name}", bundle: bundle)
