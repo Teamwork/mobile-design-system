@@ -4,7 +4,7 @@ module.exports = function({ dictionary, options }) {
 class MobileDesignSystemTokens {}
 let bundle = Bundle(for: MobileDesignSystemTokens.self)
 
-enum Sizes {\n` +
+enum Sizes {\n\n` +
   dictionary.allProperties.map(token => {
     return `  public static let ${token.name} = CGFloat(${token.value})`
   }).join(`\n`) +

@@ -13,11 +13,12 @@ module.exports = {
     
     fs.ensureDirSync(assetPath)
     fs.writeFileSync(`${assetPath}/Contents.json`, JSON.stringify(contents, null, 2));
-    
+    const printt = JSON.stringify(dictionary, null, 4);
+    console.log(`🧹 Dictionary ${printt}`);
     dictionary.allProperties
       .filter(token => token.type === `color`)
       .forEach(token => {
-        const colorsetPath = `${assetPath}/${token.name}.colorset`;
+        const colorsetPath = `${assetPath}/${token.attributes.category}${capitalizeFirstLetter(token.name)}.colorset`;
         fs.ensureDirSync(colorsetPath);
         
         // The colorset might already exist because Style Dictionary is run multiple
@@ -55,4 +56,8 @@ module.exports = {
   undo: function(dictionary, platform) {
     // no undo
   }
+}
+
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
 }

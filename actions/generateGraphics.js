@@ -17,7 +17,7 @@ module.exports = {
     
     dictionary.allProperties
       .filter(token => {
-        return token.attributes.category === `image`
+        return token.type === `image`
       })
       .forEach(token => {
         const { name, value } = token;
