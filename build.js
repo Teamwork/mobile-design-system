@@ -117,25 +117,6 @@ fs.removeSync(androidPath);
           format: `android/resources`
         }]
       }
-
-      // compose: {
-      //   transformGroup: `compose`,
-      //   buildPath: `android/compose/`,
-      //   files: [{
-      //     destination: `StyleDictionaryColor.kt`,
-      //     format: `compose/object`,
-      //     className: `StyleDictionaryColor`,
-      //     packageName: `StyleDictionaryColor`,
-      //     filter: (token) => token.type === `color`
-      //   },{
-      //     destination: `StyleDictionarySize.kt`,
-      //     format: `compose/object`,
-      //     className: `StyleDictionarySize`,
-      //     packageName: `StyleDictionarySize`,
-      //     type: `float`,
-      //     filter: (token) => token.type === `size`
-      //   }]
-      // }
     }
   }).buildAllPlatforms();
 })
