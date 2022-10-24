@@ -5,8 +5,7 @@
 1. Install dependencies: `npm ci`
 1. Run Style Dictionary: `npm run build`
 1. You should see Style Dictionary run and generate some files.
-1. `npm run build` will run Style Dictionary and generate the artifacts for Android, iOS, and web
-1. `npm start` will run the build command and start a watcher to watch for changes and rebuild
+1. `npm run build` will run Style Dictionary and generate the artifacts for Android and iOS.
 
 This project transforms your tokens stored on Figma Tokens (with GitHub sync enabled) to be automatically transformed with token-transformer and Style Dictionary to a iOS and Android environments with multiple themes. The theme switcher itself just adds light-theme or dark-theme to the root class, so in theory you could have not only light or dark theme but many different themes.
 
