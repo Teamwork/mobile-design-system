@@ -33,36 +33,6 @@
           "value": "dark"
         }
       ]
-    },
-    {
-      "idiom": "universal",
-      "color": {
-        "color-space": "srgb",
-        "components": {
-          "alpha": "1.0000",
-          "blue": "0.6667",
-          "red": "0.2118",
-          "green": "0.3020"
-        }
-      }
-    },
-    {
-      "idiom": "universal",
-      "color": {
-        "color-space": "srgb",
-        "components": {
-          "alpha": "1.0000",
-          "blue": "1.0000",
-          "red": "0.8471",
-          "green": "0.8784"
-        }
-      },
-      "appearances": [
-        {
-          "appearance": "luminosity",
-          "value": "dark"
-        }
-      ]
     }
   ]
 }
