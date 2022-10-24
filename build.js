@@ -72,9 +72,9 @@ fs.removeSync(androidPath);
             outputReferences: true
           }
         },{
-          destination: `Size.swift`,
-          filter: (token) => token.type === `borderRadius` || token.type === `borderWidth` || token.type === `spacing`,
-          className: `Size`,
+          destination: `DesignSystem.swift`,
+          filter: (token) => typeof token.value  == 'number',
+          className: `DesignSystem`,
           format: `swiftSize`
         },{
           destination: `Image.swift`,

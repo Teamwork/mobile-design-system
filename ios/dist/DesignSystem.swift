@@ -1,6 +1,15 @@
 import Foundation
 
-enum Size {
+enum DesignSystem {
+
+ enum BorderWidth {
+
+  public static let xs = CGFloat(0.5)
+  public static let sm = CGFloat(1)
+  public static let md = CGFloat(2)
+  public static let lg = CGFloat(3)
+ }
+
  enum BorderRadius {
 
   public static let 0 = CGFloat(0)
@@ -12,15 +21,7 @@ enum Size {
   public static let full = CGFloat(100)
  }
 
- enum BorderWidth {
-
-  public static let xs = CGFloat(0.5)
-  public static let sm = CGFloat(1)
-  public static let md = CGFloat(2)
-  public static let lg = CGFloat(3)
- }
-
- enum Space {
+ enum Spacing {
 
   public static let 1 = CGFloat(2)
   public static let 2 = CGFloat(4)
