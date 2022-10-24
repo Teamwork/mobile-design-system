@@ -5,391 +5,391 @@ let bundle = Bundle(for: MobileDesignSystemTokens.self)
 
 extension Color {
 
-  public static var colorLinkDefault: Color {
-    return Color.init("colorLinkDefault", bundle: bundle)
+  public static var linkDefault: Color {
+    return Color.init("linkDefault", bundle: bundle)
   }
-  public static var colorLinkHover: Color {
-    return Color.init("colorLinkHover", bundle: bundle)
+  public static var linkHover: Color {
+    return Color.init("linkHover", bundle: bundle)
   }
-  public static var colorLinkVisited: Color {
-    return Color.init("colorLinkVisited", bundle: bundle)
+  public static var linkVisited: Color {
+    return Color.init("linkVisited", bundle: bundle)
   }
-  public static var colorTextActionDefault: Color {
-    return Color.init("colorTextActionDefault", bundle: bundle)
+  public static var textActionDefault: Color {
+    return Color.init("textActionDefault", bundle: bundle)
   }
-  public static var colorTextActionHover: Color {
-    return Color.init("colorTextActionHover", bundle: bundle)
+  public static var textActionHover: Color {
+    return Color.init("textActionHover", bundle: bundle)
   }
-  public static var colorTextActionSelected: Color {
-    return Color.init("colorTextActionSelected", bundle: bundle)
+  public static var textActionSelected: Color {
+    return Color.init("textActionSelected", bundle: bundle)
   }
-  public static var colorTextInfoDefault: Color {
-    return Color.init("colorTextInfoDefault", bundle: bundle)
+  public static var textInfoDefault: Color {
+    return Color.init("textInfoDefault", bundle: bundle)
   }
-  public static var colorTextInfoHover: Color {
-    return Color.init("colorTextInfoHover", bundle: bundle)
+  public static var textInfoHover: Color {
+    return Color.init("textInfoHover", bundle: bundle)
   }
-  public static var colorTextInfoSelected: Color {
-    return Color.init("colorTextInfoSelected", bundle: bundle)
+  public static var textInfoSelected: Color {
+    return Color.init("textInfoSelected", bundle: bundle)
   }
-  public static var colorTextSuccessDefault: Color {
-    return Color.init("colorTextSuccessDefault", bundle: bundle)
+  public static var textSuccessDefault: Color {
+    return Color.init("textSuccessDefault", bundle: bundle)
   }
-  public static var colorTextSuccessHover: Color {
-    return Color.init("colorTextSuccessHover", bundle: bundle)
+  public static var textSuccessHover: Color {
+    return Color.init("textSuccessHover", bundle: bundle)
   }
-  public static var colorTextSuccessSelected: Color {
-    return Color.init("colorTextSuccessSelected", bundle: bundle)
+  public static var textSuccessSelected: Color {
+    return Color.init("textSuccessSelected", bundle: bundle)
   }
-  public static var colorTextWarningDefault: Color {
-    return Color.init("colorTextWarningDefault", bundle: bundle)
+  public static var textWarningDefault: Color {
+    return Color.init("textWarningDefault", bundle: bundle)
   }
-  public static var colorTextWarningHover: Color {
-    return Color.init("colorTextWarningHover", bundle: bundle)
+  public static var textWarningHover: Color {
+    return Color.init("textWarningHover", bundle: bundle)
   }
-  public static var colorTextWarningSelected: Color {
-    return Color.init("colorTextWarningSelected", bundle: bundle)
+  public static var textWarningSelected: Color {
+    return Color.init("textWarningSelected", bundle: bundle)
   }
-  public static var colorTextCriticalDefault: Color {
-    return Color.init("colorTextCriticalDefault", bundle: bundle)
+  public static var textCriticalDefault: Color {
+    return Color.init("textCriticalDefault", bundle: bundle)
   }
-  public static var colorTextCriticalHover: Color {
-    return Color.init("colorTextCriticalHover", bundle: bundle)
+  public static var textCriticalHover: Color {
+    return Color.init("textCriticalHover", bundle: bundle)
   }
-  public static var colorTextCriticalSelected: Color {
-    return Color.init("colorTextCriticalSelected", bundle: bundle)
+  public static var textCriticalSelected: Color {
+    return Color.init("textCriticalSelected", bundle: bundle)
   }
-  public static var colorTextOnDecorative10: Color {
-    return Color.init("colorTextOnDecorative10", bundle: bundle)
+  public static var textOnDecorative10: Color {
+    return Color.init("textOnDecorative10", bundle: bundle)
   }
-  public static var colorTextOnDecorative11: Color {
-    return Color.init("colorTextOnDecorative11", bundle: bundle)
+  public static var textOnDecorative11: Color {
+    return Color.init("textOnDecorative11", bundle: bundle)
   }
-  public static var colorTextOnDecorative09: Color {
-    return Color.init("colorTextOnDecorative09", bundle: bundle)
+  public static var textOnDecorative09: Color {
+    return Color.init("textOnDecorative09", bundle: bundle)
   }
-  public static var colorTextOnDecorative08: Color {
-    return Color.init("colorTextOnDecorative08", bundle: bundle)
+  public static var textOnDecorative08: Color {
+    return Color.init("textOnDecorative08", bundle: bundle)
   }
-  public static var colorTextOnDecorative07: Color {
-    return Color.init("colorTextOnDecorative07", bundle: bundle)
+  public static var textOnDecorative07: Color {
+    return Color.init("textOnDecorative07", bundle: bundle)
   }
-  public static var colorTextOnDecorative06: Color {
-    return Color.init("colorTextOnDecorative06", bundle: bundle)
+  public static var textOnDecorative06: Color {
+    return Color.init("textOnDecorative06", bundle: bundle)
   }
-  public static var colorTextOnDecorative05: Color {
-    return Color.init("colorTextOnDecorative05", bundle: bundle)
+  public static var textOnDecorative05: Color {
+    return Color.init("textOnDecorative05", bundle: bundle)
   }
-  public static var colorTextOnDecorative04: Color {
-    return Color.init("colorTextOnDecorative04", bundle: bundle)
+  public static var textOnDecorative04: Color {
+    return Color.init("textOnDecorative04", bundle: bundle)
   }
-  public static var colorTextOnDecorative03: Color {
-    return Color.init("colorTextOnDecorative03", bundle: bundle)
+  public static var textOnDecorative03: Color {
+    return Color.init("textOnDecorative03", bundle: bundle)
   }
-  public static var colorTextOnDecorative02: Color {
-    return Color.init("colorTextOnDecorative02", bundle: bundle)
+  public static var textOnDecorative02: Color {
+    return Color.init("textOnDecorative02", bundle: bundle)
   }
-  public static var colorTextOnDecorative01: Color {
-    return Color.init("colorTextOnDecorative01", bundle: bundle)
+  public static var textOnDecorative01: Color {
+    return Color.init("textOnDecorative01", bundle: bundle)
   }
-  public static var colorTextOnDecorativeSubtle10: Color {
-    return Color.init("colorTextOnDecorativeSubtle10", bundle: bundle)
+  public static var textOnDecorativeSubtle10: Color {
+    return Color.init("textOnDecorativeSubtle10", bundle: bundle)
   }
-  public static var colorTextOnDecorativeSubtle11: Color {
-    return Color.init("colorTextOnDecorativeSubtle11", bundle: bundle)
+  public static var textOnDecorativeSubtle11: Color {
+    return Color.init("textOnDecorativeSubtle11", bundle: bundle)
   }
-  public static var colorTextOnDecorativeSubtle09: Color {
-    return Color.init("colorTextOnDecorativeSubtle09", bundle: bundle)
+  public static var textOnDecorativeSubtle09: Color {
+    return Color.init("textOnDecorativeSubtle09", bundle: bundle)
   }
-  public static var colorTextOnDecorativeSubtle08: Color {
-    return Color.init("colorTextOnDecorativeSubtle08", bundle: bundle)
+  public static var textOnDecorativeSubtle08: Color {
+    return Color.init("textOnDecorativeSubtle08", bundle: bundle)
   }
-  public static var colorTextOnDecorativeSubtle07: Color {
-    return Color.init("colorTextOnDecorativeSubtle07", bundle: bundle)
+  public static var textOnDecorativeSubtle07: Color {
+    return Color.init("textOnDecorativeSubtle07", bundle: bundle)
   }
-  public static var colorTextOnDecorativeSubtle06: Color {
-    return Color.init("colorTextOnDecorativeSubtle06", bundle: bundle)
+  public static var textOnDecorativeSubtle06: Color {
+    return Color.init("textOnDecorativeSubtle06", bundle: bundle)
   }
-  public static var colorTextOnDecorativeSubtle05: Color {
-    return Color.init("colorTextOnDecorativeSubtle05", bundle: bundle)
+  public static var textOnDecorativeSubtle05: Color {
+    return Color.init("textOnDecorativeSubtle05", bundle: bundle)
   }
-  public static var colorTextOnDecorativeSubtle04: Color {
-    return Color.init("colorTextOnDecorativeSubtle04", bundle: bundle)
+  public static var textOnDecorativeSubtle04: Color {
+    return Color.init("textOnDecorativeSubtle04", bundle: bundle)
   }
-  public static var colorTextOnDecorativeSubtle03: Color {
-    return Color.init("colorTextOnDecorativeSubtle03", bundle: bundle)
+  public static var textOnDecorativeSubtle03: Color {
+    return Color.init("textOnDecorativeSubtle03", bundle: bundle)
   }
-  public static var colorTextOnDecorativeSubtle02: Color {
-    return Color.init("colorTextOnDecorativeSubtle02", bundle: bundle)
+  public static var textOnDecorativeSubtle02: Color {
+    return Color.init("textOnDecorativeSubtle02", bundle: bundle)
   }
-  public static var colorTextOnDecorativeSubtle01: Color {
-    return Color.init("colorTextOnDecorativeSubtle01", bundle: bundle)
+  public static var textOnDecorativeSubtle01: Color {
+    return Color.init("textOnDecorativeSubtle01", bundle: bundle)
   }
-  public static var colorIconOnPalette: Color {
-    return Color.init("colorIconOnPalette", bundle: bundle)
+  public static var iconOnPalette: Color {
+    return Color.init("iconOnPalette", bundle: bundle)
   }
-  public static var colorIconOnSuccess: Color {
-    return Color.init("colorIconOnSuccess", bundle: bundle)
+  public static var iconOnSuccess: Color {
+    return Color.init("iconOnSuccess", bundle: bundle)
   }
-  public static var colorIconOnWarning: Color {
-    return Color.init("colorIconOnWarning", bundle: bundle)
+  public static var iconOnWarning: Color {
+    return Color.init("iconOnWarning", bundle: bundle)
   }
-  public static var colorIconOnCritical: Color {
-    return Color.init("colorIconOnCritical", bundle: bundle)
+  public static var iconOnCritical: Color {
+    return Color.init("iconOnCritical", bundle: bundle)
   }
-  public static var colorIconOnInteraction: Color {
-    return Color.init("colorIconOnInteraction", bundle: bundle)
+  public static var iconOnInteraction: Color {
+    return Color.init("iconOnInteraction", bundle: bundle)
   }
-  public static var colorIconDisabled: Color {
-    return Color.init("colorIconDisabled", bundle: bundle)
+  public static var iconDisabled: Color {
+    return Color.init("iconDisabled", bundle: bundle)
   }
-  public static var colorIconOnInfo: Color {
-    return Color.init("colorIconOnInfo", bundle: bundle)
+  public static var iconOnInfo: Color {
+    return Color.init("iconOnInfo", bundle: bundle)
   }
-  public static var colorIconActionSelected: Color {
-    return Color.init("colorIconActionSelected", bundle: bundle)
+  public static var iconActionSelected: Color {
+    return Color.init("iconActionSelected", bundle: bundle)
   }
-  public static var colorIconActionHover: Color {
-    return Color.init("colorIconActionHover", bundle: bundle)
+  public static var iconActionHover: Color {
+    return Color.init("iconActionHover", bundle: bundle)
   }
-  public static var colorIconActionDefault: Color {
-    return Color.init("colorIconActionDefault", bundle: bundle)
+  public static var iconActionDefault: Color {
+    return Color.init("iconActionDefault", bundle: bundle)
   }
-  public static var colorIconInfoSelected: Color {
-    return Color.init("colorIconInfoSelected", bundle: bundle)
+  public static var iconInfoSelected: Color {
+    return Color.init("iconInfoSelected", bundle: bundle)
   }
-  public static var colorIconInfoHover: Color {
-    return Color.init("colorIconInfoHover", bundle: bundle)
+  public static var iconInfoHover: Color {
+    return Color.init("iconInfoHover", bundle: bundle)
   }
-  public static var colorIconInfoDefault: Color {
-    return Color.init("colorIconInfoDefault", bundle: bundle)
+  public static var iconInfoDefault: Color {
+    return Color.init("iconInfoDefault", bundle: bundle)
   }
-  public static var colorIconSuccessSelected: Color {
-    return Color.init("colorIconSuccessSelected", bundle: bundle)
+  public static var iconSuccessSelected: Color {
+    return Color.init("iconSuccessSelected", bundle: bundle)
   }
-  public static var colorIconSuccessHover: Color {
-    return Color.init("colorIconSuccessHover", bundle: bundle)
+  public static var iconSuccessHover: Color {
+    return Color.init("iconSuccessHover", bundle: bundle)
   }
-  public static var colorIconSuccessDefault: Color {
-    return Color.init("colorIconSuccessDefault", bundle: bundle)
+  public static var iconSuccessDefault: Color {
+    return Color.init("iconSuccessDefault", bundle: bundle)
   }
-  public static var colorIconWarningSelected: Color {
-    return Color.init("colorIconWarningSelected", bundle: bundle)
+  public static var iconWarningSelected: Color {
+    return Color.init("iconWarningSelected", bundle: bundle)
   }
-  public static var colorIconWarningHover: Color {
-    return Color.init("colorIconWarningHover", bundle: bundle)
+  public static var iconWarningHover: Color {
+    return Color.init("iconWarningHover", bundle: bundle)
   }
-  public static var colorIconWarningDefault: Color {
-    return Color.init("colorIconWarningDefault", bundle: bundle)
+  public static var iconWarningDefault: Color {
+    return Color.init("iconWarningDefault", bundle: bundle)
   }
-  public static var colorIconCriticalSelected: Color {
-    return Color.init("colorIconCriticalSelected", bundle: bundle)
+  public static var iconCriticalSelected: Color {
+    return Color.init("iconCriticalSelected", bundle: bundle)
   }
-  public static var colorIconCriticalHover: Color {
-    return Color.init("colorIconCriticalHover", bundle: bundle)
+  public static var iconCriticalHover: Color {
+    return Color.init("iconCriticalHover", bundle: bundle)
   }
-  public static var colorIconCriticalDefault: Color {
-    return Color.init("colorIconCriticalDefault", bundle: bundle)
+  public static var iconCriticalDefault: Color {
+    return Color.init("iconCriticalDefault", bundle: bundle)
   }
-  public static var colorBorderActionDefault: Color {
-    return Color.init("colorBorderActionDefault", bundle: bundle)
+  public static var borderActionDefault: Color {
+    return Color.init("borderActionDefault", bundle: bundle)
   }
-  public static var colorBorderActionHover: Color {
-    return Color.init("colorBorderActionHover", bundle: bundle)
+  public static var borderActionHover: Color {
+    return Color.init("borderActionHover", bundle: bundle)
   }
-  public static var colorBorderActionSelected: Color {
-    return Color.init("colorBorderActionSelected", bundle: bundle)
+  public static var borderActionSelected: Color {
+    return Color.init("borderActionSelected", bundle: bundle)
   }
-  public static var colorBorderSuccessDefault: Color {
-    return Color.init("colorBorderSuccessDefault", bundle: bundle)
+  public static var borderSuccessDefault: Color {
+    return Color.init("borderSuccessDefault", bundle: bundle)
   }
-  public static var colorBorderSuccessHover: Color {
-    return Color.init("colorBorderSuccessHover", bundle: bundle)
+  public static var borderSuccessHover: Color {
+    return Color.init("borderSuccessHover", bundle: bundle)
   }
-  public static var colorBorderSuccessSelected: Color {
-    return Color.init("colorBorderSuccessSelected", bundle: bundle)
+  public static var borderSuccessSelected: Color {
+    return Color.init("borderSuccessSelected", bundle: bundle)
   }
-  public static var colorBorderWarningDefault: Color {
-    return Color.init("colorBorderWarningDefault", bundle: bundle)
+  public static var borderWarningDefault: Color {
+    return Color.init("borderWarningDefault", bundle: bundle)
   }
-  public static var colorBorderWarningHover: Color {
-    return Color.init("colorBorderWarningHover", bundle: bundle)
+  public static var borderWarningHover: Color {
+    return Color.init("borderWarningHover", bundle: bundle)
   }
-  public static var colorBorderWarningSelected: Color {
-    return Color.init("colorBorderWarningSelected", bundle: bundle)
+  public static var borderWarningSelected: Color {
+    return Color.init("borderWarningSelected", bundle: bundle)
   }
-  public static var colorBorderCriticalDefault: Color {
-    return Color.init("colorBorderCriticalDefault", bundle: bundle)
+  public static var borderCriticalDefault: Color {
+    return Color.init("borderCriticalDefault", bundle: bundle)
   }
-  public static var colorBorderCriticalHover: Color {
-    return Color.init("colorBorderCriticalHover", bundle: bundle)
+  public static var borderCriticalHover: Color {
+    return Color.init("borderCriticalHover", bundle: bundle)
   }
-  public static var colorBorderCriticalSelected: Color {
-    return Color.init("colorBorderCriticalSelected", bundle: bundle)
+  public static var borderCriticalSelected: Color {
+    return Color.init("borderCriticalSelected", bundle: bundle)
   }
-  public static var colorSurfaceSuccessDefault: Color {
-    return Color.init("colorSurfaceSuccessDefault", bundle: bundle)
+  public static var surfaceSuccessDefault: Color {
+    return Color.init("surfaceSuccessDefault", bundle: bundle)
   }
-  public static var colorSurfaceSuccessHover: Color {
-    return Color.init("colorSurfaceSuccessHover", bundle: bundle)
+  public static var surfaceSuccessHover: Color {
+    return Color.init("surfaceSuccessHover", bundle: bundle)
   }
-  public static var colorSurfaceSuccessSelected: Color {
-    return Color.init("colorSurfaceSuccessSelected", bundle: bundle)
+  public static var surfaceSuccessSelected: Color {
+    return Color.init("surfaceSuccessSelected", bundle: bundle)
   }
-  public static var colorSurfaceSuccessSubtleDefault: Color {
-    return Color.init("colorSurfaceSuccessSubtleDefault", bundle: bundle)
+  public static var surfaceSuccessSubtleDefault: Color {
+    return Color.init("surfaceSuccessSubtleDefault", bundle: bundle)
   }
-  public static var colorSurfaceSuccessSubtleHover: Color {
-    return Color.init("colorSurfaceSuccessSubtleHover", bundle: bundle)
+  public static var surfaceSuccessSubtleHover: Color {
+    return Color.init("surfaceSuccessSubtleHover", bundle: bundle)
   }
-  public static var colorSurfaceSuccessSubtleSelected: Color {
-    return Color.init("colorSurfaceSuccessSubtleSelected", bundle: bundle)
+  public static var surfaceSuccessSubtleSelected: Color {
+    return Color.init("surfaceSuccessSubtleSelected", bundle: bundle)
   }
-  public static var colorSurfaceInfoDefault: Color {
-    return Color.init("colorSurfaceInfoDefault", bundle: bundle)
+  public static var surfaceInfoDefault: Color {
+    return Color.init("surfaceInfoDefault", bundle: bundle)
   }
-  public static var colorSurfaceInfoHover: Color {
-    return Color.init("colorSurfaceInfoHover", bundle: bundle)
+  public static var surfaceInfoHover: Color {
+    return Color.init("surfaceInfoHover", bundle: bundle)
   }
-  public static var colorSurfaceInfoSelected: Color {
-    return Color.init("colorSurfaceInfoSelected", bundle: bundle)
+  public static var surfaceInfoSelected: Color {
+    return Color.init("surfaceInfoSelected", bundle: bundle)
   }
-  public static var colorSurfaceInfoSubtleDefault: Color {
-    return Color.init("colorSurfaceInfoSubtleDefault", bundle: bundle)
+  public static var surfaceInfoSubtleDefault: Color {
+    return Color.init("surfaceInfoSubtleDefault", bundle: bundle)
   }
-  public static var colorSurfaceInfoSubtleHover: Color {
-    return Color.init("colorSurfaceInfoSubtleHover", bundle: bundle)
+  public static var surfaceInfoSubtleHover: Color {
+    return Color.init("surfaceInfoSubtleHover", bundle: bundle)
   }
-  public static var colorSurfaceInfoSubtleSelected: Color {
-    return Color.init("colorSurfaceInfoSubtleSelected", bundle: bundle)
+  public static var surfaceInfoSubtleSelected: Color {
+    return Color.init("surfaceInfoSubtleSelected", bundle: bundle)
   }
-  public static var colorSurfaceCriticalDefault: Color {
-    return Color.init("colorSurfaceCriticalDefault", bundle: bundle)
+  public static var surfaceCriticalDefault: Color {
+    return Color.init("surfaceCriticalDefault", bundle: bundle)
   }
-  public static var colorSurfaceCriticalHover: Color {
-    return Color.init("colorSurfaceCriticalHover", bundle: bundle)
+  public static var surfaceCriticalHover: Color {
+    return Color.init("surfaceCriticalHover", bundle: bundle)
   }
-  public static var colorSurfaceCriticalSelected: Color {
-    return Color.init("colorSurfaceCriticalSelected", bundle: bundle)
+  public static var surfaceCriticalSelected: Color {
+    return Color.init("surfaceCriticalSelected", bundle: bundle)
   }
-  public static var colorSurfaceCriticalSubtleDefault: Color {
-    return Color.init("colorSurfaceCriticalSubtleDefault", bundle: bundle)
+  public static var surfaceCriticalSubtleDefault: Color {
+    return Color.init("surfaceCriticalSubtleDefault", bundle: bundle)
   }
-  public static var colorSurfaceCriticalSubtleHover: Color {
-    return Color.init("colorSurfaceCriticalSubtleHover", bundle: bundle)
+  public static var surfaceCriticalSubtleHover: Color {
+    return Color.init("surfaceCriticalSubtleHover", bundle: bundle)
   }
-  public static var colorSurfaceCriticalSubtleSelected: Color {
-    return Color.init("colorSurfaceCriticalSubtleSelected", bundle: bundle)
+  public static var surfaceCriticalSubtleSelected: Color {
+    return Color.init("surfaceCriticalSubtleSelected", bundle: bundle)
   }
-  public static var colorSurfaceActionDefault: Color {
-    return Color.init("colorSurfaceActionDefault", bundle: bundle)
+  public static var surfaceActionDefault: Color {
+    return Color.init("surfaceActionDefault", bundle: bundle)
   }
-  public static var colorSurfaceActionHover: Color {
-    return Color.init("colorSurfaceActionHover", bundle: bundle)
+  public static var surfaceActionHover: Color {
+    return Color.init("surfaceActionHover", bundle: bundle)
   }
-  public static var colorSurfaceActionSelected: Color {
-    return Color.init("colorSurfaceActionSelected", bundle: bundle)
+  public static var surfaceActionSelected: Color {
+    return Color.init("surfaceActionSelected", bundle: bundle)
   }
-  public static var colorSurfaceActionSubtleDefault: Color {
-    return Color.init("colorSurfaceActionSubtleDefault", bundle: bundle)
+  public static var surfaceActionSubtleDefault: Color {
+    return Color.init("surfaceActionSubtleDefault", bundle: bundle)
   }
-  public static var colorSurfaceActionSubtleHover: Color {
-    return Color.init("colorSurfaceActionSubtleHover", bundle: bundle)
+  public static var surfaceActionSubtleHover: Color {
+    return Color.init("surfaceActionSubtleHover", bundle: bundle)
   }
-  public static var colorSurfaceActionSubtleSelected: Color {
-    return Color.init("colorSurfaceActionSubtleSelected", bundle: bundle)
+  public static var surfaceActionSubtleSelected: Color {
+    return Color.init("surfaceActionSubtleSelected", bundle: bundle)
   }
-  public static var colorSurfaceWarningDefault: Color {
-    return Color.init("colorSurfaceWarningDefault", bundle: bundle)
+  public static var surfaceWarningDefault: Color {
+    return Color.init("surfaceWarningDefault", bundle: bundle)
   }
-  public static var colorSurfaceWarningHover: Color {
-    return Color.init("colorSurfaceWarningHover", bundle: bundle)
+  public static var surfaceWarningHover: Color {
+    return Color.init("surfaceWarningHover", bundle: bundle)
   }
-  public static var colorSurfaceWarningSelected: Color {
-    return Color.init("colorSurfaceWarningSelected", bundle: bundle)
+  public static var surfaceWarningSelected: Color {
+    return Color.init("surfaceWarningSelected", bundle: bundle)
   }
-  public static var colorSurfaceWarningSubtleDefault: Color {
-    return Color.init("colorSurfaceWarningSubtleDefault", bundle: bundle)
+  public static var surfaceWarningSubtleDefault: Color {
+    return Color.init("surfaceWarningSubtleDefault", bundle: bundle)
   }
-  public static var colorSurfaceWarningSubtleHover: Color {
-    return Color.init("colorSurfaceWarningSubtleHover", bundle: bundle)
+  public static var surfaceWarningSubtleHover: Color {
+    return Color.init("surfaceWarningSubtleHover", bundle: bundle)
   }
-  public static var colorSurfaceWarningSubtleSelected: Color {
-    return Color.init("colorSurfaceWarningSubtleSelected", bundle: bundle)
+  public static var surfaceWarningSubtleSelected: Color {
+    return Color.init("surfaceWarningSubtleSelected", bundle: bundle)
   }
-  public static var colorSurfaceSelectDefault: Color {
-    return Color.init("colorSurfaceSelectDefault", bundle: bundle)
+  public static var surfaceSelectDefault: Color {
+    return Color.init("surfaceSelectDefault", bundle: bundle)
   }
-  public static var colorSurfaceSelectHover: Color {
-    return Color.init("colorSurfaceSelectHover", bundle: bundle)
+  public static var surfaceSelectHover: Color {
+    return Color.init("surfaceSelectHover", bundle: bundle)
   }
-  public static var colorSurfaceSelectSelected: Color {
-    return Color.init("colorSurfaceSelectSelected", bundle: bundle)
+  public static var surfaceSelectSelected: Color {
+    return Color.init("surfaceSelectSelected", bundle: bundle)
   }
-  public static var colorSurfaceDecorative10: Color {
-    return Color.init("colorSurfaceDecorative10", bundle: bundle)
+  public static var surfaceDecorative10: Color {
+    return Color.init("surfaceDecorative10", bundle: bundle)
   }
-  public static var colorSurfaceDecorative11: Color {
-    return Color.init("colorSurfaceDecorative11", bundle: bundle)
+  public static var surfaceDecorative11: Color {
+    return Color.init("surfaceDecorative11", bundle: bundle)
   }
-  public static var colorSurfaceDecorative09: Color {
-    return Color.init("colorSurfaceDecorative09", bundle: bundle)
+  public static var surfaceDecorative09: Color {
+    return Color.init("surfaceDecorative09", bundle: bundle)
   }
-  public static var colorSurfaceDecorative08: Color {
-    return Color.init("colorSurfaceDecorative08", bundle: bundle)
+  public static var surfaceDecorative08: Color {
+    return Color.init("surfaceDecorative08", bundle: bundle)
   }
-  public static var colorSurfaceDecorative07: Color {
-    return Color.init("colorSurfaceDecorative07", bundle: bundle)
+  public static var surfaceDecorative07: Color {
+    return Color.init("surfaceDecorative07", bundle: bundle)
   }
-  public static var colorSurfaceDecorative06: Color {
-    return Color.init("colorSurfaceDecorative06", bundle: bundle)
+  public static var surfaceDecorative06: Color {
+    return Color.init("surfaceDecorative06", bundle: bundle)
   }
-  public static var colorSurfaceDecorative05: Color {
-    return Color.init("colorSurfaceDecorative05", bundle: bundle)
+  public static var surfaceDecorative05: Color {
+    return Color.init("surfaceDecorative05", bundle: bundle)
   }
-  public static var colorSurfaceDecorative04: Color {
-    return Color.init("colorSurfaceDecorative04", bundle: bundle)
+  public static var surfaceDecorative04: Color {
+    return Color.init("surfaceDecorative04", bundle: bundle)
   }
-  public static var colorSurfaceDecorative03: Color {
-    return Color.init("colorSurfaceDecorative03", bundle: bundle)
+  public static var surfaceDecorative03: Color {
+    return Color.init("surfaceDecorative03", bundle: bundle)
   }
-  public static var colorSurfaceDecorative02: Color {
-    return Color.init("colorSurfaceDecorative02", bundle: bundle)
+  public static var surfaceDecorative02: Color {
+    return Color.init("surfaceDecorative02", bundle: bundle)
   }
-  public static var colorSurfaceDecorative01: Color {
-    return Color.init("colorSurfaceDecorative01", bundle: bundle)
+  public static var surfaceDecorative01: Color {
+    return Color.init("surfaceDecorative01", bundle: bundle)
   }
-  public static var colorSurfaceDecorativeSubtle10: Color {
-    return Color.init("colorSurfaceDecorativeSubtle10", bundle: bundle)
+  public static var surfaceDecorativeSubtle10: Color {
+    return Color.init("surfaceDecorativeSubtle10", bundle: bundle)
   }
-  public static var colorSurfaceDecorativeSubtle11: Color {
-    return Color.init("colorSurfaceDecorativeSubtle11", bundle: bundle)
+  public static var surfaceDecorativeSubtle11: Color {
+    return Color.init("surfaceDecorativeSubtle11", bundle: bundle)
   }
-  public static var colorSurfaceDecorativeSubtle09: Color {
-    return Color.init("colorSurfaceDecorativeSubtle09", bundle: bundle)
+  public static var surfaceDecorativeSubtle09: Color {
+    return Color.init("surfaceDecorativeSubtle09", bundle: bundle)
   }
-  public static var colorSurfaceDecorativeSubtle08: Color {
-    return Color.init("colorSurfaceDecorativeSubtle08", bundle: bundle)
+  public static var surfaceDecorativeSubtle08: Color {
+    return Color.init("surfaceDecorativeSubtle08", bundle: bundle)
   }
-  public static var colorSurfaceDecorativeSubtle07: Color {
-    return Color.init("colorSurfaceDecorativeSubtle07", bundle: bundle)
+  public static var surfaceDecorativeSubtle07: Color {
+    return Color.init("surfaceDecorativeSubtle07", bundle: bundle)
   }
-  public static var colorSurfaceDecorativeSubtle06: Color {
-    return Color.init("colorSurfaceDecorativeSubtle06", bundle: bundle)
+  public static var surfaceDecorativeSubtle06: Color {
+    return Color.init("surfaceDecorativeSubtle06", bundle: bundle)
   }
-  public static var colorSurfaceDecorativeSubtle05: Color {
-    return Color.init("colorSurfaceDecorativeSubtle05", bundle: bundle)
+  public static var surfaceDecorativeSubtle05: Color {
+    return Color.init("surfaceDecorativeSubtle05", bundle: bundle)
   }
-  public static var colorSurfaceDecorativeSubtle04: Color {
-    return Color.init("colorSurfaceDecorativeSubtle04", bundle: bundle)
+  public static var surfaceDecorativeSubtle04: Color {
+    return Color.init("surfaceDecorativeSubtle04", bundle: bundle)
   }
-  public static var colorSurfaceDecorativeSubtle03: Color {
-    return Color.init("colorSurfaceDecorativeSubtle03", bundle: bundle)
+  public static var surfaceDecorativeSubtle03: Color {
+    return Color.init("surfaceDecorativeSubtle03", bundle: bundle)
   }
-  public static var colorSurfaceDecorativeSubtle02: Color {
-    return Color.init("colorSurfaceDecorativeSubtle02", bundle: bundle)
+  public static var surfaceDecorativeSubtle02: Color {
+    return Color.init("surfaceDecorativeSubtle02", bundle: bundle)
   }
-  public static var colorSurfaceDecorativeSubtle01: Color {
-    return Color.init("colorSurfaceDecorativeSubtle01", bundle: bundle)
+  public static var surfaceDecorativeSubtle01: Color {
+    return Color.init("surfaceDecorativeSubtle01", bundle: bundle)
   }
 }
