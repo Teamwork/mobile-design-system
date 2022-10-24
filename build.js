@@ -11,58 +11,6 @@ console.log(`🧹 Cleaning ${iosPath}...`);
 fs.removeSync(iosPath);
 console.log(`🧹 Cleaning ${androidPath}...`);
 fs.removeSync(androidPath);
-console.log(`🧹 Cleaning ${webPath}...`);
-fs.removeSync(webPath);
-
-/**
- * This function will wrap a built-in format and replace `.value` with `.darkValue`
- * if a token has a `.darkValue`.
- * @param {String} format - the name of the built-in format
- * @returns {Function}
- */
- function darkFormatWrapper(format) {
-  return function(args) {
-    const dictionary = Object.assign({}, args.dictionary);
-
-    // Override each token's `value` with `darkValue`
-    dictionary.allProperties = dictionary.allProperties.map(token => {
-      const {darkValue} = token;
-      if (darkValue) {
-        return Object.assign({}, token, {
-          value: token.darkValue
-        });
-      } else {
-        return token;
-      }
-    });
-    
-    // Use the built-in format but with our customized dictionary object
-    // so it will output the darkValue instead of the value
-    return StyleDictionary.format[format]({ ...args, dictionary })
-  }
-}
-
-function hcFormatWrapper(format) {
-  return function(args) {
-    const dictionary = Object.assign({}, args.dictionary);
-
-    // Override each token's `value` with `hcValue`
-    dictionary.allProperties = dictionary.allProperties.map(token => {
-      const {hcValue} = token;
-      if (hcValue) {
-        return Object.assign({}, token, {
-          value: token.hcValue
-        });
-      } else {
-        return token;
-      }
-    });
-    
-    // Use the built-in format but with our customized dictionary object
-    // so it will output the hcValue instead of the value
-    return StyleDictionary.format[format]({ ...args, dictionary })
-  }
-}
 
 ['global', 'light', 'dark'].map(function (theme) {
   console.log(`\n\n🌈 Building ${theme} mode...`);
@@ -84,8 +32,7 @@ function hcFormatWrapper(format) {
       swiftColor: require('./formats/swiftColor'),
       swiftImage: require('./formats/swiftImage'),
       swiftUIColor: require('./formats/swiftUIColor'),
-      swiftSize: require('./formats/swiftSize'),
-      // androidDark: darkFormatWrapper(`android/resources`),
+      swiftSize: require('./formats/swiftSize')
     },
     
     source: [
@@ -126,7 +73,7 @@ function hcFormatWrapper(format) {
           }
         },{
           destination: `Size.swift`,
-          filter: (token) => token.type === `sizing`,
+          filter: (token) => token.type === `borderRadius` || token.type === `borderWidth` || token.type === `spacing`,
           className: `Size`,
           format: `swiftSize`
         },{
@@ -170,6 +117,25 @@ function hcFormatWrapper(format) {
           format: `android/resources`
         }]
       }
+
+      // compose: {
+      //   transformGroup: `compose`,
+      //   buildPath: `android/compose/`,
+      //   files: [{
+      //     destination: `StyleDictionaryColor.kt`,
+      //     format: `compose/object`,
+      //     className: `StyleDictionaryColor`,
+      //     packageName: `StyleDictionaryColor`,
+      //     filter: (token) => token.type === `color`
+      //   },{
+      //     destination: `StyleDictionarySize.kt`,
+      //     format: `compose/object`,
+      //     className: `StyleDictionarySize`,
+      //     packageName: `StyleDictionarySize`,
+      //     type: `float`,
+      //     filter: (token) => token.type === `size`
+      //   }]
+      // }
     }
   }).buildAllPlatforms();
 })

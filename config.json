@@ -1,0 +1,22 @@
+{
+    "source": ["tokens/*.json"],
+    "platforms": {
+      "ios-swift-separate-enums": {
+        "transformGroup": "ios-swift-separate",
+        "buildPath": "build/ios-swift/",
+        "files": [{
+          "destination": "StyleDictionarySize.swift",
+          "format": "ios-swift/enum.swift",
+          "className": "StyleDictionarySize",
+          "type": "float",
+          "options": {
+            "outputReferences": "true"
+                    },
+          "filter": {
+            "type": "number"
+          }
+        }]
+      }
+    }
+  }
+  
