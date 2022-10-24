@@ -93,27 +93,6 @@ function hcFormatWrapper(format) {
     ],
     
     platforms: {
-      css: {
-        transformGroup: `css`,
-        buildPath: webPath,
-        files: [{
-          destination: `${theme}.css`,
-          format: `css/variables`,
-          options: {
-            outputReferences: true
-          }
-        }]
-      },
-      
-      js: {
-        transformGroup: `web`,
-        buildPath: webPath,
-        files: [{
-          destination: `${theme}.json`,
-          format: `json/flat`
-        }]
-      },
-      
       assets: {
         transforms: [`attribute/cti`,`color/hex`,`size/remToFloat`,`name/ti/camel`],
         buildPath: `${webPath}/images/`,
