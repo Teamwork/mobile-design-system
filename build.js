@@ -1,7 +1,7 @@
 const StyleDictionary = require('style-dictionary');
 const fs = require('fs-extra');
 
-const iosPath = `TWDesignSystem-iOS/Sources/TWDesignSystem-iOS/`;
+const iosPath = `ios/dist/`;
 const androidPath = `android/styledictionary/src/main/res/`;
 const webPath = `web/dist/`;
 
