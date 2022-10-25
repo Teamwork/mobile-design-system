@@ -177,6 +177,10 @@
         "value": "#c5f2f2",
         "type": "color"
       },
+      "teal-30": {
+        "value": "#97E8F0",
+        "type": "color"
+      },
       "teal-40": {
         "value": "#4cd5e3",
         "type": "color"
@@ -375,10 +379,6 @@
       },
       "green-80": {
         "value": "#0A1A13",
-        "type": "color"
-      },
-      "teal-30": {
-        "value": "#94C7FB",
         "type": "color"
       }
     }
