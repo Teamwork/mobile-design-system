@@ -391,4 +391,391 @@ extension UIColor {
   public static var colorSurfaceDecorativeSubtle01: Color {
     return UIColor(named: "colorSurfaceDecorativeSubtle01", in: bundle, compatibleWith: nil)
   }
+  public static var duplicateColorLinkDefault: Color {
+    return UIColor(named: "duplicateColorLinkDefault", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorLinkHover: Color {
+    return UIColor(named: "duplicateColorLinkHover", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorLinkVisited: Color {
+    return UIColor(named: "duplicateColorLinkVisited", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextActionDefault: Color {
+    return UIColor(named: "duplicateColorTextActionDefault", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextActionHover: Color {
+    return UIColor(named: "duplicateColorTextActionHover", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextActionSelected: Color {
+    return UIColor(named: "duplicateColorTextActionSelected", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextInfoDefault: Color {
+    return UIColor(named: "duplicateColorTextInfoDefault", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextInfoHover: Color {
+    return UIColor(named: "duplicateColorTextInfoHover", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextInfoSelected: Color {
+    return UIColor(named: "duplicateColorTextInfoSelected", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextSuccessDefault: Color {
+    return UIColor(named: "duplicateColorTextSuccessDefault", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextSuccessHover: Color {
+    return UIColor(named: "duplicateColorTextSuccessHover", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextSuccessSelected: Color {
+    return UIColor(named: "duplicateColorTextSuccessSelected", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextWarningDefault: Color {
+    return UIColor(named: "duplicateColorTextWarningDefault", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextWarningHover: Color {
+    return UIColor(named: "duplicateColorTextWarningHover", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextWarningSelected: Color {
+    return UIColor(named: "duplicateColorTextWarningSelected", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextCriticalDefault: Color {
+    return UIColor(named: "duplicateColorTextCriticalDefault", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextCriticalHover: Color {
+    return UIColor(named: "duplicateColorTextCriticalHover", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextCriticalSelected: Color {
+    return UIColor(named: "duplicateColorTextCriticalSelected", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextOnDecorative10: Color {
+    return UIColor(named: "duplicateColorTextOnDecorative10", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextOnDecorative11: Color {
+    return UIColor(named: "duplicateColorTextOnDecorative11", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextOnDecorative09: Color {
+    return UIColor(named: "duplicateColorTextOnDecorative09", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextOnDecorative08: Color {
+    return UIColor(named: "duplicateColorTextOnDecorative08", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextOnDecorative07: Color {
+    return UIColor(named: "duplicateColorTextOnDecorative07", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextOnDecorative06: Color {
+    return UIColor(named: "duplicateColorTextOnDecorative06", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextOnDecorative05: Color {
+    return UIColor(named: "duplicateColorTextOnDecorative05", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextOnDecorative04: Color {
+    return UIColor(named: "duplicateColorTextOnDecorative04", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextOnDecorative03: Color {
+    return UIColor(named: "duplicateColorTextOnDecorative03", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextOnDecorative02: Color {
+    return UIColor(named: "duplicateColorTextOnDecorative02", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextOnDecorative01: Color {
+    return UIColor(named: "duplicateColorTextOnDecorative01", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextOnDecorativeSubtle10: Color {
+    return UIColor(named: "duplicateColorTextOnDecorativeSubtle10", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextOnDecorativeSubtle11: Color {
+    return UIColor(named: "duplicateColorTextOnDecorativeSubtle11", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextOnDecorativeSubtle09: Color {
+    return UIColor(named: "duplicateColorTextOnDecorativeSubtle09", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextOnDecorativeSubtle08: Color {
+    return UIColor(named: "duplicateColorTextOnDecorativeSubtle08", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextOnDecorativeSubtle07: Color {
+    return UIColor(named: "duplicateColorTextOnDecorativeSubtle07", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextOnDecorativeSubtle06: Color {
+    return UIColor(named: "duplicateColorTextOnDecorativeSubtle06", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextOnDecorativeSubtle05: Color {
+    return UIColor(named: "duplicateColorTextOnDecorativeSubtle05", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextOnDecorativeSubtle04: Color {
+    return UIColor(named: "duplicateColorTextOnDecorativeSubtle04", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextOnDecorativeSubtle03: Color {
+    return UIColor(named: "duplicateColorTextOnDecorativeSubtle03", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextOnDecorativeSubtle02: Color {
+    return UIColor(named: "duplicateColorTextOnDecorativeSubtle02", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorTextOnDecorativeSubtle01: Color {
+    return UIColor(named: "duplicateColorTextOnDecorativeSubtle01", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorIconOnPalette: Color {
+    return UIColor(named: "duplicateColorIconOnPalette", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorIconOnSuccess: Color {
+    return UIColor(named: "duplicateColorIconOnSuccess", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorIconOnWarning: Color {
+    return UIColor(named: "duplicateColorIconOnWarning", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorIconOnCritical: Color {
+    return UIColor(named: "duplicateColorIconOnCritical", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorIconOnInteraction: Color {
+    return UIColor(named: "duplicateColorIconOnInteraction", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorIconDisabled: Color {
+    return UIColor(named: "duplicateColorIconDisabled", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorIconOnInfo: Color {
+    return UIColor(named: "duplicateColorIconOnInfo", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorIconActionSelected: Color {
+    return UIColor(named: "duplicateColorIconActionSelected", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorIconActionHover: Color {
+    return UIColor(named: "duplicateColorIconActionHover", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorIconActionDefault: Color {
+    return UIColor(named: "duplicateColorIconActionDefault", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorIconInfoSelected: Color {
+    return UIColor(named: "duplicateColorIconInfoSelected", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorIconInfoHover: Color {
+    return UIColor(named: "duplicateColorIconInfoHover", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorIconInfoDefault: Color {
+    return UIColor(named: "duplicateColorIconInfoDefault", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorIconSuccessSelected: Color {
+    return UIColor(named: "duplicateColorIconSuccessSelected", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorIconSuccessHover: Color {
+    return UIColor(named: "duplicateColorIconSuccessHover", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorIconSuccessDefault: Color {
+    return UIColor(named: "duplicateColorIconSuccessDefault", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorIconWarningSelected: Color {
+    return UIColor(named: "duplicateColorIconWarningSelected", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorIconWarningHover: Color {
+    return UIColor(named: "duplicateColorIconWarningHover", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorIconWarningDefault: Color {
+    return UIColor(named: "duplicateColorIconWarningDefault", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorIconCriticalSelected: Color {
+    return UIColor(named: "duplicateColorIconCriticalSelected", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorIconCriticalHover: Color {
+    return UIColor(named: "duplicateColorIconCriticalHover", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorIconCriticalDefault: Color {
+    return UIColor(named: "duplicateColorIconCriticalDefault", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorBorderActionDefault: Color {
+    return UIColor(named: "duplicateColorBorderActionDefault", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorBorderActionHover: Color {
+    return UIColor(named: "duplicateColorBorderActionHover", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorBorderActionSelected: Color {
+    return UIColor(named: "duplicateColorBorderActionSelected", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorBorderSuccessDefault: Color {
+    return UIColor(named: "duplicateColorBorderSuccessDefault", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorBorderSuccessHover: Color {
+    return UIColor(named: "duplicateColorBorderSuccessHover", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorBorderSuccessSelected: Color {
+    return UIColor(named: "duplicateColorBorderSuccessSelected", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorBorderWarningDefault: Color {
+    return UIColor(named: "duplicateColorBorderWarningDefault", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorBorderWarningHover: Color {
+    return UIColor(named: "duplicateColorBorderWarningHover", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorBorderWarningSelected: Color {
+    return UIColor(named: "duplicateColorBorderWarningSelected", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorBorderCriticalDefault: Color {
+    return UIColor(named: "duplicateColorBorderCriticalDefault", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorBorderCriticalHover: Color {
+    return UIColor(named: "duplicateColorBorderCriticalHover", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorBorderCriticalSelected: Color {
+    return UIColor(named: "duplicateColorBorderCriticalSelected", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceSuccessDefault: Color {
+    return UIColor(named: "duplicateColorSurfaceSuccessDefault", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceSuccessHover: Color {
+    return UIColor(named: "duplicateColorSurfaceSuccessHover", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceSuccessSelected: Color {
+    return UIColor(named: "duplicateColorSurfaceSuccessSelected", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceSuccessSubtleDefault: Color {
+    return UIColor(named: "duplicateColorSurfaceSuccessSubtleDefault", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceSuccessSubtleHover: Color {
+    return UIColor(named: "duplicateColorSurfaceSuccessSubtleHover", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceSuccessSubtleSelected: Color {
+    return UIColor(named: "duplicateColorSurfaceSuccessSubtleSelected", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceInfoDefault: Color {
+    return UIColor(named: "duplicateColorSurfaceInfoDefault", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceInfoHover: Color {
+    return UIColor(named: "duplicateColorSurfaceInfoHover", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceInfoSelected: Color {
+    return UIColor(named: "duplicateColorSurfaceInfoSelected", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceInfoSubtleDefault: Color {
+    return UIColor(named: "duplicateColorSurfaceInfoSubtleDefault", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceInfoSubtleHover: Color {
+    return UIColor(named: "duplicateColorSurfaceInfoSubtleHover", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceInfoSubtleSelected: Color {
+    return UIColor(named: "duplicateColorSurfaceInfoSubtleSelected", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceCriticalDefault: Color {
+    return UIColor(named: "duplicateColorSurfaceCriticalDefault", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceCriticalHover: Color {
+    return UIColor(named: "duplicateColorSurfaceCriticalHover", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceCriticalSelected: Color {
+    return UIColor(named: "duplicateColorSurfaceCriticalSelected", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceCriticalSubtleDefault: Color {
+    return UIColor(named: "duplicateColorSurfaceCriticalSubtleDefault", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceCriticalSubtleHover: Color {
+    return UIColor(named: "duplicateColorSurfaceCriticalSubtleHover", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceCriticalSubtleSelected: Color {
+    return UIColor(named: "duplicateColorSurfaceCriticalSubtleSelected", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceActionDefault: Color {
+    return UIColor(named: "duplicateColorSurfaceActionDefault", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceActionHover: Color {
+    return UIColor(named: "duplicateColorSurfaceActionHover", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceActionSelected: Color {
+    return UIColor(named: "duplicateColorSurfaceActionSelected", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceActionSubtleDefault: Color {
+    return UIColor(named: "duplicateColorSurfaceActionSubtleDefault", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceActionSubtleHover: Color {
+    return UIColor(named: "duplicateColorSurfaceActionSubtleHover", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceActionSubtleSelected: Color {
+    return UIColor(named: "duplicateColorSurfaceActionSubtleSelected", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceWarningDefault: Color {
+    return UIColor(named: "duplicateColorSurfaceWarningDefault", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceWarningHover: Color {
+    return UIColor(named: "duplicateColorSurfaceWarningHover", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceWarningSelected: Color {
+    return UIColor(named: "duplicateColorSurfaceWarningSelected", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceWarningSubtleDefault: Color {
+    return UIColor(named: "duplicateColorSurfaceWarningSubtleDefault", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceWarningSubtleHover: Color {
+    return UIColor(named: "duplicateColorSurfaceWarningSubtleHover", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceWarningSubtleSelected: Color {
+    return UIColor(named: "duplicateColorSurfaceWarningSubtleSelected", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceSelectDefault: Color {
+    return UIColor(named: "duplicateColorSurfaceSelectDefault", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceSelectHover: Color {
+    return UIColor(named: "duplicateColorSurfaceSelectHover", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceSelectSelected: Color {
+    return UIColor(named: "duplicateColorSurfaceSelectSelected", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceDecorative10: Color {
+    return UIColor(named: "duplicateColorSurfaceDecorative10", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceDecorative11: Color {
+    return UIColor(named: "duplicateColorSurfaceDecorative11", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceDecorative09: Color {
+    return UIColor(named: "duplicateColorSurfaceDecorative09", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceDecorative08: Color {
+    return UIColor(named: "duplicateColorSurfaceDecorative08", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceDecorative07: Color {
+    return UIColor(named: "duplicateColorSurfaceDecorative07", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceDecorative06: Color {
+    return UIColor(named: "duplicateColorSurfaceDecorative06", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceDecorative05: Color {
+    return UIColor(named: "duplicateColorSurfaceDecorative05", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceDecorative04: Color {
+    return UIColor(named: "duplicateColorSurfaceDecorative04", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceDecorative03: Color {
+    return UIColor(named: "duplicateColorSurfaceDecorative03", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceDecorative02: Color {
+    return UIColor(named: "duplicateColorSurfaceDecorative02", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceDecorative01: Color {
+    return UIColor(named: "duplicateColorSurfaceDecorative01", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceDecorativeSubtle10: Color {
+    return UIColor(named: "duplicateColorSurfaceDecorativeSubtle10", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceDecorativeSubtle11: Color {
+    return UIColor(named: "duplicateColorSurfaceDecorativeSubtle11", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceDecorativeSubtle09: Color {
+    return UIColor(named: "duplicateColorSurfaceDecorativeSubtle09", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceDecorativeSubtle08: Color {
+    return UIColor(named: "duplicateColorSurfaceDecorativeSubtle08", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceDecorativeSubtle07: Color {
+    return UIColor(named: "duplicateColorSurfaceDecorativeSubtle07", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceDecorativeSubtle06: Color {
+    return UIColor(named: "duplicateColorSurfaceDecorativeSubtle06", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceDecorativeSubtle05: Color {
+    return UIColor(named: "duplicateColorSurfaceDecorativeSubtle05", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceDecorativeSubtle04: Color {
+    return UIColor(named: "duplicateColorSurfaceDecorativeSubtle04", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceDecorativeSubtle03: Color {
+    return UIColor(named: "duplicateColorSurfaceDecorativeSubtle03", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceDecorativeSubtle02: Color {
+    return UIColor(named: "duplicateColorSurfaceDecorativeSubtle02", in: bundle, compatibleWith: nil)
+  }
+  public static var duplicateColorSurfaceDecorativeSubtle01: Color {
+    return UIColor(named: "duplicateColorSurfaceDecorativeSubtle01", in: bundle, compatibleWith: nil)
+  }
 }
