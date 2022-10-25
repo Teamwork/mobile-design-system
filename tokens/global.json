@@ -423,7 +423,7 @@
       "type": "borderRadius"
     },
     "xl": {
-      "value": 34,
+      "value": 28,
       "type": "borderRadius"
     },
     "full": {
@@ -977,6 +977,10 @@
     },
     "space-16": {
       "value": 128,
+      "type": "spacing"
+    },
+    "space-none": {
+      "value": 0,
       "type": "spacing"
     }
   }
