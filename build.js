@@ -1,7 +1,7 @@
 const StyleDictionary = require('style-dictionary');
 const fs = require('fs-extra');
 
-const iosPath = `TeamworkDesignSystemiOS/Sources/TeamworkDesignSystemiOS/`;
+const iosPath = `ios/Sources/DesignSystem/`;
 const androidPath = `android/styledictionary/src/main/res/`;
 const webPath = `web/dist/`;
 

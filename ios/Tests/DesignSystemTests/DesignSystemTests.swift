@@ -1,11 +1,10 @@
 import XCTest
-@testable import TeamworkDesignSystemiOS
+@testable import TeamworkMobileDesignSystem
 
-final class TeamworkDesignSystemiOSTests: XCTestCase {
+final class DesignSystemTests: XCTestCase {
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(TeamworkDesignSystemiOS().text, "Hello, World!")
     }
 }

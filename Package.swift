@@ -4,12 +4,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "TeamworkDesignSystemiOS",
+    name: "TeamworkMobileDesignSystem",
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "TeamworkDesignSystemiOS",
-            targets: ["TeamworkDesignSystemiOS"]),
+            name: "TeamworkMobileDesignSystem",
+            targets: ["TeamworkMobileDesignSystem"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -19,12 +19,12 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
-            name: "TeamworkDesignSystemiOS",
+            name: "TeamworkMobileDesignSystem",
             dependencies: [],
-            path: "TeamworkDesignSystemiOS/Sources/TeamworkDesignSystemiOS"),
+            path: "ios/Sources/DesignSystem"),
         .testTarget(
-            name: "TeamworkDesignSystemiOSTests",
-            dependencies: ["TeamworkDesignSystemiOS"],
-            path: "TeamworkDesignSystemiOS/Tests/TeamworkDesignSystemiOSTests")
+            name: "DesignSystemTests",
+            dependencies: ["TeamworkMobileDesignSystem"],
+            path: "ios/Tests/DesignSystemTests")
     ]
 )

@@ -12,11 +12,21 @@
 		<key>TeamworkDesignSystemiOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>TeamworkMobileDesignSystem.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>DesignSystemTests</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>TeamworkDesignSystem-iOS</key>
 		<dict>
 			<key>primary</key>
@@ -38,6 +48,16 @@
 			<true/>
 		</dict>
 		<key>TeamworkDesignSystemiOS_TeamworkDesignSystemiOS</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>TeamworkMobileDesignSystem</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>TeamworkMobileDesignSystem_TeamworkMobileDesignSystem</key>
 		<dict>
 			<key>primary</key>
 			<true/>
