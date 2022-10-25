@@ -35,7 +35,9 @@ const webPath = `web/dist/`;
       swiftColor: require('./formats/swiftColor'),
       swiftImage: require('./formats/swiftImage'),
       swiftUIColor: require('./formats/swiftUIColor'),
-      swiftSize: require('./formats/swiftSize')
+      swiftSize: require('./formats/swiftSize'),
+      //android
+      androidColor: require('./formats/androidColor')
     },
     
     source: [
@@ -124,8 +126,8 @@ const webPath = `web/dist/`;
         buildPath: androidPath,
         files: [{
           destination: `values/colors.xml`,
-          format: `android/resources`,
-          filter: (token) => token.type === `color` && token.filePath !== `tokens/dark.json`,
+          format: `androidColor`,
+          filter: (token) => token.type === `color` && token.filePath === `tokens/light.json`,
           options: {
             // this is important!
             // this will keep token references intact so that we don't need
@@ -139,7 +141,7 @@ const webPath = `web/dist/`;
           // from the above file will properly reference
           // these colors if the OS is set to night mode.
           destination: `values-night/colors.xml`,
-          format: `android/resources`,
+          format: `androidColor`,
           filter: (token) => token.type === `color` && token.filePath === `tokens/dark.json`
         },{
           destination: `values/font_dimens.xml`,
