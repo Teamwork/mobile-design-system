@@ -9,7 +9,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "TeamworkDesignSystemiOS",
-            targets: ["TeamworkDesignSystem-iOS"]),
+            targets: ["TeamworkDesignSystemiOS"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -19,12 +19,12 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
-            name: "TeamworkDesignSystem-iOS",
+            name: "TeamworkDesignSystemiOS",
             dependencies: [],
-            path: "TeamworkDesignSystem-iOS/Sources/TeamworkDesignSystem-iOS"),
+            path: "TeamworkDesignSysteiOS/Sources/TeamworkDesignSystemiOS"),
         .testTarget(
-            name: "TeamworkDesignSystem-iOSTests",
-            dependencies: ["TeamworkDesignSystem-iOS"],
-            path: "TeamworkDesignSystem-iOS/Tests/TeamworkDesignSystem-iOSTests")
+            name: "TeamworkDesignSystemiOSTests",
+            dependencies: ["TeamworkDesignSystemiOS"],
+            path: "TeamworkDesignSystemiOS/Tests/TeamworkDesignSystemiOSTests")
     ]
 )
