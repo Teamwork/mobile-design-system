@@ -16,6 +16,7 @@ module.exports = function({ dictionary, options }) {
 class MobileDesignSystemTokens {}
 let bundle = Bundle(for: MobileDesignSystemTokens.self)
 
+@available(iOS 13.0, *)
 extension Color {\n\n` +
   dictionary.allProperties.map(token => {
     return `  public static var ${token.name}: Color {

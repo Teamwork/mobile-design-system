@@ -6,13 +6,10 @@
  module.exports = function({ dictionary, options }) {
     return `import UIKit
   
-class MobileDesignSystemTokens {}
-let bundle = Bundle(for: MobileDesignSystemTokens.self)
-  
 extension UIColor {\n` +
   dictionary.allProperties.map(token => {
-    return `  public static var ${token.name}: Color {
-    return UIColor(named: "${token.name}", in: bundle, compatibleWith: nil)
+    return `  public static var ${token.name}: UIColor {
+    return UIColor(named: "${token.name}", in: bundle, compatibleWith: nil) ?? .gray
   }`
   }).join(`\n`) +
   `\n}`
