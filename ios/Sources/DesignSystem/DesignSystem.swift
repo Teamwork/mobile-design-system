@@ -23,16 +23,16 @@ enum DesignSystem {
 
  enum LineHeights {
 
-  public static let leading01 = CGFloat(44)
-  public static let leading02 = CGFloat(52)
-  public static let leading03 = CGFloat(64)
-  public static let leading04 = CGFloat(32)
-  public static let leading05 = CGFloat(36)
-  public static let leading06 = CGFloat(40)
-  public static let leading07 = CGFloat(20)
-  public static let leading08 = CGFloat(24)
-  public static let leading09 = CGFloat(28)
-  public static let leading10 = CGFloat(16)
+  public static let leading01 = CGFloat(16)
+  public static let leading02 = CGFloat(20)
+  public static let leading03 = CGFloat(24)
+  public static let leading04 = CGFloat(28)
+  public static let leading05 = CGFloat(32)
+  public static let leading06 = CGFloat(36)
+  public static let leading07 = CGFloat(40)
+  public static let leading08 = CGFloat(44)
+  public static let leading09 = CGFloat(52)
+  public static let leading10 = CGFloat(64)
  }
 
  enum FontSizes {
