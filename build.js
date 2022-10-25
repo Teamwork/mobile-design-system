@@ -3,14 +3,15 @@ const fs = require('fs-extra');
 
 const iosPath = `ios/Sources/DesignSystem/`;
 const androidPath = `android/styledictionary/src/main/res/`;
+const composePath = `android/styledictionary/src/main/`;
 const webPath = `web/dist/`;
 
 // before this runs we should clean the directories we are generating files in
 // to make sure they are ✨clean✨
-console.log(`🧹 Cleaning ${iosPath}...`);
-fs.removeSync(iosPath);
-console.log(`🧹 Cleaning ${androidPath}...`);
-fs.removeSync(androidPath);
+[iosPath, androidPath, composePath, webPath].forEach(dir => {
+  console.log(`🧹 Cleaning ${dir}...`);
+  fs.removeSync(dir);
+});
 
 ['global', 'light', 'dark'].map(function (theme) {
   console.log(`\n\n🌈 Building ${theme} mode...`);
@@ -25,7 +26,9 @@ fs.removeSync(androidPath);
     transform: {
       'attribute/cti': require('./transforms/attributeCTI'),
       'colorRGB': require('./transforms/colorRGB'),
-      'size/remToFloat': require('./transforms/remToFloat')
+      'size/remToFloat': require('./transforms/remToFloat'),
+      // compose
+      'colorCompose': require('./transforms/colorCompose'),
     },
     // custom formats
     format: {
@@ -80,6 +83,39 @@ fs.removeSync(androidPath);
           destination: `Image.swift`,
           filter: (token) => token.type === `image`,
           format: `swiftImage`
+        }]
+      },
+
+      compose: {
+        transformGroup: 'compose',
+        buildPath: composePath,
+        transforms: ["color/composeColor", "name/ti/camel", "colorCompose"],
+        files: [{
+            destination: "ColorsLight.kt",
+            format: `compose/object`,
+            filter: (token) => token.type === `color` && token.filePath === `tokens/light.json`,
+            className: "ColorsLight",
+            packageName: "com.teamwork.design",
+            options: {
+              // this is important!
+              // this will keep token references intact so that we don't need
+              // to generate *all* color resources for dark mode, only
+              // the specific ones that change
+              outputReferences: true
+            },
+        },{
+            destination: "ColorsDark.kt",
+            format: `compose/object`,
+            filter: (token) => token.type === `color` && token.filePath === `tokens/dark.json`,
+            className: "ColorsDark",
+            packageName: "com.teamwork.design",
+            options: {
+              // this is important!
+              // this will keep token references intact so that we don't need
+              // to generate *all* color resources for dark mode, only
+              // the specific ones that change
+              outputReferences: true
+            },
         }]
       },
       
