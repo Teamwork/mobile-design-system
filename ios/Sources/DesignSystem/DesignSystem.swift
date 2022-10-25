@@ -56,4 +56,24 @@ enum DesignSystem {
   public static let tracking07 = CGFloat(0.25)
   public static let tracking08 = CGFloat(0.5)
  }
+
+ enum Spacing {
+
+  public static let space01 = CGFloat(2)
+  public static let space02 = CGFloat(4)
+  public static let space03 = CGFloat(8)
+  public static let space04 = CGFloat(12)
+  public static let space05 = CGFloat(16)
+  public static let space06 = CGFloat(24)
+  public static let space07 = CGFloat(32)
+  public static let space08 = CGFloat(40)
+  public static let space09 = CGFloat(44)
+  public static let space10 = CGFloat(48)
+  public static let space11 = CGFloat(56)
+  public static let space12 = CGFloat(64)
+  public static let space13 = CGFloat(72)
+  public static let space14 = CGFloat(80)
+  public static let space15 = CGFloat(112)
+  public static let space16 = CGFloat(128)
+ }
 }
