@@ -432,7 +432,7 @@
         "type": "borderRadius"
       }
     },
-    "font-families": {
+    "font-family": {
       "poppins": {
         "value": "Poppins",
         "type": "fontFamilies"
@@ -578,7 +578,7 @@
       "display": {
         "small": {
           "value": {
-            "fontFamily": "{font-families.poppins}",
+            "fontFamily": "{font-family.poppins}",
             "fontWeight": "{font-weight.regular}",
             "lineHeight": "{line-height.leading-01}",
             "fontSize": "{fonts-size.font-size-09}",
@@ -592,7 +592,7 @@
         },
         "medium": {
           "value": {
-            "fontFamily": "{font-families.poppins}",
+            "fontFamily": "{font-family.poppins}",
             "fontWeight": "{font-weight.regular}",
             "lineHeight": "{line-height.leading-02}",
             "fontSize": "{fonts-size.font-size-10}",
@@ -606,7 +606,7 @@
         },
         "large": {
           "value": {
-            "fontFamily": "{font-families.poppins}",
+            "fontFamily": "{font-family.poppins}",
             "fontWeight": "{font-weight.regular}",
             "lineHeight": "{line-height.leading-03}",
             "fontSize": "{fonts-size.font-size-11}",
@@ -622,7 +622,7 @@
       "headline": {
         "small": {
           "value": {
-            "fontFamily": "{font-families.poppins}",
+            "fontFamily": "{font-family.poppins}",
             "fontWeight": "{font-weight.regular}",
             "lineHeight": "{line-height.leading-04}",
             "fontSize": "{fonts-size.font-size-06}",
@@ -636,7 +636,7 @@
         },
         "medium": {
           "value": {
-            "fontFamily": "{font-families.poppins}",
+            "fontFamily": "{font-family.poppins}",
             "fontWeight": "{font-weight.regular}",
             "lineHeight": "{line-height.leading-05}",
             "fontSize": "{fonts-size.font-size-07}",
@@ -650,7 +650,7 @@
         },
         "large": {
           "value": {
-            "fontFamily": "{font-families.poppins}",
+            "fontFamily": "{font-family.poppins}",
             "fontWeight": "{font-weight.regular}",
             "lineHeight": "{line-height.leading-06}",
             "fontSize": "{fonts-size.font-size-08}",
@@ -666,7 +666,7 @@
       "title": {
         "small": {
           "value": {
-            "fontFamily": "{font-families.poppins}",
+            "fontFamily": "{font-family.poppins}",
             "fontWeight": "{font-weight.medium}",
             "lineHeight": "{line-height.leading-07}",
             "fontSize": "{fonts-size.font-size-03}",
@@ -680,7 +680,7 @@
         },
         "medium": {
           "value": {
-            "fontFamily": "{font-families.poppins}",
+            "fontFamily": "{font-family.poppins}",
             "fontWeight": "{font-weight.medium}",
             "lineHeight": "{line-height.leading-08}",
             "fontSize": "{fonts-size.font-size-04}",
@@ -694,7 +694,7 @@
         },
         "large": {
           "value": {
-            "fontFamily": "{font-families.poppins}",
+            "fontFamily": "{font-family.poppins}",
             "fontWeight": "{font-weight.regular}",
             "lineHeight": "{line-height.leading-09}",
             "fontSize": "{fonts-size.font-size-05}",
@@ -710,7 +710,7 @@
       "label": {
         "small": {
           "value": {
-            "fontFamily": "{font-families.poppins}",
+            "fontFamily": "{font-family.poppins}",
             "fontWeight": "{font-weight.medium}",
             "lineHeight": "{line-height.leading-10}",
             "fontSize": "{fonts-size.font-size-01}",
@@ -724,7 +724,7 @@
         },
         "medium": {
           "value": {
-            "fontFamily": "{font-families.poppins}",
+            "fontFamily": "{font-family.poppins}",
             "fontWeight": "{font-weight.medium}",
             "lineHeight": "{line-height.leading-10}",
             "fontSize": "{fonts-size.font-size-02}",
@@ -738,7 +738,7 @@
         },
         "large": {
           "value": {
-            "fontFamily": "{font-families.poppins}",
+            "fontFamily": "{font-family.poppins}",
             "fontWeight": "{font-weight.medium}",
             "lineHeight": "{line-height.leading-07}",
             "fontSize": "{fonts-size.font-size-03}",
@@ -754,7 +754,7 @@
       "body": {
         "small": {
           "value": {
-            "fontFamily": "{font-families.roboto}",
+            "fontFamily": "{font-family.roboto}",
             "fontWeight": "{font-weight.regular}",
             "lineHeight": "{line-height.leading-10}",
             "fontSize": "{fonts-size.font-size-02}",
@@ -768,7 +768,7 @@
         },
         "medium": {
           "value": {
-            "fontFamily": "{font-families.roboto}",
+            "fontFamily": "{font-family.roboto}",
             "fontWeight": "{font-weight.regular}",
             "lineHeight": "{line-height.leading-07}",
             "fontSize": "{fonts-size.font-size-03}",
@@ -782,7 +782,7 @@
         },
         "large": {
           "value": {
-            "fontFamily": "{font-families.roboto}",
+            "fontFamily": "{font-family.roboto}",
             "fontWeight": "{font-weight.regular}",
             "lineHeight": "{line-height.leading-08}",
             "fontSize": "{fonts-size.font-size-04}",
