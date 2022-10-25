@@ -914,6 +914,72 @@
         "value": "none",
         "type": "textDecoration"
       }
+    },
+    "space": {
+      "space-01": {
+        "value": "2",
+        "type": "spacing"
+      },
+      "space-02": {
+        "value": "4",
+        "type": "spacing"
+      },
+      "space-03": {
+        "value": "8",
+        "type": "spacing"
+      },
+      "space-04": {
+        "value": "12",
+        "type": "spacing"
+      },
+      "space-05": {
+        "value": "16",
+        "type": "spacing"
+      },
+      "space-06": {
+        "value": "24",
+        "type": "spacing"
+      },
+      "space-07": {
+        "value": "32",
+        "type": "spacing"
+      },
+      "space-08": {
+        "value": "40",
+        "type": "spacing"
+      },
+      "space-09": {
+        "value": "44",
+        "type": "spacing"
+      },
+      "space-10": {
+        "value": "48",
+        "type": "spacing"
+      },
+      "space-11": {
+        "value": "56",
+        "type": "spacing"
+      },
+      "space-12": {
+        "value": "64",
+        "type": "spacing"
+      },
+      "space-13": {
+        "value": "72",
+        "type": "spacing"
+      },
+      "space-14": {
+        "value": "80",
+        "type": "spacing"
+      },
+      "space-15": {
+        "value": "112",
+        "type": "spacing"
+      },
+      "space-16": {
+        "value": "128",
+        "type": "spacing"
+      }
     }
   },
   "light": {
