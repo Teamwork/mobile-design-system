@@ -17,7 +17,7 @@ enum DesignSystem {
   public static let sm = CGFloat(8)
   public static let md = CGFloat(12)
   public static let lg = CGFloat(16)
-  public static let xl = CGFloat(34)
+  public static let xl = CGFloat(28)
   public static let full = CGFloat(100)
  }
 
@@ -75,5 +75,6 @@ enum DesignSystem {
   public static let space14 = CGFloat(80)
   public static let space15 = CGFloat(112)
   public static let space16 = CGFloat(128)
+  public static let spaceNone = CGFloat(0)
  }
 }
