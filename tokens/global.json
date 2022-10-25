@@ -431,7 +431,7 @@
       "type": "borderRadius"
     }
   },
-  "font-families": {
+  "font-family": {
     "poppins": {
       "value": "Poppins",
       "type": "fontFamilies"
