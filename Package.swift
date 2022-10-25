@@ -21,9 +21,10 @@ let package = Package(
         .target(
             name: "TeamworkDesignSystem-iOS",
             dependencies: [],
-            path: "Sources/TeamworkDesignSystem-iOS"),
+            path: "TeamworkDesignSystem-iOS/Sources/TeamworkDesignSystem-iOS"),
         .testTarget(
             name: "TeamworkDesignSystem-iOSTests",
-            dependencies: ["TeamworkDesignSystem-iOS"]),
+            dependencies: ["TeamworkDesignSystem-iOS"],
+            path: "TeamworkDesignSystem-iOS/Tests/TeamworkDesignSystem-iOSTests")
     ]
 )
