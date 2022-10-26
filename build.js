@@ -37,7 +37,8 @@ const webPath = `web/dist/`;
       swiftUIColor: require('./formats/swiftUIColor'),
       swiftSize: require('./formats/swiftSize'),
       //android
-      androidColor: require('./formats/androidColor')
+      androidColor: require('./formats/androidColor'),
+      composeTypography: require('./formats/composeTypography')
     },
     
     source: [
@@ -132,6 +133,10 @@ const webPath = `web/dist/`;
               // the specific ones that change
               outputReferences: true
             },
+        },{
+          destination: `Typography.kt`,
+          filter: (token) => token.type  === 'typography',
+          format: `composeTypography`
         }]
       },
       
@@ -157,11 +162,6 @@ const webPath = `web/dist/`;
           destination: `values-night/colors.xml`,
           format: `androidColor`,
           filter: (token) => token.type === `color` && token.filePath === `tokens/dark.json`
-        },{
-          destination: `values/font_dimens.xml`,
-          filter: (token) => token.type === `size` &&
-            token.type === `font`,
-          format: `android/resources`
         },{
           destination: `values/dimens.xml`,
           filter: (token) => token.type === `size` &&
