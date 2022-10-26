@@ -17,22 +17,22 @@ enum DesignSystem {
   public static let sm = CGFloat(8)
   public static let md = CGFloat(12)
   public static let lg = CGFloat(16)
-  public static let xl = CGFloat(34)
+  public static let xl = CGFloat(28)
   public static let full = CGFloat(100)
  }
 
  enum LineHeights {
 
-  public static let leading01 = CGFloat(44)
-  public static let leading02 = CGFloat(52)
-  public static let leading03 = CGFloat(64)
-  public static let leading04 = CGFloat(32)
-  public static let leading05 = CGFloat(36)
-  public static let leading06 = CGFloat(40)
-  public static let leading07 = CGFloat(20)
-  public static let leading08 = CGFloat(24)
-  public static let leading09 = CGFloat(28)
-  public static let leading10 = CGFloat(16)
+  public static let leading01 = CGFloat(16)
+  public static let leading02 = CGFloat(20)
+  public static let leading03 = CGFloat(24)
+  public static let leading04 = CGFloat(28)
+  public static let leading05 = CGFloat(32)
+  public static let leading06 = CGFloat(36)
+  public static let leading07 = CGFloat(40)
+  public static let leading08 = CGFloat(44)
+  public static let leading09 = CGFloat(52)
+  public static let leading10 = CGFloat(64)
  }
 
  enum FontSizes {
@@ -55,5 +55,26 @@ enum DesignSystem {
   public static let tracking06 = CGFloat(0.4)
   public static let tracking07 = CGFloat(0.25)
   public static let tracking08 = CGFloat(0.5)
+ }
+
+ enum Spacing {
+
+  public static let space01 = CGFloat(2)
+  public static let space02 = CGFloat(4)
+  public static let space03 = CGFloat(8)
+  public static let space04 = CGFloat(12)
+  public static let space05 = CGFloat(16)
+  public static let space06 = CGFloat(24)
+  public static let space07 = CGFloat(32)
+  public static let space08 = CGFloat(40)
+  public static let space09 = CGFloat(44)
+  public static let space10 = CGFloat(48)
+  public static let space11 = CGFloat(56)
+  public static let space12 = CGFloat(64)
+  public static let space13 = CGFloat(72)
+  public static let space14 = CGFloat(80)
+  public static let space15 = CGFloat(112)
+  public static let space16 = CGFloat(128)
+  public static let spaceNone = CGFloat(0)
  }
 }
