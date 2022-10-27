@@ -38,8 +38,9 @@ const webPath = `web/dist/`;
       swiftSize: require('./formats/swiftSize'),
       //android
       androidColor: require('./formats/androidColor'),
-      composeTypography: require('./formats/composeTypography'),
-      androidTypography: require('./formats/androidTypography')
+      androidTypography: require('./formats/androidTypography'),
+      composeSize: require('./formats/composeSize'),
+      composeTypography: require('./formats/composeTypography')
     },
     
     source: [
@@ -138,6 +139,10 @@ const webPath = `web/dist/`;
           destination: `Typography.kt`,
           filter: (token) => token.type  === 'typography',
           format: `composeTypography`
+        },{
+          destination: `Sizes.kt`,
+          filter: (token) => token.type  !== 'color' && token.type != 'typography',
+          format: `composeSize`
         }]
       },
       
