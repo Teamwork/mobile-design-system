@@ -13,9 +13,8 @@ const { indexOf } = require("lodash");
  * ```
  */
 module.exports = function ({ dictionary, options }) {
-  return `package com.teamwork.design;
+  return `package com.teamwork.design.generated;
   
-import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
@@ -23,12 +22,13 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.em
 import androidx.compose.ui.unit.sp
+import com.teamwork.mobile.design.R
 
 private val Poppins = FontFamily(
-  Font(R.font.poppins_regular, weight = FontWeight.Normal),
-  Font(R.font.poppins_medium, weight = FontWeight.Medium),
-  Font(R.font.poppins_semibold, weight = FontWeight.SemiBold),
-  Font(R.font.poppins_bold, weight = FontWeight.Bold),
+  Font(R.font.family_poppins_regular, weight = FontWeight.Normal),
+  Font(R.font.family_poppins_medium, weight = FontWeight.Medium),
+  Font(R.font.family_poppins_semibold, weight = FontWeight.SemiBold),
+  Font(R.font.family_poppins_bold, weight = FontWeight.Bold),
 )
   
 object Typography {

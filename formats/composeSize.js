@@ -13,22 +13,24 @@ module.exports = function ({ dictionary, options }) {
     return acc;
   }, /* inital value for the acc is an empty map*/ {});
 
-  return `package com.teamwork.design;
+  return `package com.teamwork.design.generated;
+
+import androidx.compose.ui.unit.dp
   
-${Object.keys(typeMap).map(type => handleType(type, typeMap[type])).filter(it => it.length > 0).join("\n")}
+${Object.keys(typeMap).map(type => handleType(type, typeMap[type])).filter(it => it.length > 0).join("\n\n")}
 `;
 }
 
 function handleType(type, tokens) {
   switch (type) {
     case "borderWidth":
-      return classForFloatConstants("BorderWidth", tokens);
+      return classForNumberConstants("BorderWidth", tokens);
     case "borderRadius":
-      return classForIntConstants("BorderRadius", tokens);
+      return classForNumberConstants("BorderRadius", tokens);
     case "lineHeights":
-      return classForIntConstants("LineHeights", tokens);
+      return classForNumberConstants("LineHeights", tokens);
     case "spacing":
-      return classForIntConstants("Spacing", tokens);
+      return classForNumberConstants("Spacing", tokens);
     // not needed yet?
     // case "boxShadow":
     //   return JSON.stringify(tokens, null, 5);
@@ -38,25 +40,8 @@ function handleType(type, tokens) {
   }
 }
 
-function classForFloatConstants(className, tokens) {
+function classForNumberConstants(className, tokens) {
   return `object ${className} {
-${tokens.map(token => `\tconst val ${token.name} = ${token.value}F`).join("\n")}
+${tokens.map(token => `\tval ${token.name} = ${token.value}.dp`).join("\n")}
 }`;
-}
-
-function classForIntConstants(className, tokens) {
-  return `object ${className} {
-${tokens.map(token => `\tconst val ${token.name} = ${token.value}`).join("\n")}
-}`;
-}
-
-function handleToken(token) {
-  if (token.type === "borderWidth") {
-    return borderWidth(token) + "\n";
-  }
-  return token.type + "\n";
-}
-
-function borderWidth(token) {
-  return `const val ${token.name} = ${token.value}`;
 }

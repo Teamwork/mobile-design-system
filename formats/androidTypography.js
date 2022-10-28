@@ -13,19 +13,20 @@ ${dictionary.allProperties.map(token => getTextStyleForToken(token)).join("\n\n"
 function getTextStyleForToken(token) {
   return `  <style name="${token.name}">
     <item name="android:fontFamily">${token.value.fontFamily}</item>
-    <item name="android:textSize">${token.value.fontSize}</item>
+    <item name="android:textSize">${token.value.fontSize}sp</item>
     <item name="android:letterSpacing">${calculateLetterSpacing(token.value.letterSpacing)}</item>
-    <item name="android:lineSpacingExtra">${token.value.lineHeight}</item> <!-- TODO this is lineHeight not lineSpacingExtra -->
+    <item name="android:lineSpacingExtra">${token.value.lineHeight}sp</item> <!-- TODO this is lineHeight not lineSpacingExtra -->
   </style>`;
 }
 
 function calculateLetterSpacing(letterSpacing) {
+  // TODO This is broken, XML doesn't let you specify ems or sp
   if (indexOf(letterSpacing, "%") != -1) {
-    // We treat percentages as em units. Eg: -2% -> 0.98.em
+    // We treat percentages as em units. Eg: -2% -> 0.98
     const letterSpacingNumber = parseInt(letterSpacing.replace("%", ""));
 
-    return (100 + letterSpacingNumber) / 100.0 + "em";
+    return (100 + letterSpacingNumber) / 100.0;
   }
   // No percentage will be treated as sp units
-  return `${letterSpacing}sp`;
+  return `${letterSpacing}`;
 }
