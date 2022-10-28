@@ -10,10 +10,10 @@ import androidx.compose.ui.unit.sp
 import com.teamwork.mobile.design.R
 
 private val Poppins = FontFamily(
-  Font(R.font.family_poppins_regular, weight = FontWeight.Normal),
-  Font(R.font.family_poppins_medium, weight = FontWeight.Medium),
-  Font(R.font.family_poppins_semibold, weight = FontWeight.SemiBold),
-  Font(R.font.family_poppins_bold, weight = FontWeight.Bold),
+  Font(R.font.gilroy_regular, weight = FontWeight.Normal),
+  Font(R.font.gilroy_medium, weight = FontWeight.Medium),
+  Font(R.font.gilroy_semibold, weight = FontWeight.SemiBold),
+  Font(R.font.gilroy_bold, weight = FontWeight.Bold),
 )
   
 object Typography {
@@ -145,7 +145,7 @@ object Typography {
     	fontStyle = FontStyle.Normal,
     	fontWeight = FontWeight.Normal,
     	lineHeight = 40.sp,
-    	letterSpacing = 0.98.em,
+    	letterSpacing = 0.02.em,
     	fontSize = 32.sp
 	)
 

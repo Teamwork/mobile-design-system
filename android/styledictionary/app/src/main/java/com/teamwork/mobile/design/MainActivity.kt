@@ -22,9 +22,19 @@ class MainActivity : ComponentActivity() {
             TeamworkTheme {
                 Column {
                     Text(
-                        text = "Hello!",
+                        text = "headlineLarge",
+                        style = com.teamwork.design.generated.Typography.headlineLarge,
+                        color = TwColor.text.textInfoDefault
+                    )
+                    Text(
+                        text = "bodyMedium",
+                        style = com.teamwork.design.generated.Typography.bodyMedium,
+                        color = TwColor.border.borderSuccessHover
+                    )
+                    Text(
+                        text = "bodySmall",
                         style = com.teamwork.design.generated.Typography.bodySmall,
-                        color = TwColor.colorTextOnDecorative01
+                        color = TwColor.icon.iconActionDefault
                     )
                 }
             }
