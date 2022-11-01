@@ -5,6 +5,17 @@
  */
 module.exports = function ({ dictionary, options }) {
   const isDarkTheme = dictionary.allProperties[0].filePath === "tokens/dark.json"
+  let colorGroups = {};
+
+  dictionary.allProperties.forEach(token => {
+    // remove the dark_ or light_ prefix since we need the colour names to be the same for both themes
+    const color = getColorName(token.name);
+    if (typeof colorGroups[color.group] === "undefined") {
+      colorGroups[color.group] = [];
+    }
+    color.value = token.value;
+    colorGroups[color.group].push(color);
+  });
 
   return `package com.teamwork.design.generated
 
@@ -12,7 +23,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.*
 
 val ${getClassName(isDarkTheme)} = TeamworkColors(
-${generateDataClassArguments(dictionary.allProperties)}
+${generateDataClassArguments(colorGroups)}
 )\n`;
 }
 
@@ -24,17 +35,52 @@ function getClassName(isDarkTheme) {
   }
 }
 
-function generateDataClassArguments(allProperties) {
-  return allProperties.map(token => {
-    // remove the dark_ or light_ prefix since we need the colour names to be the same for both themes
-    return `\t${getColorName(token.name)} = ${token.value},`;
+function generateDataClassArguments(colorGroups) {
+  return Object.keys(colorGroups).map(groupName => {
+    const colors = colorGroups[groupName];
+    const className = `TeamworkColors.${upperCaseFirstLetter(groupName)}`;
+
+    return `\t${groupName} = ${className}(\n` + colors.map(color => {
+      return `\t\t${color.name} = ${color.value},`;
+    }).join("\n") + `\n\t),`;
   }).join("\n");
 }
 
 function getColorName(fullColorName) {
+  let colorName = fullColorName;
   if (fullColorName.startsWith("color")) {
-    const colorName = fullColorName.replace("color", "");
-    return colorName.charAt(0).toLowerCase() + colorName.slice(1);
+    colorName = fullColorName.replace("color", "");
+    colorName = lowerCaseFirstLetter(colorName);
   }
-  return fullColorName;
+
+  const group = getFirstWordFromCamelCase(colorName);
+  
+  return {
+    group: group,
+    name: colorName
+  };
+}
+
+
+//
+
+
+function lowerCaseFirstLetter(word) {
+  return word.charAt(0).toLowerCase() + word.slice(1);
+}
+
+function upperCaseFirstLetter(word) {
+  return word.charAt(0).toUpperCase() + word.slice(1);
+}
+
+function getFirstWordFromCamelCase(text) {
+  let word = "";
+  for (i = 0; i < text.length - 1; i++) {
+    const char = text.charAt(i);
+    if (char == char.toUpperCase()) {
+      return word;
+    }
+    word += char;
+  }
+  return text;
 }
