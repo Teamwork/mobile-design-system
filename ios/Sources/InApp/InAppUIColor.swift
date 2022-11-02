@@ -22,8 +22,6 @@ public extension UIColor {
             public let child40: UIColor
             public let child50: UIColor
             public let child60: UIColor
-            public let black: UIColor
-            public let white: UIColor
         }
         
         // MARK: - Feedback
@@ -49,5 +47,8 @@ public extension UIColor {
         public static let label = UIColor.label
         public static let secondaryLabel = UIColor.secondaryLabel
         public static let tertiaryLabel = UIColor.tertiaryLabel
+
+        public static let neutralBlack = UIColor(named: "ui-neutral-black", in: bundle, compatibleWith: nil)!
+        public static let neutralWhite = UIColor(named: "ui-neutral-white", in: bundle, compatibleWith: nil)!
     }
 }
