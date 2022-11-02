@@ -2,6 +2,11 @@ plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
 }
+apply from: '../publish-library.gradle'
+
+project.ext.libraryVersion = "0.0.1-alpha01"
+project.ext.libraryArtifactId = 'teamwork-design-system'
+project.ext.javadocTitle = "Teamwork Design System " + libraryVersion
 
 android {
     namespace 'com.teamwork.mobile.design'
