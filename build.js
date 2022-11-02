@@ -63,6 +63,20 @@ const webPath = `web/dist/`;
         buildPath: iosPath,
         transforms: [`attribute/cti`,`name/ti/camel`,`size/swift/remToCGFloat`],
         files: [{
+          destination: `PaletteColor.swift`,
+          format: `swiftColor`,
+          filter: (token) => token.type === `color` && theme === `global`,
+          options: {
+            outputReferences: true
+          }
+        },{
+          destination: `PaletteUIColor.swift`,
+          format: `swiftUIColor`,
+          filter: (token) => token.type === `color` && theme === `global`,
+          options: {
+            outputReferences: true
+          }
+        },{
           destination: `Color.swift`,
           format: `swiftColor`,
           filter: (token) => token.type === `color`,

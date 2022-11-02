@@ -9,7 +9,7 @@ const { contents, darkAppearance, idiom, hcAppearance } = require('./consts');
 module.exports = {
   // This is going to run once per theme.
   do: (dictionary, platform) => {
-    const assetPath = `${platform.buildPath}/StyleDictionary.xcassets`;
+    const assetPath = `${platform.buildPath}/Colors.xcassets`;
     
     fs.ensureDirSync(assetPath)
     fs.writeFileSync(`${assetPath}/Contents.json`, JSON.stringify(contents, null, 2));
@@ -17,7 +17,7 @@ module.exports = {
     dictionary.allProperties
       .filter(token => token.type === `color`)
       .forEach(token => {
-        const colorsetPath = `${assetPath}/${token.name}.colorset`;
+        const colorsetPath = `${assetPath}/tokens/${token.name}.colorset`;
         fs.ensureDirSync(colorsetPath);
         
         // The colorset might already exist because Style Dictionary is run multiple
