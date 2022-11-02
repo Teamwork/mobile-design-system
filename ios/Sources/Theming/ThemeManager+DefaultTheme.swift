@@ -76,10 +76,6 @@ public extension ThemeManager {
                 child80: UIColor(named: "default-brand-secondary-08-80", in: .module, compatibleWith: nil)!,
                 child100: UIColor(named: "default-brand-secondary-08-100", in: .module, compatibleWith: nil)!
             ),
-            neutralLight: UIColor(named: "default-neutral-light", in: .module, compatibleWith: nil)!,
-            neutralDark: UIColor(named: "default-neutral-dark", in: .module, compatibleWith: nil)!,
-            neutralBackground: .systemBackground,
-            neutralShadow: UIColor(named: "default-neutral-shadow", in: .module, compatibleWith: nil)!,
             feedbackAccent: Theme.DynamicColor(
                 base: UIColor(named: "default-feedback-accent-base", in: .module, compatibleWith: nil)!,
                 child20: UIColor(named: "default-feedback-accent-20", in: .module, compatibleWith: nil)!,
