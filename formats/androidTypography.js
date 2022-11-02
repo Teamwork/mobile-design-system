@@ -11,11 +11,16 @@ ${dictionary.allProperties.map(token => getTextStyleForToken(token)).join("\n\n"
 }
 
 function getTextStyleForToken(token) {
-  return `  <style name="${token.name}">
+  return `  <!--
+    Token Name: ${token.name}
+    ========================= 
+    ${Object.keys(token.value).map(key => `${key} => ${token.value[key]}`).join("\n\t")}
+  -->
+  <style name="${token.name}">
     <item name="android:fontFamily">${token.value.fontFamily}</item>
     <item name="android:textSize">${token.value.fontSize}sp</item>
     <item name="android:letterSpacing">${calculateLetterSpacing(token.value.letterSpacing)}</item>
-    <item name="android:lineSpacingExtra">${token.value.lineHeight}sp</item> <!-- TODO this is lineHeight not lineSpacingExtra -->
+    ${getLineHeightTag(token)}
   </style>`;
 }
 
@@ -29,4 +34,13 @@ function calculateLetterSpacing(letterSpacing) {
   }
   // No percentage will be treated as sp units
   return `${letterSpacing}`;
+}
+
+function getLineHeightTag(token) {
+  const nameAttribute = "android:lineSpacingExtra";
+  const lineHeight = token.value.lineHeight;
+  const textSize = token.value.fontSize;
+  const value = lineHeight - textSize;
+
+  return `<item name="${nameAttribute}">${value}sp</item>`
 }
