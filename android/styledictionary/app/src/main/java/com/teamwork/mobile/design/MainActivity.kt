@@ -13,8 +13,6 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.ui.Modifier
 import com.teamwork.design.TeamworkTheme
-import com.teamwork.design.generated.BorderWidth
-import com.teamwork.design.generated.TeamworkTypography
 
 class MainActivity : ComponentActivity() {
 
@@ -29,29 +27,29 @@ class MainActivity : ComponentActivity() {
                     Column {
                         Text(
                             text = "headlineLarge",
-                            style = TeamworkTypography.headlineLarge
+                            style = TeamworkTheme.typography.headlineLarge
                         )
                         Text(
                             text = "headlineMedium",
-                            style = TeamworkTypography.headlineMedium
+                            style = TeamworkTheme.typography.headlineMedium
                         )
                         Text(
                             modifier = Modifier.border(
                                 border = BorderStroke(
-                                    width = BorderWidth.sm,
+                                    width = TeamworkTheme.borderWidth.sm,
                                     color = TeamworkTheme.color.border.borderSuccessHover
                                 )
                             ),
                             text = "headlineSmall",
-                            style = TeamworkTypography.headlineSmall
+                            style = TeamworkTheme.typography.headlineSmall
                         )
                         Text(
                             text = "bodyMedium",
-                            style = TeamworkTypography.bodyMedium
+                            style = TeamworkTheme.typography.bodyMedium
                         )
                         Text(
                             text = "bodySmall",
-                            style = TeamworkTypography.bodySmall
+                            style = TeamworkTheme.typography.bodySmall
                         )
 
                         Button(
