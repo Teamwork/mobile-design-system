@@ -1,6 +1,6 @@
 import UIKit
 
-extension ThemeManager {
+public extension ThemeManager {
 
     static let defaultTheme = Theme(
         colors: Theme.Colors(
