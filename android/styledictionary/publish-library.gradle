@@ -1,0 +1,172 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
+apply plugin: 'com.jfrog.artifactory'
+//apply from: '../dependencies.gradle'
+
+project.ext.mavenTeamworkGroupId = 'com.teamwork.android'
+// Project properties to be overridden by the module
+project.ext.libraryVersion = ''
+project.ext.libraryArtifactId = ''
+project.ext.javadocTitle = ''
+
+// default configuration
+android {
+    compileSdkVersion project.ext.sharedCompileSdkVersion
+    buildToolsVersion project.ext.sharedBuildToolsVersion
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+configurations {
+    javadocDeps
+}
+
+task sourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier = 'sources'
+}
+
+task javadoc(type: Javadoc) {
+    source = android.sourceSets.main.java.srcDirs
+    options.linkSource true
+    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+    classpath += configurations.javadocDeps
+    failOnError false
+
+    doFirst { // delay title initialization to allow title to be overridden by library module
+        title = "${javadocTitle}"
+    }
+}
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+artifacts {
+    archives javadocJar
+    archives sourcesJar
+}
+
+dependencies {
+    // prevents dependency warnings when building Javadoc
+    javadocDeps "androidx.annotation:annotation:${versions.androidx.annotation}"
+}
+
+// To publish to local Maven: ./gradlew {module_name}:publishLocalPublicationToMavenLocal
+
+// To publish to the Teamwork Maven repository: ./gradlew clean {module_name}:artifactoryPublish
+
+publishing {
+    publications {
+
+        local(MavenPublication) {
+
+            afterEvaluate {
+                groupId mavenTeamworkGroupId
+                version libraryVersion + '-SNAPSHOT'
+
+                // since teamwork-utils is used by so many modules, we publish it with the same
+                // artifact name so that dependency conflict resolutions can override the version
+                // used more easily
+                if (libraryArtifactId == "teamwork-utils") {
+                    artifactId libraryArtifactId
+                } else {
+                    artifactId libraryArtifactId + '-debug'
+                }
+
+                artifact artifact("$buildDir/outputs/aar/${libraryArtifactId}-debug.aar")
+                artifact sourcesJar
+                artifact javadocJar
+            }
+
+            pom.withXml {
+                def dependenciesNode = asNode().appendNode('dependencies')
+                // Iterate over the `api` dependencies, adding a <dependency> node for each
+                configurations.api.allDependencies.each {
+                    appendDependencyProperties(dependenciesNode, it, true)
+                }
+            }
+        }
+
+        aarDebug(MavenPublication) {
+
+            afterEvaluate {
+                groupId mavenTeamworkGroupId
+                version libraryVersion
+                artifactId libraryArtifactId + '-debug'
+
+                artifact artifact("$buildDir/outputs/aar/${libraryArtifactId}-debug.aar")
+                artifact sourcesJar
+                artifact javadocJar
+            }
+
+            pom.withXml {
+                def dependenciesNode = asNode().appendNode('dependencies')
+                // Iterate over the `api` dependencies, adding a <dependency> node for each
+                configurations.api.allDependencies.each {
+                    appendDependencyProperties(dependenciesNode, it, false)
+                }
+            }
+        }
+
+        aar(MavenPublication) {
+            afterEvaluate {
+                groupId mavenTeamworkGroupId
+                version libraryVersion
+                artifactId libraryArtifactId
+
+                pom.withXml {
+                    asNode().appendNode('name', libraryArtifactId)
+                }
+
+                artifact("$buildDir/outputs/aar/${libraryArtifactId}-release.aar")
+                artifact sourcesJar
+                artifact javadocJar
+            }
+
+            //The publication doesn't know about our dependencies, so we have to manually add them to the pom
+            pom.withXml {
+                asNode().appendNode('licenses').appendNode('license').
+                        appendNode('name', 'Copyright Teamwork 2017-present').parent().
+                        appendNode('url', 'http://www.teamwork.com')
+
+                def dependenciesNode = asNode().appendNode('dependencies')
+                // Iterate over the `api` dependencies, adding a <dependency> node for each
+                configurations.api.allDependencies.each {
+                    appendDependencyProperties(dependenciesNode, it, false)
+                }
+            }
+        }
+    }
+}
+
+private static void appendDependencyProperties(dependenciesNode, Dependency dependency, Boolean isLocal) {
+    def dependencyNode = dependenciesNode.appendNode('dependency')
+    dependencyNode.appendNode('groupId', dependency.group)
+    dependencyNode.appendNode('artifactId', dependency.name)
+    dependencyNode.appendNode('version', dependency.version)
+    if (!isLocal) { // local builds don't support this attribute
+        dependencyNode.appendNode('packaging', 'aar')
+    }
+}
+
+artifactory {
+    contextUrl = "${artifactory_url}"
+    publish {
+        repository {
+            repoKey = "${artifactory_repo}"
+            username = "${localProperties.artifactory_user}"
+            password = "${localProperties.artifactory_password}"
+        }
+        defaults {
+            publications('aarDebug', 'aar')
+            publishArtifacts = true
+            properties = ['qa.level': 'basic', 'q.os': 'android', 'dev.team': 'Android']
+            publishPom = true
+        }
+    }
+}

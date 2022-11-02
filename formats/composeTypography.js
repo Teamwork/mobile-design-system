@@ -1,4 +1,4 @@
-const { indexOf } = require("lodash");
+const { indexOf, unary } = require("lodash");
 
 /**
  * This custom format creates a file for Compose that contains the Typography definitions for 
@@ -8,7 +8,7 @@ const { indexOf } = require("lodash");
  * ```Kotlin
  * Text(
  *    ...
- *    textStyle = Typography.headlineLarge
+ *    textStyle = TeamworkTypography.headlineLarge
  * )
  * ```
  */
@@ -25,13 +25,13 @@ import androidx.compose.ui.unit.sp
 import com.teamwork.mobile.design.R
 
 private val Poppins = FontFamily(
-  Font(R.font.family_poppins_regular, weight = FontWeight.Normal),
-  Font(R.font.family_poppins_medium, weight = FontWeight.Medium),
-  Font(R.font.family_poppins_semibold, weight = FontWeight.SemiBold),
-  Font(R.font.family_poppins_bold, weight = FontWeight.Bold),
+  Font(R.font.poppins_regular, weight = FontWeight.Normal),
+  Font(R.font.poppins_medium, weight = FontWeight.Medium),
+  Font(R.font.poppins_semibold, weight = FontWeight.SemiBold),
+  Font(R.font.poppins_bold, weight = FontWeight.Bold),
 )
   
-object Typography {
+object TeamworkTypography {
 ${dictionary.allProperties.map(token => getTextStyleForToken(token)).join("\n\n")}
 }`;
 }
@@ -78,9 +78,10 @@ function getFontWeight(fontWeight) {
 function calculateLetterSpacing(letterSpacing) {
   if (indexOf(letterSpacing, "%") != -1) {
     // We treat percentages as em units. Eg: -2% -> 0.98.em
-    const letterSpacingNumber = parseInt(letterSpacing.replace("%", ""));
+    const letterSpacingNumber = parseInt(letterSpacing.replace("%", "")) / 100.0;
+    const unaryOperatorWrapping = letterSpacingNumber < 0 ? `(${letterSpacingNumber})` : letterSpacingNumber;
 
-    return (100 + letterSpacingNumber) / 100.0 + ".em";
+    return unaryOperatorWrapping + ".em";
   }
   // No percentage will be treated as sp units
   return `${letterSpacing}.sp`;

@@ -125,7 +125,7 @@ const webPath = `web/dist/`;
           filter: (token) => token.type  === 'color',
           format: `composeTeamworkColors`
         },{
-          destination: `Typography.kt`,
+          destination: `TeamworkTypography.kt`,
           filter: (token) => token.type  === 'typography',
           format: `composeTypography`
         },{

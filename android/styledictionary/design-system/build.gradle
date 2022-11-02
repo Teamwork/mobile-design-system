@@ -28,6 +28,14 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    buildFeatures {
+        compose true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion "1.3.0"
+    }
 }
 
 dependencies {
@@ -38,6 +46,7 @@ dependencies {
 
     // Material TODO update when using Kotlin 1.7.* #20279933
     api "com.google.android.material:material:1.6.1"
+    api "androidx.compose.material3:material3:1.0.0"
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.5.1'

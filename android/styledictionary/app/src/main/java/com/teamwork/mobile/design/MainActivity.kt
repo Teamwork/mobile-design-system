@@ -3,15 +3,18 @@ package com.teamwork.mobile.design
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.isSystemInDarkTheme
+import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Column
-import androidx.compose.material3.MaterialTheme
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.CompositionLocalProvider
-import androidx.compose.runtime.compositionLocalOf
-import com.teamwork.design.generated.DarkColors
-import com.teamwork.design.generated.LightColors
+import androidx.compose.ui.Modifier
+import com.teamwork.design.TeamworkTheme
+import com.teamwork.design.generated.BorderWidth
+import com.teamwork.design.generated.TeamworkTypography
 
 class MainActivity : ComponentActivity() {
 
@@ -20,49 +23,61 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             TeamworkTheme {
-                Column {
-                    Text(
-                        text = "headlineLarge",
-                        style = com.teamwork.design.generated.Typography.headlineLarge,
-                        color = TwColor.text.textInfoDefault
-                    )
-                    Text(
-                        text = "bodyMedium",
-                        style = com.teamwork.design.generated.Typography.bodyMedium,
-                        color = TwColor.border.borderSuccessHover
-                    )
-                    Text(
-                        text = "bodySmall",
-                        style = com.teamwork.design.generated.Typography.bodySmall,
-                        color = TwColor.icon.iconActionDefault
-                    )
+                Surface(
+                    modifier = Modifier.fillMaxSize()
+                ) {
+                    Column {
+                        Text(
+                            text = "headlineLarge",
+                            style = TeamworkTypography.headlineLarge
+                        )
+                        Text(
+                            text = "headlineMedium",
+                            style = TeamworkTypography.headlineMedium
+                        )
+                        Text(
+                            modifier = Modifier.border(
+                                border = BorderStroke(
+                                    width = BorderWidth.sm,
+                                    color = TeamworkTheme.color.border.borderSuccessHover
+                                )
+                            ),
+                            text = "headlineSmall",
+                            style = TeamworkTypography.headlineSmall
+                        )
+                        Text(
+                            text = "bodyMedium",
+                            style = TeamworkTypography.bodyMedium
+                        )
+                        Text(
+                            text = "bodySmall",
+                            style = TeamworkTypography.bodySmall
+                        )
+
+                        Button(
+                            onClick = { /*TODO*/ },
+                            colors = ButtonDefaults.buttonColors(
+                                containerColor = TeamworkTheme.color.surface.surfaceActionDefault
+                            )
+                        ) {
+                            Text(
+                                text = "colorSurfaceActionDefault"
+                            )
+                        }
+                        Button(
+                            onClick = { /*TODO*/ },
+                            colors = ButtonDefaults.buttonColors(
+                                containerColor = TeamworkTheme.color.surface.surfaceCriticalDefault
+                            )
+                        ) {
+                            Text(
+                                text = "colorSurfaceCriticalDefault"
+                            )
+                        }
+                    }
                 }
             }
         }
     }
 
 }
-
-@Composable
-fun TeamworkTheme(content: @Composable () -> Unit) {
-    MaterialTheme {
-        // Calculate elevations based on the system theme
-        val teamworkColors = if (isSystemInDarkTheme()) {
-            DarkColors
-        } else {
-            LightColors
-        }
-
-        // Bind elevation as the value for LocalElevations
-        CompositionLocalProvider(LocalTeamworkColors provides teamworkColors) {
-            content()
-        }
-    }
-}
-
-
-val LocalTeamworkColors = compositionLocalOf { LightColors }
-
-val TwColor
-    @Composable
-    get() = LocalTeamworkColors.current

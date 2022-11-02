@@ -10,13 +10,13 @@ import androidx.compose.ui.unit.sp
 import com.teamwork.mobile.design.R
 
 private val Poppins = FontFamily(
-  Font(R.font.gilroy_regular, weight = FontWeight.Normal),
-  Font(R.font.gilroy_medium, weight = FontWeight.Medium),
-  Font(R.font.gilroy_semibold, weight = FontWeight.SemiBold),
-  Font(R.font.gilroy_bold, weight = FontWeight.Bold),
+  Font(R.font.poppins_regular, weight = FontWeight.Normal),
+  Font(R.font.poppins_medium, weight = FontWeight.Medium),
+  Font(R.font.poppins_semibold, weight = FontWeight.SemiBold),
+  Font(R.font.poppins_bold, weight = FontWeight.Bold),
 )
   
-object Typography {
+object TeamworkTypography {
 	/**
 	 * {
      "fontFamily": "Poppins",
@@ -35,7 +35,7 @@ object Typography {
     	fontStyle = FontStyle.Normal,
     	fontWeight = FontWeight.Normal,
     	lineHeight = 44.sp,
-    	letterSpacing = 0.97.em,
+    	letterSpacing = (-0.03).em,
     	fontSize = 36.sp
 	)
 
@@ -57,7 +57,7 @@ object Typography {
     	fontStyle = FontStyle.Normal,
     	fontWeight = FontWeight.Normal,
     	lineHeight = 52.sp,
-    	letterSpacing = 0.97.em,
+    	letterSpacing = (-0.03).em,
     	fontSize = 45.sp
 	)
 
@@ -79,7 +79,7 @@ object Typography {
     	fontStyle = FontStyle.Normal,
     	fontWeight = FontWeight.Normal,
     	lineHeight = 64.sp,
-    	letterSpacing = 0.96.em,
+    	letterSpacing = (-0.04).em,
     	fontSize = 57.sp
 	)
 
@@ -101,7 +101,7 @@ object Typography {
     	fontStyle = FontStyle.Normal,
     	fontWeight = FontWeight.Normal,
     	lineHeight = 32.sp,
-    	letterSpacing = 0.97.em,
+    	letterSpacing = (-0.03).em,
     	fontSize = 24.sp
 	)
 
@@ -123,7 +123,7 @@ object Typography {
     	fontStyle = FontStyle.Normal,
     	fontWeight = FontWeight.Normal,
     	lineHeight = 36.sp,
-    	letterSpacing = 0.97.em,
+    	letterSpacing = (-0.03).em,
     	fontSize = 28.sp
 	)
 
@@ -145,7 +145,7 @@ object Typography {
     	fontStyle = FontStyle.Normal,
     	fontWeight = FontWeight.Normal,
     	lineHeight = 40.sp,
-    	letterSpacing = 0.02.em,
+    	letterSpacing = (-0.02).em,
     	fontSize = 32.sp
 	)
 
@@ -167,7 +167,7 @@ object Typography {
     	fontStyle = FontStyle.Normal,
     	fontWeight = FontWeight.Medium,
     	lineHeight = 20.sp,
-    	letterSpacing = 0.98.em,
+    	letterSpacing = (-0.02).em,
     	fontSize = 14.sp
 	)
 
@@ -189,7 +189,7 @@ object Typography {
     	fontStyle = FontStyle.Normal,
     	fontWeight = FontWeight.Medium,
     	lineHeight = 24.sp,
-    	letterSpacing = 0.97.em,
+    	letterSpacing = (-0.03).em,
     	fontSize = 16.sp
 	)
 
@@ -211,7 +211,7 @@ object Typography {
     	fontStyle = FontStyle.Normal,
     	fontWeight = FontWeight.Normal,
     	lineHeight = 28.sp,
-    	letterSpacing = 0.98.em,
+    	letterSpacing = (-0.02).em,
     	fontSize = 22.sp
 	)
 
@@ -233,7 +233,7 @@ object Typography {
     	fontStyle = FontStyle.Normal,
     	fontWeight = FontWeight.Medium,
     	lineHeight = 16.sp,
-    	letterSpacing = 1.em,
+    	letterSpacing = 0.em,
     	fontSize = 11.sp
 	)
 
@@ -255,7 +255,7 @@ object Typography {
     	fontStyle = FontStyle.Normal,
     	fontWeight = FontWeight.Medium,
     	lineHeight = 16.sp,
-    	letterSpacing = 0.99.em,
+    	letterSpacing = (-0.01).em,
     	fontSize = 12.sp
 	)
 
@@ -277,7 +277,7 @@ object Typography {
     	fontStyle = FontStyle.Normal,
     	fontWeight = FontWeight.Medium,
     	lineHeight = 20.sp,
-    	letterSpacing = 0.97.em,
+    	letterSpacing = (-0.03).em,
     	fontSize = 14.sp
 	)
 
