@@ -38,7 +38,16 @@ public extension UIColor {
         public static let secondaryLabel = UIColor.secondaryLabel
         public static let tertiaryLabel = UIColor.tertiaryLabel
 
-        public static let neutralBlack = UIColor(named: "ui-neutral-black", in: bundle, compatibleWith: nil)!
-        public static let neutralWhite = UIColor(named: "ui-neutral-white", in: bundle, compatibleWith: nil)!
+        // MARK: - Neutral
+        public static let neutralBlack = UIColor(named: "ui-neutral-black", in: bundle, compatibleWith: nil).unsafelyUnwrapped
+        public static let neutralWhite = UIColor(named: "ui-neutral-white", in: bundle, compatibleWith: nil).unsafelyUnwrapped
+        public static let defaultNeutral01 = UIColor(named: "default-neutral-1", in: bundle, compatibleWith: nil).unsafelyUnwrapped
+        public static let defaultNeutral02 = UIColor(named: "default-neutral-2", in: bundle, compatibleWith: nil).unsafelyUnwrapped
+        public static let defaultNeutral03 = UIColor(named: "default-neutral-3", in: bundle, compatibleWith: nil).unsafelyUnwrapped
+        public static let defaultNeutral04 = UIColor(named: "default-neutral-4", in: bundle, compatibleWith: nil).unsafelyUnwrapped
+        public static let defaultNeutral05 = UIColor(named: "default-neutral-5", in: bundle, compatibleWith: nil).unsafelyUnwrapped
+        public static let defaultNeutral06 = UIColor(named: "default-neutral-6", in: bundle, compatibleWith: nil).unsafelyUnwrapped
+        public static let defaultNeutral07 = UIColor(named: "default-neutral-7", in: bundle, compatibleWith: nil).unsafelyUnwrapped
+        public static let defaultNeutral08 = UIColor(named: "default-neutral-8", in: bundle, compatibleWith: nil).unsafelyUnwrapped
     }
 }
