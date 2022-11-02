@@ -49,5 +49,8 @@ public extension UIColor {
         public static let defaultNeutral06 = UIColor(named: "default-neutral-6", in: bundle, compatibleWith: nil).unsafelyUnwrapped
         public static let defaultNeutral07 = UIColor(named: "default-neutral-7", in: bundle, compatibleWith: nil).unsafelyUnwrapped
         public static let defaultNeutral08 = UIColor(named: "default-neutral-8", in: bundle, compatibleWith: nil).unsafelyUnwrapped
+        public static let neutralLight = UIColor(named: "default-neutral-light", in: bundle, compatibleWith: nil).unsafelyUnwrapped
+        public static let neutralDark = UIColor(named: "default-neutral-dark", in: bundle, compatibleWith: nil).unsafelyUnwrapped
+        public static let neutralShadow = UIColor(named: "default-neutral-shadow", in: bundle, compatibleWith: nil).unsafelyUnwrapped
     }
 }
