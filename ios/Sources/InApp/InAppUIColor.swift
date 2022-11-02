@@ -14,6 +14,8 @@ public extension UIColor {
             public let child50: UIColor
         }
         
+        public static let separator = UIColor.separator
+
         // MARK: - Feedback
         
         public static let errorPrimary = UIColor(named: "errorPrimary", in: bundle, compatibleWith: nil).unsafelyUnwrapped
