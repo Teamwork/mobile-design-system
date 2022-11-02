@@ -6,6 +6,9 @@ const androidPath = `android/styledictionary/teamwork-design-system/src/main/res
 const composePath = `android/styledictionary/teamwork-design-system/src/main/java/com/teamwork/design/generated/`;
 const webPath = `web/dist/`;
 
+// the name of the class generated for holding the color tokens for Compose
+const composeColorsClassName = "TeamworkColors";
+
 // before this runs we should clean the directories we are generating files in
 // to make sure they are ✨clean✨
 // TODO clean the Android directory again!
@@ -116,18 +119,30 @@ const webPath = `web/dist/`;
           destination: "ColorsLight.kt",
           format: `composeColor`,
           filter: (token) => token.type === `color` && token.filePath === `tokens/light.json`,
+          options: {
+            colorsClassName: composeColorsClassName
+          }
       },{
           destination: "ColorsDark.kt",
           format: `composeColor`,
           filter: (token) => token.type === `color` && token.filePath === `tokens/dark.json`,
+          options: {
+            colorsClassName: composeColorsClassName
+          }
         },{
-          destination: `TeamworkColors.kt`,
+          destination: `${composeColorsClassName}.kt`,
           filter: (token) => token.type  === 'color',
-          format: `composeTeamworkColors`
+          format: `composeTeamworkColors`,
+          options: {
+            className: composeColorsClassName
+          }
         },{
           destination: `TeamworkTypography.kt`,
           filter: (token) => token.type  === 'typography',
-          format: `composeTypography`
+          format: `composeTypography`,
+          options: {
+            className: "TeamworkTypography"
+          }
         },{
           destination: `Sizes.kt`,
           filter: (token) => token.type  !== 'color' && token.type != 'typography',

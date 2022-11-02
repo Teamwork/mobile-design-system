@@ -4,6 +4,7 @@
  * via `R.color.color.light_color_link_default` etc.
  */
 module.exports = function ({ dictionary, options }) {
+  const colorsClassName = options.colorsClassName;
   const isDarkTheme = dictionary.allProperties[0].filePath === "tokens/dark.json"
   let colorGroups = {};
 
@@ -22,7 +23,7 @@ module.exports = function ({ dictionary, options }) {
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.*
 
-val ${getClassName(isDarkTheme)} = TeamworkColors(
+val ${getClassName(isDarkTheme)} = ${colorsClassName}(
 ${generateDataClassArguments(colorGroups)}
 )\n`;
 }

@@ -51,7 +51,6 @@ function getTextStyleForToken(token) {
           },
  */
 
-  // TODO letterSpacing needs to be in em
   // fontStyle can be FontStyle.Normal or FontStyle.Italic
   return `\t/**
 \t * ${JSON.stringify(token.value, null, 5)}

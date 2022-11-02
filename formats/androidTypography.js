@@ -25,7 +25,6 @@ function getTextStyleForToken(token) {
 }
 
 function calculateLetterSpacing(letterSpacing) {
-  // TODO This is broken, XML doesn't let you specify ems or sp
   if (indexOf(letterSpacing, "%") != -1) {
     // We treat percentages as em units. Eg: -2% -> 0.98
     const letterSpacingNumber = parseInt(letterSpacing.replace("%", ""));

@@ -4,6 +4,7 @@
  * via `R.color.color.light_color_link_default` etc.
  */
 module.exports = function ({ dictionary, options }) {
+  const className = options.className;
   let colorGroups = {};
 
   dictionary.allProperties.forEach(token => {
@@ -21,7 +22,7 @@ module.exports = function ({ dictionary, options }) {
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.*
 
-data class TeamworkColors(
+data class ${className}(
 ${generateDataClassArguments(colorGroups)}
 )\n {
 ${generateInnerClasses(colorGroups)}
