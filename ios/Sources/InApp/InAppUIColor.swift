@@ -43,14 +43,6 @@ public extension UIColor {
         // MARK: - Neutral
         public static let neutralBlack = UIColor(named: "ui-neutral-black", in: bundle, compatibleWith: nil).unsafelyUnwrapped
         public static let neutralWhite = UIColor(named: "ui-neutral-white", in: bundle, compatibleWith: nil).unsafelyUnwrapped
-        public static let defaultNeutral01 = UIColor(named: "default-neutral-1", in: bundle, compatibleWith: nil).unsafelyUnwrapped
-        public static let defaultNeutral02 = UIColor(named: "default-neutral-2", in: bundle, compatibleWith: nil).unsafelyUnwrapped
-        public static let defaultNeutral03 = UIColor(named: "default-neutral-3", in: bundle, compatibleWith: nil).unsafelyUnwrapped
-        public static let defaultNeutral04 = UIColor(named: "default-neutral-4", in: bundle, compatibleWith: nil).unsafelyUnwrapped
-        public static let defaultNeutral05 = UIColor(named: "default-neutral-5", in: bundle, compatibleWith: nil).unsafelyUnwrapped
-        public static let defaultNeutral06 = UIColor(named: "default-neutral-6", in: bundle, compatibleWith: nil).unsafelyUnwrapped
-        public static let defaultNeutral07 = UIColor(named: "default-neutral-7", in: bundle, compatibleWith: nil).unsafelyUnwrapped
-        public static let defaultNeutral08 = UIColor(named: "default-neutral-8", in: bundle, compatibleWith: nil).unsafelyUnwrapped
         public static let neutralLight = UIColor(named: "default-neutral-light", in: bundle, compatibleWith: nil).unsafelyUnwrapped
         public static let neutralDark = UIColor(named: "default-neutral-dark", in: bundle, compatibleWith: nil).unsafelyUnwrapped
         public static let neutralShadow = UIColor(named: "default-neutral-shadow", in: bundle, compatibleWith: nil).unsafelyUnwrapped
