@@ -14,16 +14,6 @@ public extension UIColor {
             public let child50: UIColor
         }
         
-        public struct NeutralUIColor: Hashable {
-            
-            public let base: UIColor
-            public let child10: UIColor
-            public let child20: UIColor
-            public let child40: UIColor
-            public let child50: UIColor
-            public let child60: UIColor
-        }
-        
         // MARK: - Feedback
         
         public static let errorPrimary = UIColor(named: "errorPrimary", in: bundle, compatibleWith: nil).unsafelyUnwrapped
