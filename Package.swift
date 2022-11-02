@@ -21,7 +21,7 @@ let package = Package(
         .target(
             name: "TeamworkMobileDesignSystem",
             dependencies: [],
-            path: "ios/Sources/DesignSystem"),
+            path: "ios/Sources"),
         .testTarget(
             name: "DesignSystemTests",
             dependencies: ["TeamworkMobileDesignSystem"],

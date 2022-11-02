@@ -13,9 +13,6 @@
 module.exports = function({ dictionary, options }) {
   return `import SwiftUI
 
-class MobileDesignSystemTokens {}
-let bundle = Bundle(for: MobileDesignSystemTokens.self)
-
 @available(iOS 13.0, *)
 extension Color {\n\n` +
   dictionary.allProperties.map(token => {
