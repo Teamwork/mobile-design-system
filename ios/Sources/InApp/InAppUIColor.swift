@@ -35,30 +35,19 @@ public extension UIColor {
         
         // MARK: - Fill
 
-        public static let secondarySystemFill = UIColor(named: "secondarySystemFill", in: bundle, compatibleWith: nil).unsafelyUnwrapped
-        public static let tertiarySystemFill = UIColor(named: "tertiarySystemFill", in: bundle, compatibleWith: nil).unsafelyUnwrapped
-        public static let quaternarySystemFill = UIColor(named: "quaternarySystemFill", in: bundle, compatibleWith: nil).unsafelyUnwrapped
+        public static let secondarySystemFill = UIColor.secondarySystemFill
+        public static let tertiarySystemFill = UIColor.tertiarySystemFill
+        public static let quaternarySystemFill = UIColor.quaternarySystemFill
         
         // MARK: - System Background
         
-        public static let systemBackground = UIColor(named: "systemBackground", in: bundle, compatibleWith: nil).unsafelyUnwrapped
-        public static let secondarySystemBackground = UIColor(named: "secondarySystemBackground", in: bundle, compatibleWith: nil).unsafelyUnwrapped
+        public static let systemBackground = UIColor.systemBackground
+        public static let secondarySystemBackground = UIColor.secondarySystemBackground
         
         // MARK: - Label
         
-        public static let label = UIColor(named: "label", in: bundle, compatibleWith: nil).unsafelyUnwrapped
-        public static let secondaryLabel = UIColor(named: "secondaryLabel", in: bundle, compatibleWith: nil).unsafelyUnwrapped
-        public static let tertiaryLabel = UIColor(named: "tertiaryLabel", in: bundle, compatibleWith: nil).unsafelyUnwrapped
-        
-        public static let neutral = NeutralUIColor(
-            base: .paletteNeutral30,
-            child10: .paletteNeutral10,
-            child20: .paletteNeutral20,
-            child40: .paletteNeutral40,
-            child50: .paletteNeutral50,
-            child60: .paletteNeutral60,
-            black: UIColor(named: "ui-neutral-black", in: bundle, compatibleWith: nil)!,
-            white: UIColor(named: "ui-neutral-white", in: bundle, compatibleWith: nil)!
-        )
+        public static let label = UIColor.label
+        public static let secondaryLabel = UIColor.secondaryLabel
+        public static let tertiaryLabel = UIColor.tertiaryLabel
     }
 }
