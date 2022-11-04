@@ -126,8 +126,8 @@ extension Color {
   public static var colorTextOnDecorativeSubtle01: Color {
     return Color.init("colorTextOnDecorativeSubtle01", bundle: bundle)
   }
-  public static var colorIconOnPalette: Color {
-    return Color.init("colorIconOnPalette", bundle: bundle)
+  public static var colorIconOnDecoration: Color {
+    return Color.init("colorIconOnDecoration", bundle: bundle)
   }
   public static var colorIconOnSuccess: Color {
     return Color.init("colorIconOnSuccess", bundle: bundle)
