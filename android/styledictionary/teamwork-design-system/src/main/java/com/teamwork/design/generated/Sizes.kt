@@ -11,7 +11,8 @@ object BorderWidth {
 
 object BorderRadius {
 	val none = 0.dp
-	val xs = 4.dp
+	val xxs = 4.dp
+	val xs = 6.dp
 	val sm = 8.dp
 	val md = 12.dp
 	val lg = 16.dp
