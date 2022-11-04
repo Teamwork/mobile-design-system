@@ -123,6 +123,21 @@ extension Color {
   public static var colorTextOnDecorativeSubtle01: Color {
     return Color.init("colorTextOnDecorativeSubtle01", bundle: bundle)
   }
+  public static var colorTextOnAction: Color {
+    return Color.init("colorTextOnAction", bundle: bundle)
+  }
+  public static var colorTextOnCritical: Color {
+    return Color.init("colorTextOnCritical", bundle: bundle)
+  }
+  public static var colorTextOnWarning: Color {
+    return Color.init("colorTextOnWarning", bundle: bundle)
+  }
+  public static var colorTextOnSuccess: Color {
+    return Color.init("colorTextOnSuccess", bundle: bundle)
+  }
+  public static var colorTextOnInfo: Color {
+    return Color.init("colorTextOnInfo", bundle: bundle)
+  }
   public static var colorIconOnDecoration: Color {
     return Color.init("colorIconOnDecoration", bundle: bundle)
   }

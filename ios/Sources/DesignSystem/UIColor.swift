@@ -121,6 +121,21 @@ extension UIColor {
   public static var colorTextOnDecorativeSubtle01: UIColor {
     return UIColor(named: "colorTextOnDecorativeSubtle01", in: bundle, compatibleWith: nil).unsafelyUnwrapped
   }
+  public static var colorTextOnAction: UIColor {
+    return UIColor(named: "colorTextOnAction", in: bundle, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextOnCritical: UIColor {
+    return UIColor(named: "colorTextOnCritical", in: bundle, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextOnWarning: UIColor {
+    return UIColor(named: "colorTextOnWarning", in: bundle, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextOnSuccess: UIColor {
+    return UIColor(named: "colorTextOnSuccess", in: bundle, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextOnInfo: UIColor {
+    return UIColor(named: "colorTextOnInfo", in: bundle, compatibleWith: nil).unsafelyUnwrapped
+  }
   public static var colorIconOnDecoration: UIColor {
     return UIColor(named: "colorIconOnDecoration", in: bundle, compatibleWith: nil).unsafelyUnwrapped
   }
