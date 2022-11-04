@@ -136,6 +136,9 @@ extension UIColor {
   public static var colorTextOnInfo: UIColor {
     return UIColor(named: "colorTextOnInfo", in: bundle, compatibleWith: nil).unsafelyUnwrapped
   }
+  public static var colorTextOnPalette: UIColor {
+    return UIColor(named: "colorTextOnPalette", in: bundle, compatibleWith: nil).unsafelyUnwrapped
+  }
   public static var colorIconOnDecoration: UIColor {
     return UIColor(named: "colorIconOnDecoration", in: bundle, compatibleWith: nil).unsafelyUnwrapped
   }

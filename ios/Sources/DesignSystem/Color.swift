@@ -138,6 +138,9 @@ extension Color {
   public static var colorTextOnInfo: Color {
     return Color.init("colorTextOnInfo", bundle: bundle)
   }
+  public static var colorTextOnPalette: Color {
+    return Color.init("colorTextOnPalette", bundle: bundle)
+  }
   public static var colorIconOnDecoration: Color {
     return Color.init("colorIconOnDecoration", bundle: bundle)
   }

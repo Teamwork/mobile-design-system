@@ -197,6 +197,10 @@
         "on-info": {
           "value": "#fff",
           "type": "color"
+        },
+        "on-palette": {
+          "value": "#fff",
+          "type": "color"
         }
       },
       "icon": {
