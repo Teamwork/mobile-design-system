@@ -177,6 +177,48 @@
               "type": "color"
             }
           }
+        },
+        "inverted": {
+          "primary": {
+            "value": "#000",
+            "type": "color"
+          },
+          "secondary": {
+            "value": "#3c3c4399",
+            "type": "color"
+          },
+          "tertiary": {
+            "value": "#3c3c434d",
+            "type": "color"
+          },
+          "quaternary": {
+            "value": "#3c3c432e",
+            "type": "color"
+          }
+        },
+        "on-action": {
+          "value": "#000",
+          "type": "color"
+        },
+        "on-success": {
+          "value": "#000",
+          "type": "color"
+        },
+        "on-critical": {
+          "value": "#000",
+          "type": "color"
+        },
+        "on-info": {
+          "value": "#000",
+          "type": "color"
+        },
+        "on-palette": {
+          "value": "#000",
+          "type": "color"
+        },
+        "on-warning": {
+          "value": "#000",
+          "type": "color"
         }
       },
       "icon": {

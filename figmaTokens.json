@@ -1198,6 +1198,18 @@
             "primary": {
               "value": "#fff",
               "type": "color"
+            },
+            "seondary": {
+              "value": "rgba(235,235,245,0.6)",
+              "type": "color"
+            },
+            "tertiary": {
+              "value": "rgba(235,235,245,0.3)",
+              "type": "color"
+            },
+            "quaternary": {
+              "value": "rgba(235,235,245,0.18)",
+              "type": "color"
             }
           }
         },
@@ -1791,6 +1803,48 @@
                 "type": "color"
               }
             }
+          },
+          "inverted": {
+            "primary": {
+              "value": "#000",
+              "type": "color"
+            },
+            "secondary": {
+              "value": "rgba(60,60,67,0.6)",
+              "type": "color"
+            },
+            "tertiary": {
+              "value": "rgba(60,60,67,0.3)",
+              "type": "color"
+            },
+            "quaternary": {
+              "value": "rgba(60,60,67,0.18)",
+              "type": "color"
+            }
+          },
+          "on-action": {
+            "value": "#000",
+            "type": "color"
+          },
+          "on-success": {
+            "value": "#000",
+            "type": "color"
+          },
+          "on-critical": {
+            "value": "#000",
+            "type": "color"
+          },
+          "on-info": {
+            "value": "#000",
+            "type": "color"
+          },
+          "on-palette": {
+            "value": "#000",
+            "type": "color"
+          },
+          "on-warning": {
+            "value": "#000",
+            "type": "color"
           }
         },
         "icon": {

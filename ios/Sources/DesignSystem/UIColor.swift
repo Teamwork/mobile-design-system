@@ -121,6 +121,36 @@ extension UIColor {
   public static var colorTextOnDecorativeSubtle01: UIColor {
     return UIColor(named: "colorTextOnDecorativeSubtle01", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
+  public static var colorTextInvertedPrimary: UIColor {
+    return UIColor(named: "colorTextInvertedPrimary", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextInvertedSecondary: UIColor {
+    return UIColor(named: "colorTextInvertedSecondary", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextInvertedTertiary: UIColor {
+    return UIColor(named: "colorTextInvertedTertiary", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextInvertedQuaternary: UIColor {
+    return UIColor(named: "colorTextInvertedQuaternary", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextOnAction: UIColor {
+    return UIColor(named: "colorTextOnAction", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextOnSuccess: UIColor {
+    return UIColor(named: "colorTextOnSuccess", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextOnCritical: UIColor {
+    return UIColor(named: "colorTextOnCritical", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextOnInfo: UIColor {
+    return UIColor(named: "colorTextOnInfo", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextOnPalette: UIColor {
+    return UIColor(named: "colorTextOnPalette", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextOnWarning: UIColor {
+    return UIColor(named: "colorTextOnWarning", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
   public static var colorIconOnPalette: UIColor {
     return UIColor(named: "colorIconOnPalette", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }

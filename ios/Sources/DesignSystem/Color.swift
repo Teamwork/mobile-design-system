@@ -123,6 +123,36 @@ extension Color {
   public static var colorTextOnDecorativeSubtle01: Color {
     return Color.init("colorTextOnDecorativeSubtle01", bundle: .module)
   }
+  public static var colorTextInvertedPrimary: Color {
+    return Color.init("colorTextInvertedPrimary", bundle: .module)
+  }
+  public static var colorTextInvertedSecondary: Color {
+    return Color.init("colorTextInvertedSecondary", bundle: .module)
+  }
+  public static var colorTextInvertedTertiary: Color {
+    return Color.init("colorTextInvertedTertiary", bundle: .module)
+  }
+  public static var colorTextInvertedQuaternary: Color {
+    return Color.init("colorTextInvertedQuaternary", bundle: .module)
+  }
+  public static var colorTextOnAction: Color {
+    return Color.init("colorTextOnAction", bundle: .module)
+  }
+  public static var colorTextOnSuccess: Color {
+    return Color.init("colorTextOnSuccess", bundle: .module)
+  }
+  public static var colorTextOnCritical: Color {
+    return Color.init("colorTextOnCritical", bundle: .module)
+  }
+  public static var colorTextOnInfo: Color {
+    return Color.init("colorTextOnInfo", bundle: .module)
+  }
+  public static var colorTextOnPalette: Color {
+    return Color.init("colorTextOnPalette", bundle: .module)
+  }
+  public static var colorTextOnWarning: Color {
+    return Color.init("colorTextOnWarning", bundle: .module)
+  }
   public static var colorIconOnPalette: Color {
     return Color.init("colorIconOnPalette", bundle: .module)
   }
