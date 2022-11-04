@@ -407,8 +407,12 @@
         "value": "0",
         "type": "borderRadius"
       },
-      "xs": {
+      "xxs": {
         "value": "4",
+        "type": "borderRadius"
+      },
+      "xs": {
+        "value": "6",
         "type": "borderRadius"
       },
       "sm": {
@@ -1165,10 +1169,30 @@
                 "type": "color"
               }
             }
+          },
+          "on-action": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "on-critical": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "on-success": {
+            "value": "#fff",
+            "type": "color"
+          },
+          "on-warning": {
+            "value": "#fff",
+            "type": "color"
+          },
+          "on-info": {
+            "value": "#fff",
+            "type": "color"
           }
         },
         "icon": {
-          "on-palette": {
+          "on-decoration": {
             "value": "#ffffff",
             "type": "color"
           },
@@ -1760,7 +1784,7 @@
           }
         },
         "icon": {
-          "on-palette": {
+          "on-decoration": {
             "value": "#ffffff",
             "type": "color"
           },
