@@ -25,20 +25,6 @@ public extension Theme {
         public let brandSecondary07: DynamicColor
         public let brandSecondary08: DynamicColor
 
-        public let neutral01: UIColor
-        public let neutral02: UIColor
-        public let neutral03: UIColor
-        public let neutral04: UIColor
-        public let neutral05: UIColor
-        public let neutral06: UIColor
-        public let neutral07: UIColor
-        public let neutral08: UIColor
-
-        public let neutralLight: UIColor
-        public let neutralDark: UIColor
-        public let neutralBackground: UIColor
-        public let neutralShadow: UIColor
-
         public let feedbackAccent: DynamicColor
         public let feedbackError: DynamicColor
         public let feedbackWarning: DynamicColor

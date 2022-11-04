@@ -22,7 +22,12 @@ let package = Package(
         .target(
             name: "TeamworkMobileDesignSystem",
             dependencies: [],
-            path: "ios/Sources"),
+            path: "ios/Sources",
+            resources: [
+                .process("DesignSystem/Colors.xcassets"),
+                .process("InApp/InAppColors.xcassets")
+            ]
+        ),
         .testTarget(
             name: "DesignSystemTests",
             dependencies: ["TeamworkMobileDesignSystem"],

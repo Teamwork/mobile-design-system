@@ -69,17 +69,6 @@ public extension UIColor {
     static var brandYellowBase: UIColor { colors.brandSecondary08.base }
     static var brandIndigoBase: UIColor { colors.brandSecondary06.base }
 
-    static var neutral01: UIColor { colors.neutral01 }
-    static var neutral02: UIColor { colors.neutral02 }
-    static var neutral03: UIColor { colors.neutral03 }
-    static var neutral04: UIColor { colors.neutral04 }
-    static var neutral05: UIColor { colors.neutral05 }
-    static var neutral06: UIColor { colors.neutral06 }
-    static var neutral07: UIColor { colors.neutral07 }
-    static var neutral08: UIColor { colors.neutral08 }
-
-    static var neutralWhite: UIColor { colors.neutralBackground }
-
     static var feedbackAccentBase: UIColor { colors.feedbackAccent.base }
     // swiftlint:disable:next force_unwrapping
     static var feedbackAccent10 = UIColor(named: "default-feedback-accent-10", in: .module, compatibleWith: nil)!
@@ -93,7 +82,4 @@ public extension UIColor {
     
     // Cell selection
     static var backgroundSelected: UIColor { .systemGray3 }
-    
-    // App shadow
-    static var shadow: UIColor { colors.neutralShadow }
 }

@@ -9,7 +9,7 @@
 extension UIColor {\n` +
   dictionary.allProperties.map(token => {
     return `  public static var ${token.name}: UIColor {
-    return UIColor(named: "${token.name}", in: bundle, compatibleWith: nil).unsafelyUnwrapped
+    return UIColor(named: "${token.name}", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }`
   }).join(`\n`) +
   `\n}`
