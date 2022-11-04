@@ -1808,7 +1808,7 @@
           }
         },
         "icon": {
-          "on-decoration": {
+          "on-palette": {
             "value": "#ffffff",
             "type": "color"
           },
