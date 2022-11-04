@@ -121,6 +121,8 @@ extension UIColor {
   public static var colorTextOnDecorativeSubtle01: UIColor {
     return UIColor(named: "colorTextOnDecorativeSubtle01", in: bundle, compatibleWith: nil).unsafelyUnwrapped
   }
+  public static var colorIconOnDecoration: UIColor {
+    return UIColor(named: "colorIconOnDecoration", in: bundle, compatibleWith: nil).unsafelyUnwrapped
   }
   public static var colorIconOnSuccess: UIColor {
     return UIColor(named: "colorIconOnSuccess", in: bundle, compatibleWith: nil).unsafelyUnwrapped
