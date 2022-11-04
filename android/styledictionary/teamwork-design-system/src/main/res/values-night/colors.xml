@@ -42,6 +42,16 @@
 	<color name="color_text_on_decorative_subtle_03">#fff0ca</color>
 	<color name="color_text_on_decorative_subtle_02">#e2daff</color>
 	<color name="color_text_on_decorative_subtle_01">#d8e0ff</color>
+	<color name="color_text_inverted_primary">#000</color>
+	<color name="color_text_inverted_secondary">#3c3c4399</color>
+	<color name="color_text_inverted_tertiary">#3c3c434d</color>
+	<color name="color_text_inverted_quaternary">#3c3c432e</color>
+	<color name="color_text_on_action">#000</color>
+	<color name="color_text_on_success">#000</color>
+	<color name="color_text_on_critical">#000</color>
+	<color name="color_text_on_info">#000</color>
+	<color name="color_text_on_palette">#000</color>
+	<color name="color_text_on_warning">#000</color>
 	<color name="color_icon_on_palette">#ffffff</color>
 	<color name="color_icon_on_success">#ffffff</color>
 	<color name="color_icon_on_warning">#ffffff</color>
