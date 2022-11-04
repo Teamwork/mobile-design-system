@@ -14,7 +14,13 @@
           "red": "1.0000",
           "green": "1.0000"
         }
-      }
+      },
+      "appearances": [
+        {
+          "appearance": "luminosity",
+          "value": "dark"
+        }
+      ]
     }
   ]
 }
