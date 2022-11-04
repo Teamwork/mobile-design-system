@@ -1,1 +1,5 @@
 node_modules
+
+# Mac specific ignores
+.DS_STORE
+**/.DS_Store
