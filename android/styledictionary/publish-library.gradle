@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'maven-publish'
 apply plugin: 'com.jfrog.artifactory'
-//apply from: '../dependencies.gradle'
+apply from: '../dependencies.gradle'
 
 project.ext.mavenTeamworkGroupId = 'com.teamwork.android'
 // Project properties to be overridden by the module

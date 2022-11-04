@@ -11,7 +11,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/design-system" />
+            <option value="$PROJECT_DIR$/teamwork-design-system" />
           </set>
         </option>
       </GradleProjectSettings>

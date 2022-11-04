@@ -2,8 +2,8 @@ const StyleDictionary = require('style-dictionary');
 const fs = require('fs-extra');
 
 const iosPath = `ios/Sources/DesignSystem/`;
-const androidPath = `android/styledictionary/design-system/src/main/res/`;
-const composePath = `android/styledictionary/design-system/src/main/java/com/teamwork/design/generated/`;
+const androidPath = `android/styledictionary/teamwork-design-system/src/main/res/`;
+const composePath = `android/styledictionary/teamwork-design-system/src/main/java/com/teamwork/design/generated/`;
 const webPath = `web/dist/`;
 
 // before this runs we should clean the directories we are generating files in

@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Teamwork"
 include ':app'
-include ':design-system'
+include ':teamwork-design-system'
