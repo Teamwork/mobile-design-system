@@ -1193,6 +1193,12 @@
           "on-info": {
             "value": "#fff",
             "type": "color"
+          },
+          "inverted": {
+            "primary": {
+              "value": "#fff",
+              "type": "color"
+            }
           }
         },
         "icon": {
