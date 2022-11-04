@@ -1186,7 +1186,6 @@
             "value": "#fff",
             "type": "color"
           },
-
           "on-info": {
             "value": "#fff",
             "type": "color"
@@ -1782,6 +1781,26 @@
                 "type": "color"
               }
             }
+          },
+          "on-action": {
+            "value": "#fff",
+            "type": "color"
+          },
+          "on-critical": {
+            "value": "#fff",
+            "type": "color"
+          },
+          "on-warning": {
+            "value": "#fff",
+            "type": "color"
+          },
+          "on-success": {
+            "value": "#fff",
+            "type": "color"
+          },
+          "on-info": {
+            "value": "#fff",
+            "type": "color"
           }
         },
         "icon": {
