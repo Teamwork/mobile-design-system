@@ -1,4 +1,4 @@
-package com.teamwork.design.generated;
+package com.teamwork.design.generated
   
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
@@ -16,6 +16,7 @@ private val Poppins = FontFamily(
   Font(R.font.poppins_bold, weight = FontWeight.Bold),
 )
   
+@Suppress("unused")
 object TeamworkTypography {
 	/**
 	 * {

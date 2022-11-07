@@ -21,7 +21,6 @@ module.exports = function ({ dictionary, options }) {
   return `package com.teamwork.design.generated
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.unit.*
 
 val ${getClassName(isDarkTheme)} = ${colorsClassName}(
 ${generateDataClassArguments(colorGroups)}

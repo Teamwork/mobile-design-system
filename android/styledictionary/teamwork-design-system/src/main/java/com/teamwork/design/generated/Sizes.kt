@@ -1,4 +1,6 @@
-package com.teamwork.design.generated;
+@file:Suppress("unused")
+  
+package com.teamwork.design.generated
 
 import androidx.compose.ui.unit.dp
   
