@@ -1,7 +1,6 @@
 package com.teamwork.design.generated
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.unit.*
 
 data class TeamworkColors(
 	val link: Link = Link(

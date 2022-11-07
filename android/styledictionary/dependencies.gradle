@@ -1,4 +1,4 @@
-Constants Gradle file to use for dependencies versions (and related properties)
+// Constants Gradle file to use for dependencies versions (and related properties)
 
 ext {
 
