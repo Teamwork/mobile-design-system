@@ -628,6 +628,12 @@
             }
           }
         }
+      },
+      "badassColour": {
+        "primary": {
+          "value": "#c803ff",
+          "type": "color"
+        }
       }
     }
   }
