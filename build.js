@@ -2,13 +2,17 @@ const StyleDictionary = require('style-dictionary');
 const fs = require('fs-extra');
 
 const iosPath = `ios/Sources/DesignSystem/`;
-const androidPath = `android/styledictionary/src/main/res/`;
-const composePath = `android/styledictionary/src/main/`;
+const androidPath = `android/styledictionary/teamwork-design-system/src/main/res/`;
+const composePath = `android/styledictionary/teamwork-design-system/src/main/java/com/teamwork/design/generated/`;
 const webPath = `web/dist/`;
+
+// the name of the class generated for holding the color tokens for Compose
+const composeColorsClassName = "TeamworkColors";
 
 // before this runs we should clean the directories we are generating files in
 // to make sure they are ✨clean✨
-[iosPath, androidPath, composePath, webPath].forEach(dir => {
+// TODO clean the Android directory again!
+[iosPath, composePath, webPath].forEach(dir => {
   console.log(`🧹 Cleaning ${dir}...`);
   fs.removeSync(dir);
 });
@@ -37,7 +41,12 @@ const webPath = `web/dist/`;
       swiftUIColor: require('./formats/swiftUIColor'),
       swiftSize: require('./formats/swiftSize'),
       //android
-      androidColor: require('./formats/androidColor')
+      androidColor: require('./formats/androidColor'),
+      androidTypography: require('./formats/androidTypography'),
+      composeColor: require('./formats/composeColor'),
+      composeTeamworkColors: require('./formats/composeTeamworkColors'),
+      composeSize: require('./formats/composeSize'),
+      composeTypography: require('./formats/composeTypography')
     },
     
     source: [
@@ -106,32 +115,38 @@ const webPath = `web/dist/`;
         transformGroup: 'compose',
         buildPath: composePath,
         transforms: ["color/composeColor", "name/ti/camel", "colorCompose"],
-        files: [{
-            destination: "ColorsLight.kt",
-            format: `compose/object`,
-            filter: (token) => token.type === `color` && token.filePath === `tokens/light.json`,
-            className: "ColorsLight",
-            packageName: "com.teamwork.design",
-            options: {
-              // this is important!
-              // this will keep token references intact so that we don't need
-              // to generate *all* color resources for dark mode, only
-              // the specific ones that change
-              outputReferences: true
-            },
+        files: [,{
+          destination: "ColorsLight.kt",
+          format: `composeColor`,
+          filter: (token) => token.type === `color` && token.filePath === `tokens/light.json`,
+          options: {
+            colorsClassName: composeColorsClassName
+          }
+      },{
+          destination: "ColorsDark.kt",
+          format: `composeColor`,
+          filter: (token) => token.type === `color` && token.filePath === `tokens/dark.json`,
+          options: {
+            colorsClassName: composeColorsClassName
+          }
         },{
-            destination: "ColorsDark.kt",
-            format: `compose/object`,
-            filter: (token) => token.type === `color` && token.filePath === `tokens/dark.json`,
-            className: "ColorsDark",
-            packageName: "com.teamwork.design",
-            options: {
-              // this is important!
-              // this will keep token references intact so that we don't need
-              // to generate *all* color resources for dark mode, only
-              // the specific ones that change
-              outputReferences: true
-            },
+          destination: `${composeColorsClassName}.kt`,
+          filter: (token) => token.type  === 'color',
+          format: `composeTeamworkColors`,
+          options: {
+            className: composeColorsClassName
+          }
+        },{
+          destination: `TeamworkTypography.kt`,
+          filter: (token) => token.type  === 'typography',
+          format: `composeTypography`,
+          options: {
+            className: "TeamworkTypography"
+          }
+        },{
+          destination: `Sizes.kt`,
+          filter: (token) => token.type  !== 'color' && token.type != 'typography',
+          format: `composeSize`
         }]
       },
       
@@ -158,10 +173,9 @@ const webPath = `web/dist/`;
           format: `androidColor`,
           filter: (token) => token.type === `color` && token.filePath === `tokens/dark.json`
         },{
-          destination: `values/font_dimens.xml`,
-          filter: (token) => token.type === `size` &&
-            token.type === `font`,
-          format: `android/resources`
+          destination: `values/typography.xml`,
+          filter: (token) => token.type  === 'typography',
+          format: `androidTypography`
         },{
           destination: `values/dimens.xml`,
           filter: (token) => token.type === `size` &&

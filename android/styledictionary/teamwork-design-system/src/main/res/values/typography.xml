@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--
+    Token Name: typography_display_small
+    ========================= 
+    fontFamily => Poppins
+	fontWeight => Regular
+	lineHeight => 44
+	fontSize => 36
+	letterSpacing => -3%
+	paragraphSpacing => 
+	paragraphIndent => 
+	textCase => none
+	textDecoration => none
+  -->
+  <style name="typography_display_small">
+    <item name="android:fontFamily">Poppins</item>
+    <item name="android:textSize">36sp</item>
+    <item name="android:letterSpacing">0.97</item>
+    <item name="android:lineSpacingExtra">8sp</item>
+  </style>
+
+  <!--
+    Token Name: typography_display_medium
+    ========================= 
+    fontFamily => Poppins
+	fontWeight => Regular
+	lineHeight => 52
+	fontSize => 45
+	letterSpacing => -3%
+	paragraphSpacing => 
+	paragraphIndent => 
+	textCase => none
+	textDecoration => none
+  -->
+  <style name="typography_display_medium">
+    <item name="android:fontFamily">Poppins</item>
+    <item name="android:textSize">45sp</item>
+    <item name="android:letterSpacing">0.97</item>
+    <item name="android:lineSpacingExtra">7sp</item>
+  </style>
+
+  <!--
+    Token Name: typography_display_large
+    ========================= 
+    fontFamily => Poppins
+	fontWeight => Regular
+	lineHeight => 64
+	fontSize => 57
+	letterSpacing => -4%
+	paragraphSpacing => 
+	paragraphIndent => 
+	textCase => none
+	textDecoration => none
+  -->
+  <style name="typography_display_large">
+    <item name="android:fontFamily">Poppins</item>
+    <item name="android:textSize">57sp</item>
+    <item name="android:letterSpacing">0.96</item>
+    <item name="android:lineSpacingExtra">7sp</item>
+  </style>
+
+  <!--
+    Token Name: typography_headline_small
+    ========================= 
+    fontFamily => Poppins
+	fontWeight => Regular
+	lineHeight => 32
+	fontSize => 24
+	letterSpacing => -3%
+	paragraphSpacing => 
+	paragraphIndent => 
+	textCase => none
+	textDecoration => none
+  -->
+  <style name="typography_headline_small">
+    <item name="android:fontFamily">Poppins</item>
+    <item name="android:textSize">24sp</item>
+    <item name="android:letterSpacing">0.97</item>
+    <item name="android:lineSpacingExtra">8sp</item>
+  </style>
+
+  <!--
+    Token Name: typography_headline_medium
+    ========================= 
+    fontFamily => Poppins
+	fontWeight => Regular
+	lineHeight => 36
+	fontSize => 28
+	letterSpacing => -3%
+	paragraphSpacing => 
+	paragraphIndent => 
+	textCase => none
+	textDecoration => none
+  -->
+  <style name="typography_headline_medium">
+    <item name="android:fontFamily">Poppins</item>
+    <item name="android:textSize">28sp</item>
+    <item name="android:letterSpacing">0.97</item>
+    <item name="android:lineSpacingExtra">8sp</item>
+  </style>
+
+  <!--
+    Token Name: typography_headline_large
+    ========================= 
+    fontFamily => Poppins
+	fontWeight => Regular
+	lineHeight => 40
+	fontSize => 32
+	letterSpacing => -2%
+	paragraphSpacing => 
+	paragraphIndent => 
+	textCase => none
+	textDecoration => none
+  -->
+  <style name="typography_headline_large">
+    <item name="android:fontFamily">Poppins</item>
+    <item name="android:textSize">32sp</item>
+    <item name="android:letterSpacing">0.98</item>
+    <item name="android:lineSpacingExtra">8sp</item>
+  </style>
+
+  <!--
+    Token Name: typography_title_small
+    ========================= 
+    fontFamily => Poppins
+	fontWeight => Medium
+	lineHeight => 20
+	fontSize => 14
+	letterSpacing => -2%
+	paragraphSpacing => 
+	paragraphIndent => 
+	textCase => none
+	textDecoration => none
+  -->
+  <style name="typography_title_small">
+    <item name="android:fontFamily">Poppins</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:letterSpacing">0.98</item>
+    <item name="android:lineSpacingExtra">6sp</item>
+  </style>
+
+  <!--
+    Token Name: typography_title_medium
+    ========================= 
+    fontFamily => Poppins
+	fontWeight => Medium
+	lineHeight => 24
+	fontSize => 16
+	letterSpacing => -3%
+	paragraphSpacing => 
+	paragraphIndent => 
+	textCase => none
+	textDecoration => none
+  -->
+  <style name="typography_title_medium">
+    <item name="android:fontFamily">Poppins</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:letterSpacing">0.97</item>
+    <item name="android:lineSpacingExtra">8sp</item>
+  </style>
+
+  <!--
+    Token Name: typography_title_large
+    ========================= 
+    fontFamily => Poppins
+	fontWeight => Regular
+	lineHeight => 28
+	fontSize => 22
+	letterSpacing => -2%
+	paragraphSpacing => 
+	paragraphIndent => 
+	textCase => none
+	textDecoration => none
+  -->
+  <style name="typography_title_large">
+    <item name="android:fontFamily">Poppins</item>
+    <item name="android:textSize">22sp</item>
+    <item name="android:letterSpacing">0.98</item>
+    <item name="android:lineSpacingExtra">6sp</item>
+  </style>
+
+  <!--
+    Token Name: typography_label_small
+    ========================= 
+    fontFamily => Poppins
+	fontWeight => Medium
+	lineHeight => 16
+	fontSize => 11
+	letterSpacing => 0%
+	paragraphSpacing => 
+	paragraphIndent => 
+	textCase => none
+	textDecoration => none
+  -->
+  <style name="typography_label_small">
+    <item name="android:fontFamily">Poppins</item>
+    <item name="android:textSize">11sp</item>
+    <item name="android:letterSpacing">1</item>
+    <item name="android:lineSpacingExtra">5sp</item>
+  </style>
+
+  <!--
+    Token Name: typography_label_medium
+    ========================= 
+    fontFamily => Poppins
+	fontWeight => Medium
+	lineHeight => 16
+	fontSize => 12
+	letterSpacing => -1%
+	paragraphSpacing => 
+	paragraphIndent => 
+	textCase => none
+	textDecoration => none
+  -->
+  <style name="typography_label_medium">
+    <item name="android:fontFamily">Poppins</item>
+    <item name="android:textSize">12sp</item>
+    <item name="android:letterSpacing">0.99</item>
+    <item name="android:lineSpacingExtra">4sp</item>
+  </style>
+
+  <!--
+    Token Name: typography_label_large
+    ========================= 
+    fontFamily => Poppins
+	fontWeight => Medium
+	lineHeight => 20
+	fontSize => 14
+	letterSpacing => -3%
+	paragraphSpacing => 
+	paragraphIndent => 
+	textCase => none
+	textDecoration => none
+  -->
+  <style name="typography_label_large">
+    <item name="android:fontFamily">Poppins</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:letterSpacing">0.97</item>
+    <item name="android:lineSpacingExtra">6sp</item>
+  </style>
+
+  <!--
+    Token Name: typography_body_small
+    ========================= 
+    fontFamily => Roboto
+	fontWeight => Regular
+	lineHeight => 16
+	fontSize => 12
+	letterSpacing => 0.4
+	paragraphSpacing => 
+	paragraphIndent => 
+	textCase => none
+	textDecoration => none
+  -->
+  <style name="typography_body_small">
+    <item name="android:fontFamily">Roboto</item>
+    <item name="android:textSize">12sp</item>
+    <item name="android:letterSpacing">0.4</item>
+    <item name="android:lineSpacingExtra">4sp</item>
+  </style>
+
+  <!--
+    Token Name: typography_body_medium
+    ========================= 
+    fontFamily => Roboto
+	fontWeight => Regular
+	lineHeight => 20
+	fontSize => 14
+	letterSpacing => 0.25
+	paragraphSpacing => 
+	paragraphIndent => 
+	textCase => none
+	textDecoration => none
+  -->
+  <style name="typography_body_medium">
+    <item name="android:fontFamily">Roboto</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:letterSpacing">0.25</item>
+    <item name="android:lineSpacingExtra">6sp</item>
+  </style>
+
+  <!--
+    Token Name: typography_body_large
+    ========================= 
+    fontFamily => Roboto
+	fontWeight => Regular
+	lineHeight => 24
+	fontSize => 16
+	letterSpacing => 0.5
+	paragraphSpacing => 
+	paragraphIndent => 
+	textCase => none
+	textDecoration => none
+  -->
+  <style name="typography_body_large">
+    <item name="android:fontFamily">Roboto</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:letterSpacing">0.5</item>
+    <item name="android:lineSpacingExtra">8sp</item>
+  </style>
+</resources>
