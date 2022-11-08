@@ -54,7 +54,7 @@ val LightColors = TeamworkColors(
 		textOnPalette = Color(0xFFF),
 		textOnInfo = Color(0xFFF),
 		textInvertedPrimary = Color(0xFFF),
-		textInvertedSeondary = Color(0xEBEBF599),
+		textInvertedSecondary = Color(0xEBEBF599),
 		textInvertedTertiary = Color(0xEBEBF54D),
 		textInvertedQuaternary = Color(0xEBEBF52E),
 	),
