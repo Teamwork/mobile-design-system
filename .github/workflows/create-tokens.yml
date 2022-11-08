@@ -1,34 +1,22 @@
-name: Generate Mobile files
-on: [push]
-env:
-  GH_TOKEN: ${{ secrets.GH_TOKEN }}
+name: Generate mobile files
+on: [pull_request]
 
 jobs:
-  changelog:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: 🔍 GH_TOKEN
-        if: env.GH_TOKEN == ''
-        env: 
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: echo "GH_TOKEN=${GITHUB_TOKEN}" >> $GITHUB_ENV
-
-      - name: 🤘 Checkout
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+      - name: 🤘 Setup Node.js environment
+        uses: actions/setup-node@v2.4.0
+      # Install dependencies
+      - name: ⬇ Install dependencies
+        run: npm ci
+      # Transform Figma Tokens JSON to something Style Dictionary can read, run Style Dictionary
+      - name: ⚙ Transform Figma Tokens JSON
+      - run: npm run build
+      # Add files that were created during a run, e.g. created files from style dictionary or token-transformer.
+      - name: 👏 Generate Mobile files
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          fetch-depth: 0
-          ref: master
-          token: ${{ env.GH_TOKEN }}
-
-      - name: ⚙ Generate Mobile files
-        uses: faberNovel/github-changelog-generator-action@master
-        with:
-          options: --token ${{ secrets.GITHUB_TOKEN }} --o changelog.md
-
-      - name: 🚀 Push generated files
-        run: |
-          git config --local user.name github-actions
-          git config --local user.email github-actions@github.com
-          git add changelog.md
-          git commit -m "🖉 Update changelog with ${GITHUB_REF#refs/*/}"
-          git push
+          commit_message: 📚 Updated files generated 
