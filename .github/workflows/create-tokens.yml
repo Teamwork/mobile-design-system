@@ -7,16 +7,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: 🤘 Setup Node.js environment
+      - name: Setup Node.js environment
         uses: actions/setup-node@v2.4.0
       # Install dependencies
-      - name: ⬇ Install dependencies
-        run: npm ci
+      - run: npm ci
       # Transform Figma Tokens JSON to something Style Dictionary can read, run Style Dictionary
-      - name: ⚙ Transform Figma Tokens JSON
       - run: npm run build
       # Add files that were created during a run, e.g. created files from style dictionary or token-transformer.
-      - name: 👏 Generate Mobile files
-        uses: stefanzweifel/git-auto-commit-action@v4
+      - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: 📚 Updated files generated 
