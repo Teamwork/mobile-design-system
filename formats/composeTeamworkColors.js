@@ -20,7 +20,6 @@ module.exports = function ({ dictionary, options }) {
   return `package com.teamwork.design.generated
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.unit.*
 
 data class ${className}(
 ${generateDataClassArguments(colorGroups)}

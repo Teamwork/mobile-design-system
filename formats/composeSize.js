@@ -13,7 +13,9 @@ module.exports = function ({ dictionary, options }) {
     return acc;
   }, /* inital value for the acc is an empty map*/ {});
 
-  return `package com.teamwork.design.generated;
+  return `@file:Suppress("unused")
+  
+package com.teamwork.design.generated
 
 import androidx.compose.ui.unit.dp
   

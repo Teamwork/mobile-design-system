@@ -1,7 +1,6 @@
 package com.teamwork.design.generated
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.unit.*
 
 val LightColors = TeamworkColors(
 	link = TeamworkColors.Link(
@@ -49,11 +48,11 @@ val LightColors = TeamworkColors(
 		textOnDecorativeSubtle01 = Color(0xFF364DAA),
 		textOnAction = Color(0xFFFFFFFF),
 		textOnCritical = Color(0xFFFFFFFF),
-		textOnSuccess = Color(0xFFF),
-		textOnWarning = Color(0xFFF),
-		textOnPalette = Color(0xFFF),
-		textOnInfo = Color(0xFFF),
-		textInvertedPrimary = Color(0xFFF),
+		textOnSuccess = Color(0xFFFFFFFF),
+		textOnWarning = Color(0xFFFFFFFF),
+		textOnPalette = Color(0xFFFFFFFF),
+		textOnInfo = Color(0xFFFFFFFF),
+		textInvertedPrimary = Color(0xFFFFFFFF),
 		textInvertedSecondary = Color(0xEBEBF599),
 		textInvertedTertiary = Color(0xEBEBF54D),
 		textInvertedQuaternary = Color(0xEBEBF52E),

@@ -44,6 +44,7 @@ const composeColorsClassName = "TeamworkColors";
       androidColor: require('./formats/androidColor'),
       androidTypography: require('./formats/androidTypography'),
       composeColor: require('./formats/composeColor'),
+      composeColorPalette: require('./formats/composeColorPalette'),
       composeTeamworkColors: require('./formats/composeTeamworkColors'),
       composeSize: require('./formats/composeSize'),
       composeTypography: require('./formats/composeTypography')
@@ -115,7 +116,14 @@ const composeColorsClassName = "TeamworkColors";
         transformGroup: 'compose',
         buildPath: composePath,
         transforms: ["color/composeColor", "name/ti/camel", "colorCompose"],
-        files: [,{
+        files: [{
+          destination: "ColorPalette.kt",
+          format: `composeColorPalette`,
+          filter: (token) => token.type === `color` && token.filePath === `tokens/global.json`,
+          options: {
+            className: "ColorPalette"
+          }
+        },{
           destination: "ColorsLight.kt",
           format: `composeColor`,
           filter: (token) => token.type === `color` && token.filePath === `tokens/light.json`,

@@ -22,4 +22,4 @@ ext {
         def keystorePropertiesFile = rootProject.file("local.properties")
         localProperties.load(new FileInputStream(keystorePropertiesFile))
     }
-}		 }
+}

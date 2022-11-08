@@ -13,7 +13,7 @@ const { indexOf, unary } = require("lodash");
  * ```
  */
 module.exports = function ({ dictionary, options }) {
-  return `package com.teamwork.design.generated;
+  return `package com.teamwork.design.generated
   
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
@@ -31,6 +31,7 @@ private val Poppins = FontFamily(
   Font(R.font.poppins_bold, weight = FontWeight.Bold),
 )
   
+@Suppress("unused")
 object TeamworkTypography {
 ${dictionary.allProperties.map(token => getTextStyleForToken(token)).join("\n\n")}
 }`;
