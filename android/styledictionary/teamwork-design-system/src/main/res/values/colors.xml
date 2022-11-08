@@ -49,7 +49,7 @@
 	<color name="color_text_on_palette">#fff</color>
 	<color name="color_text_on_info">#fff</color>
 	<color name="color_text_inverted_primary">#fff</color>
-	<color name="color_text_inverted_seondary">#ebebf599</color>
+	<color name="color_text_inverted_secondary">#ebebf599</color>
 	<color name="color_text_inverted_tertiary">#ebebf54d</color>
 	<color name="color_text_inverted_quaternary">#ebebf52e</color>
 	<color name="color_icon_on_palette">#ffffff</color>
