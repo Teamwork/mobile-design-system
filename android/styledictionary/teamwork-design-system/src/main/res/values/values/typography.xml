@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="typography_display_small">
+    <item name="android:fontFamily">Poppins</item>
+    <item name="android:textSize">36</item>
+    <item name="android:letterSpacing">0.97em</item>
+    <item name="android:lineSpacingExtra">44</item> <!-- TODO this is lineHeight not lineSpacingExtra -->
+  </style>
+
+  <style name="typography_display_medium">
+    <item name="android:fontFamily">Poppins</item>
+    <item name="android:textSize">45</item>
+    <item name="android:letterSpacing">0.97em</item>
+    <item name="android:lineSpacingExtra">52</item> <!-- TODO this is lineHeight not lineSpacingExtra -->
+  </style>
+
+  <style name="typography_display_large">
+    <item name="android:fontFamily">Poppins</item>
+    <item name="android:textSize">57</item>
+    <item name="android:letterSpacing">0.96em</item>
+    <item name="android:lineSpacingExtra">64</item> <!-- TODO this is lineHeight not lineSpacingExtra -->
+  </style>
+
+  <style name="typography_headline_small">
+    <item name="android:fontFamily">Poppins</item>
+    <item name="android:textSize">24</item>
+    <item name="android:letterSpacing">0.97em</item>
+    <item name="android:lineSpacingExtra">32</item> <!-- TODO this is lineHeight not lineSpacingExtra -->
+  </style>
+
+  <style name="typography_headline_medium">
+    <item name="android:fontFamily">Poppins</item>
+    <item name="android:textSize">28</item>
+    <item name="android:letterSpacing">0.97em</item>
+    <item name="android:lineSpacingExtra">36</item> <!-- TODO this is lineHeight not lineSpacingExtra -->
+  </style>
+
+  <style name="typography_headline_large">
+    <item name="android:fontFamily">Poppins</item>
+    <item name="android:textSize">32</item>
+    <item name="android:letterSpacing">0.98em</item>
+    <item name="android:lineSpacingExtra">40</item> <!-- TODO this is lineHeight not lineSpacingExtra -->
+  </style>
+
+  <style name="typography_title_small">
+    <item name="android:fontFamily">Poppins</item>
+    <item name="android:textSize">14</item>
+    <item name="android:letterSpacing">0.98em</item>
+    <item name="android:lineSpacingExtra">20</item> <!-- TODO this is lineHeight not lineSpacingExtra -->
+  </style>
+
+  <style name="typography_title_medium">
+    <item name="android:fontFamily">Poppins</item>
+    <item name="android:textSize">16</item>
+    <item name="android:letterSpacing">0.97em</item>
+    <item name="android:lineSpacingExtra">24</item> <!-- TODO this is lineHeight not lineSpacingExtra -->
+  </style>
+
+  <style name="typography_title_large">
+    <item name="android:fontFamily">Poppins</item>
+    <item name="android:textSize">22</item>
+    <item name="android:letterSpacing">0.98em</item>
+    <item name="android:lineSpacingExtra">28</item> <!-- TODO this is lineHeight not lineSpacingExtra -->
+  </style>
+
+  <style name="typography_label_small">
+    <item name="android:fontFamily">Poppins</item>
+    <item name="android:textSize">11</item>
+    <item name="android:letterSpacing">1em</item>
+    <item name="android:lineSpacingExtra">16</item> <!-- TODO this is lineHeight not lineSpacingExtra -->
+  </style>
+
+  <style name="typography_label_medium">
+    <item name="android:fontFamily">Poppins</item>
+    <item name="android:textSize">12</item>
+    <item name="android:letterSpacing">0.99em</item>
+    <item name="android:lineSpacingExtra">16</item> <!-- TODO this is lineHeight not lineSpacingExtra -->
+  </style>
+
+  <style name="typography_label_large">
+    <item name="android:fontFamily">Poppins</item>
+    <item name="android:textSize">14</item>
+    <item name="android:letterSpacing">0.97em</item>
+    <item name="android:lineSpacingExtra">20</item> <!-- TODO this is lineHeight not lineSpacingExtra -->
+  </style>
+
+  <style name="typography_body_small">
+    <item name="android:fontFamily">Roboto</item>
+    <item name="android:textSize">12</item>
+    <item name="android:letterSpacing">0.4sp</item>
+    <item name="android:lineSpacingExtra">16</item> <!-- TODO this is lineHeight not lineSpacingExtra -->
+  </style>
+
+  <style name="typography_body_medium">
+    <item name="android:fontFamily">Roboto</item>
+    <item name="android:textSize">14</item>
+    <item name="android:letterSpacing">0.25sp</item>
+    <item name="android:lineSpacingExtra">20</item> <!-- TODO this is lineHeight not lineSpacingExtra -->
+  </style>
+
+  <style name="typography_body_large">
+    <item name="android:fontFamily">Roboto</item>
+    <item name="android:textSize">16</item>
+    <item name="android:letterSpacing">0.5sp</item>
+    <item name="android:lineSpacingExtra">24</item> <!-- TODO this is lineHeight not lineSpacingExtra -->
+  </style>
+</resources>
