@@ -5,7 +5,7 @@ plugins {
 apply from: '../dependencies.gradle'
 apply from: '../publish-library.gradle'
 
-project.ext.libraryVersion = "0.0.1-alpha03"
+project.ext.libraryVersion = "0.0.1-alpha04"
 project.ext.libraryArtifactId = 'teamwork-design-system'
 project.ext.javadocTitle = "Teamwork Design System " + libraryVersion
 

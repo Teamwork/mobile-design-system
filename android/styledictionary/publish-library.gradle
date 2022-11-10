@@ -155,12 +155,20 @@ private static void appendDependencyProperties(dependenciesNode, Dependency depe
 }
 
 artifactory {
-    contextUrl = "${localProperties.artifactory_url}"
+    def bitriseBuildNumber = System.getenv(project.ext.BITRISE_ENV_VAR) ?: null
+    def isOnCi = bitriseBuildNumber != null
+
+    def artifactory_url = (isOnCi) ? System.getenv("artifactory_url") : localProperties.artifactory_url
+    def artifactory_repo = (isOnCi) ? System.getenv("artifactory_repo") : localProperties.artifactory_repo
+    def artifactory_user = (isOnCi) ? System.getenv("artifactory_user") : localProperties.artifactory_user
+    def artifactory_password = (isOnCi) ? System.getenv("artifactory_password") : localProperties.artifactory_password
+
+    contextUrl = artifactory_url
     publish {
         repository {
-            repoKey = "${localProperties.artifactory_repo}"
-            username = "${localProperties.artifactory_user}"
-            password = "${localProperties.artifactory_password}"
+            repoKey = "${artifactory_repo}"
+            username = "${artifactory_user}"
+            password = "${artifactory_password}"
         }
         defaults {
             publications('aarDebug', 'aar')
