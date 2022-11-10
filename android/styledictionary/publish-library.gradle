@@ -155,10 +155,10 @@ private static void appendDependencyProperties(dependenciesNode, Dependency depe
 }
 
 artifactory {
-    contextUrl = "${artifactory_url}"
+    contextUrl = "${localProperties.artifactory_url}"
     publish {
         repository {
-            repoKey = "${artifactory_repo}"
+            repoKey = "${localProperties.artifactory_repo}"
             username = "${localProperties.artifactory_user}"
             password = "${localProperties.artifactory_password}"
         }
