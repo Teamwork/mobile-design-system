@@ -8,6 +8,8 @@ ext {
     sharedTargetSdkVersion = 32
     sharedBuildToolsVersion = "32.0.0"
 
+    BITRISE_ENV_VAR = "BITRISE_BUILD_NUMBER"
+
     // dependency versions (sorted alphabetically)
     versions += [
             // Teamwork internal dependencies
