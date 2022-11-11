@@ -1170,29 +1170,31 @@
               }
             }
           },
-          "on-action": {
-            "value": "#ffffff",
-            "type": "color"
-          },
-          "on-critical": {
-            "value": "#ffffff",
-            "type": "color"
-          },
-          "on-success": {
-            "value": "#fff",
-            "type": "color"
-          },
-          "on-warning": {
-            "value": "#fff",
-            "type": "color"
-          },
-          "on-palette": {
-            "value": "#fff",
-            "type": "color"
-          },
-          "on-info": {
-            "value": "#fff",
-            "type": "color"
+          "on-context": {
+            "on-action": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "on-critical": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "on-success": {
+              "value": "#fff",
+              "type": "color"
+            },
+            "on-warning": {
+              "value": "#fff",
+              "type": "color"
+            },
+            "on-palette": {
+              "value": "#fff",
+              "type": "color"
+            },
+            "on-info": {
+              "value": "#fff",
+              "type": "color"
+            }
           },
           "inverted": {
             "primary": {
@@ -1214,33 +1216,35 @@
           }
         },
         "icon": {
-          "on-palette": {
-            "value": "#ffffff",
-            "type": "color"
-          },
-          "on-success": {
-            "value": "#ffffff",
-            "type": "color"
-          },
-          "on-warning": {
-            "value": "#ffffff",
-            "type": "color"
-          },
-          "on-critical": {
-            "value": "#ffffff",
-            "type": "color"
-          },
-          "on-interaction": {
-            "value": "#ffffff",
-            "type": "color"
-          },
-          "disabled": {
-            "value": "#edeff5",
-            "type": "color"
-          },
-          "on-info": {
-            "value": "#ffffff",
-            "type": "color"
+          "on-context": {
+            "on-palette": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "on-success": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "on-warning": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "on-critical": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "on-interaction": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "disabled": {
+              "value": "#edeff5",
+              "type": "color"
+            },
+            "on-info": {
+              "value": "#ffffff",
+              "type": "color"
+            }
           },
           "action": {
             "selected": {
@@ -1822,59 +1826,63 @@
               "type": "color"
             }
           },
-          "on-action": {
-            "value": "#000",
-            "type": "color"
-          },
-          "on-success": {
-            "value": "#000",
-            "type": "color"
-          },
-          "on-critical": {
-            "value": "#000",
-            "type": "color"
-          },
-          "on-info": {
-            "value": "#000",
-            "type": "color"
-          },
-          "on-palette": {
-            "value": "#000",
-            "type": "color"
-          },
-          "on-warning": {
-            "value": "#000",
-            "type": "color"
+          "on-context": {
+            "on-action": {
+              "value": "#000",
+              "type": "color"
+            },
+            "on-success": {
+              "value": "#000",
+              "type": "color"
+            },
+            "on-critical": {
+              "value": "#000",
+              "type": "color"
+            },
+            "on-info": {
+              "value": "#000",
+              "type": "color"
+            },
+            "on-palette": {
+              "value": "#000",
+              "type": "color"
+            },
+            "on-warning": {
+              "value": "#000",
+              "type": "color"
+            }
           }
         },
         "icon": {
-          "on-palette": {
-            "value": "#ffffff",
-            "type": "color"
-          },
-          "on-success": {
-            "value": "#ffffff",
-            "type": "color"
-          },
-          "on-warning": {
-            "value": "#ffffff",
-            "type": "color"
-          },
-          "on-critical": {
-            "value": "#ffffff",
-            "type": "color"
-          },
-          "on-interaction": {
-            "value": "#ffffff",
-            "type": "color"
-          },
-          "disabled": {
-            "value": "#edeff5",
-            "type": "color"
-          },
-          "on-info": {
-            "value": "#ffffff",
-            "type": "color"
+          "on-context": {
+            "on-palette": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "on-success": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "on-warning": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "on-critical": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "on-interaction": {
+              "value": "#ffffff",
+              "type": "color"
+            },
+            "disabled": {
+              "value": "#edeff5",
+              "type": "color"
+            },
+            "on-info": {
+              "value": "#ffffff",
+              "type": "color"
+            }
           },
           "action": {
             "selected": {
@@ -2422,19 +2430,6 @@
         "dark.color.text.inverted.secondary": "S:0cb491f17cb85d74359b772779e62360e3a00904,",
         "dark.color.text.inverted.tertiary": "S:1623f9fed02a7dcfc8f4661f3ab1debf599ad45c,",
         "dark.color.text.inverted.quaternary": "S:45f18c11f7435c97fd7f4c8524de09cfb273a462,",
-        "dark.color.text.on-action": "S:6ce8be308b0e8db72b424e930b0f39bd03165e42,",
-        "dark.color.text.on-success": "S:6635624c10468c17811c9f4a110c2af4b9accc39,",
-        "dark.color.text.on-critical": "S:e48ab0d94f5eca3b89b93d7614908fcea09623ad,",
-        "dark.color.text.on-info": "S:52d6c1405e07c61a38221eeabd8e5fb1fab59c4a,",
-        "dark.color.text.on-palette": "S:4e5bb51b64eb4800cda3946ac90326c515f182b9,",
-        "dark.color.text.on-warning": "S:417fb26ae6f1210f21b24919d9924922649c8537,",
-        "dark.color.icon.on-palette": "S:86f6fc23327898c8da2e74939b99e156ddb66b9e,",
-        "dark.color.icon.on-success": "S:e46f2947b1fc13d57e69d0faf4b50dc26991d1f8,",
-        "dark.color.icon.on-warning": "S:d1b08861be5788f7c9639de571133a6dced40cca,",
-        "dark.color.icon.on-critical": "S:de44d42c77a4926a9b5450cbe677d341cf352257,",
-        "dark.color.icon.on-interaction": "S:b57affd1af55afc4c68c8aca9a45149206c26ec8,",
-        "dark.color.icon.disabled": "S:6c46cba867f2afab889b02afecc4bec6ef24efb4,",
-        "dark.color.icon.on-info": "S:9952eadda8400786f11a7b08a3d3bc881ff61ce7,",
         "dark.color.icon.action.selected": "S:d6bb8500a2b0f72d064de6a36a6309b0b25d8994,",
         "dark.color.icon.action.hover": "S:925ff43bad6fb557cbb6f3daa8dbf9bd48878f02,",
         "dark.color.icon.action.default": "S:47152accb60e1a5c1b0f9bb7b8fdf550564f188a,",
@@ -2683,17 +2678,6 @@
         "light.color.text.on-decorative.subtle.03": "S:1c8ba9bd88facd6c1b38d4b22259cb5b37d9fd98,",
         "light.color.text.on-decorative.subtle.02": "S:a7de8e824f7d374a16daaeac59b284b0133838cf,",
         "light.color.text.on-decorative.subtle.01": "S:122038138dcb07cf930017d8bffec2760fa80587,",
-        "light.color.text.on-action": "S:ec15ff77a8b067956ffda4f084663f4e2af23866,",
-        "light.color.text.on-critical": "S:8991def0bdb3b466c5d53a2b6b1e58f127612bae,",
-        "light.color.text.on-success": "S:36da8870bf8816589eaccaab8cd8a1bbc1ab2787,",
-        "light.color.text.on-warning": "S:fa9f8529ffb1a8095d709be0f9853feef297dab0,",
-        "light.color.text.on-info": "S:2916b2ccf5c14de303a8705316381223c9e27eaf,",
-        "light.color.icon.on-success": "S:74bbdd5e7b49d2e0574ad4b0ba7c82b1718a19db,",
-        "light.color.icon.on-warning": "S:f0873413861bbc3ee0fa339baee5caacdf224a78,",
-        "light.color.icon.on-critical": "S:1d8beaee129644c2ea7bc4452b939486515d130d,",
-        "light.color.icon.on-interaction": "S:c332f38b20475c65bbf4318acae1ee08cf139bd8,",
-        "light.color.icon.disabled": "S:ec5b1700e8eae3f0570549e6dc6169cb73a61288,",
-        "light.color.icon.on-info": "S:6d66cef3eb8dba003ead88ba6d5cc937cfb33332,",
         "light.color.icon.action.selected": "S:27f4d39f023d03e45ec848240449d1cc065f907b,",
         "light.color.icon.action.hover": "S:edfae1775ea317414e0b58fcbc53c5491a9b2eff,",
         "light.color.icon.action.default": "S:518a6e3c4e2804612283c3f92cd7ed6d088cfd67,",
@@ -2781,12 +2765,10 @@
         "shadow.elevation 3": "S:5234d067ab63ba5324b22be292e63ef1eeb7279c,",
         "shadow.elevation 4": "S:d310b12280d9af38d2c36756874b821fd103194c,",
         "shadow.elevation 5": "S:be46f4c58cc8a349d57dfca3380814cdb580fb0d,",
-        "light.color.text.on-palette": "S:90b311ac52c7042fcb82e38a926ba0eed47a65b4,",
         "light.color.text.inverted.primary": "S:ef5ee9147adc1948dc65ca5a7c89e93a046da307,",
         "light.color.text.inverted.secondary": "S:f22bec169483a6a2187ed40b8b508b8ac1312c22,",
         "light.color.text.inverted.tertiary": "S:a99c3b94f107b5c23149e54c6c782abd2ded3d1a,",
-        "light.color.text.inverted.quaternary": "S:484090c2ca4b18e62b81218d48b1e51080ec1ab9,",
-        "light.color.icon.on-palette": "S:4bac84662aba2a3c7003fd2ac58d8e918c6d9b73,"
+        "light.color.text.inverted.quaternary": "S:484090c2ca4b18e62b81218d48b1e51080ec1ab9,"
       }
     }
   ],
