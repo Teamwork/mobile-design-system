@@ -2,19 +2,24 @@ plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
 }
+apply from: '../dependencies.gradle'
+apply from: 'library-version.gradle'
 apply from: '../publish-library.gradle'
 
-project.ext.libraryVersion = "0.0.1-alpha01"
+// defined by `library-version.gradle` so we can update it on CI
+project.ext.libraryVersion = library_version
 project.ext.libraryArtifactId = 'teamwork-design-system'
 project.ext.javadocTitle = "Teamwork Design System " + libraryVersion
 
+System.out.println("LIBRARY_VERSION = ${library_version}")
+
 android {
     namespace 'com.teamwork.mobile.design'
-    compileSdk 33
+    compileSdk project.ext.sharedCompileSdkVersion
 
     defaultConfig {
-        minSdk 23
-        targetSdk 33
+        minSdk sharedMinSdkVersion
+        targetSdk sharedTargetSdkVersion
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -26,10 +31,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = '1.8'
     }
@@ -45,18 +52,19 @@ android {
 
 dependencies {
     // Compose TODO update when using Kotlin 1.7.* #20279933
-    debugApi "androidx.compose.ui:ui-tooling:1.3.0-alpha01"
-    api "androidx.compose.ui:ui:1.3.0-alpha01"
-    api "androidx.compose.ui:ui-tooling-preview:1.3.0-alpha01"
+    debugApi "androidx.compose.ui:ui-tooling:${versions.androidx.compose}"
+    api "androidx.compose.ui:ui:${versions.androidx.compose}"
+    api "androidx.compose.ui:ui-tooling-preview:${versions.androidx.compose}"
 
     // Material TODO update when using Kotlin 1.7.* #20279933
-    api "com.google.android.material:material:1.6.1"
-    api "androidx.compose.material3:material3:1.0.0"
+    api "com.google.android.material:material:${versions.androidx.material}"
+    api "androidx.compose.material3:material3:${versions.androidx.composeMaterial3}"
 
-    implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.5.1'
-    implementation 'com.google.android.material:material:1.6.1'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation "androidx.core:core-ktx:${versions.androidx.core}"
+    implementation "androidx.appcompat:appcompat:${versions.androidx.appCompat}"
+    implementation "androidx.activity:activity-compose:${versions.androidx.activity}"
+
+    testImplementation "junit:junit:${versions.junit}"
+
+    androidTestImplementation "androidx.test.ext:junit:${versions.androidx.testExt}"
 }
