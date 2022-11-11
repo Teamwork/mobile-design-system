@@ -153,6 +153,39 @@ extension Color {
   public static var colorTextOnContextOnWarning: Color {
     return Color.init("colorTextOnContextOnWarning", bundle: .module)
   }
+  public static var colorTextDecorative10: Color {
+    return Color.init("colorTextDecorative10", bundle: .module)
+  }
+  public static var colorTextDecorative11: Color {
+    return Color.init("colorTextDecorative11", bundle: .module)
+  }
+  public static var colorTextDecorative01: Color {
+    return Color.init("colorTextDecorative01", bundle: .module)
+  }
+  public static var colorTextDecorative02: Color {
+    return Color.init("colorTextDecorative02", bundle: .module)
+  }
+  public static var colorTextDecorative03: Color {
+    return Color.init("colorTextDecorative03", bundle: .module)
+  }
+  public static var colorTextDecorative04: Color {
+    return Color.init("colorTextDecorative04", bundle: .module)
+  }
+  public static var colorTextDecorative05: Color {
+    return Color.init("colorTextDecorative05", bundle: .module)
+  }
+  public static var colorTextDecorative06: Color {
+    return Color.init("colorTextDecorative06", bundle: .module)
+  }
+  public static var colorTextDecorative07: Color {
+    return Color.init("colorTextDecorative07", bundle: .module)
+  }
+  public static var colorTextDecorative08: Color {
+    return Color.init("colorTextDecorative08", bundle: .module)
+  }
+  public static var colorTextDecorative09: Color {
+    return Color.init("colorTextDecorative09", bundle: .module)
+  }
   public static var colorIconOnContextOnPalette: Color {
     return Color.init("colorIconOnContextOnPalette", bundle: .module)
   }

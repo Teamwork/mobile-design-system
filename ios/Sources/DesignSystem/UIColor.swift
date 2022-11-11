@@ -151,6 +151,39 @@ extension UIColor {
   public static var colorTextOnContextOnWarning: UIColor {
     return UIColor(named: "colorTextOnContextOnWarning", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
+  public static var colorTextDecorative10: UIColor {
+    return UIColor(named: "colorTextDecorative10", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextDecorative11: UIColor {
+    return UIColor(named: "colorTextDecorative11", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextDecorative01: UIColor {
+    return UIColor(named: "colorTextDecorative01", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextDecorative02: UIColor {
+    return UIColor(named: "colorTextDecorative02", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextDecorative03: UIColor {
+    return UIColor(named: "colorTextDecorative03", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextDecorative04: UIColor {
+    return UIColor(named: "colorTextDecorative04", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextDecorative05: UIColor {
+    return UIColor(named: "colorTextDecorative05", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextDecorative06: UIColor {
+    return UIColor(named: "colorTextDecorative06", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextDecorative07: UIColor {
+    return UIColor(named: "colorTextDecorative07", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextDecorative08: UIColor {
+    return UIColor(named: "colorTextDecorative08", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextDecorative09: UIColor {
+    return UIColor(named: "colorTextDecorative09", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
   public static var colorIconOnContextOnPalette: UIColor {
     return UIColor(named: "colorIconOnContextOnPalette", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }

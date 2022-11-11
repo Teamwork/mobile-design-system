@@ -52,6 +52,17 @@
 	<color name="color_text_inverted_secondary">#ebebf599</color>
 	<color name="color_text_inverted_tertiary">#ebebf54d</color>
 	<color name="color_text_inverted_quaternary">#ebebf52e</color>
+	<color name="color_text_decorative_10">#4ecd97</color>
+	<color name="color_text_decorative_11">#ff7641</color>
+	<color name="color_text_decorative_01">#4461d7</color>
+	<color name="color_text_decorative_02">#895ef7</color>
+	<color name="color_text_decorative_03">#ffc63c</color>
+	<color name="color_text_decorative_04">#4da2f8</color>
+	<color name="color_text_decorative_05">#ff61c7</color>
+	<color name="color_text_decorative_06">#ca6419</color>
+	<color name="color_text_decorative_07">#4cd5e3</color>
+	<color name="color_text_decorative_08">#e12d42</color>
+	<color name="color_text_decorative_09">#a7acc5</color>
 	<color name="color_icon_on_context_on_palette">#ffffff</color>
 	<color name="color_icon_on_context_on_success">#ffffff</color>
 	<color name="color_icon_on_context_on_warning">#ffffff</color>

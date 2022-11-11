@@ -57,6 +57,17 @@ data class TeamworkColors(
 		textOnContextOnInfo = Color(0xFF000000),
 		textOnContextOnPalette = Color(0xFF000000),
 		textOnContextOnWarning = Color(0xFF000000),
+		textDecorative10 = Color(0xFF95E1C1),
+		textDecorative11 = Color(0xFFFFA785),
+		textDecorative01 = Color(0xFFABB7ED),
+		textDecorative02 = Color(0xFFBBA1FF),
+		textDecorative03 = Color(0xFFFFDC87),
+		textDecorative04 = Color(0xFF94C7FB),
+		textDecorative05 = Color(0xFFFFA0DD),
+		textDecorative06 = Color(0xFFDFA275),
+		textDecorative07 = Color(0xFF97E8F0),
+		textDecorative08 = Color(0xFFED7987),
+		textDecorative09 = Color(0xFFCACDDC),
 	),
 
 	val icon: Icon = Icon(
@@ -212,6 +223,17 @@ data class TeamworkColors(
 		val textOnContextOnInfo: Color = Color(0xFF000000),
 		val textOnContextOnPalette: Color = Color(0xFF000000),
 		val textOnContextOnWarning: Color = Color(0xFF000000),
+		val textDecorative10: Color = Color(0xFF95E1C1),
+		val textDecorative11: Color = Color(0xFFFFA785),
+		val textDecorative01: Color = Color(0xFFABB7ED),
+		val textDecorative02: Color = Color(0xFFBBA1FF),
+		val textDecorative03: Color = Color(0xFFFFDC87),
+		val textDecorative04: Color = Color(0xFF94C7FB),
+		val textDecorative05: Color = Color(0xFFFFA0DD),
+		val textDecorative06: Color = Color(0xFFDFA275),
+		val textDecorative07: Color = Color(0xFF97E8F0),
+		val textDecorative08: Color = Color(0xFFED7987),
+		val textDecorative09: Color = Color(0xFFCACDDC),
 	)
 
 	data class Icon(

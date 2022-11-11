@@ -52,6 +52,17 @@
 	<color name="color_text_on_context_on_info">#000</color>
 	<color name="color_text_on_context_on_palette">#000</color>
 	<color name="color_text_on_context_on_warning">#000</color>
+	<color name="color_text_decorative_10">#95e1c1</color>
+	<color name="color_text_decorative_11">#ffa785</color>
+	<color name="color_text_decorative_01">#abb7ed</color>
+	<color name="color_text_decorative_02">#bba1ff</color>
+	<color name="color_text_decorative_03">#ffdc87</color>
+	<color name="color_text_decorative_04">#94c7fb</color>
+	<color name="color_text_decorative_05">#ffa0dd</color>
+	<color name="color_text_decorative_06">#dfa275</color>
+	<color name="color_text_decorative_07">#97E8F0</color>
+	<color name="color_text_decorative_08">#ed7987</color>
+	<color name="color_text_decorative_09">#cacddc</color>
 	<color name="color_icon_on_context_on_palette">#ffffff</color>
 	<color name="color_icon_on_context_on_success">#ffffff</color>
 	<color name="color_icon_on_context_on_warning">#ffffff</color>
