@@ -1213,6 +1213,52 @@
               "value": "rgba(235,235,245,0.18)",
               "type": "color"
             }
+          },
+          "decorative": {
+            "10": {
+              "value": "{color.palette.green-40}",
+              "type": "color"
+            },
+            "11": {
+              "value": "{color.palette.orange-40}",
+              "type": "color"
+            },
+            "01": {
+              "value": "{color.palette.indigo-40}",
+              "type": "color"
+            },
+            "02": {
+              "value": "{color.palette.purple-40}",
+              "type": "color"
+            },
+            "03": {
+              "value": "{color.palette.yellow-40}",
+              "type": "color"
+            },
+            "04": {
+              "value": "{color.palette.blue-40}",
+              "type": "color"
+            },
+            "05": {
+              "value": "{color.palette.pink-40}",
+              "type": "color"
+            },
+            "06": {
+              "value": "{color.palette.brown-40}",
+              "type": "color"
+            },
+            "07": {
+              "value": "{color.palette.teal-40}",
+              "type": "color"
+            },
+            "08": {
+              "value": "{color.palette.red-40}",
+              "type": "color"
+            },
+            "09": {
+              "value": "{color.palette.grey-50}",
+              "type": "color"
+            }
           }
         },
         "icon": {
@@ -1849,6 +1895,52 @@
             },
             "on-warning": {
               "value": "#000",
+              "type": "color"
+            }
+          },
+          "decorative": {
+            "10": {
+              "value": "{color.palette.green-30}",
+              "type": "color"
+            },
+            "11": {
+              "value": "{color.palette.orange-30}",
+              "type": "color"
+            },
+            "01": {
+              "value": "{color.palette.indigo-30}",
+              "type": "color"
+            },
+            "02": {
+              "value": "{color.palette.purple-30}",
+              "type": "color"
+            },
+            "03": {
+              "value": "{color.palette.yellow-30}",
+              "type": "color"
+            },
+            "04": {
+              "value": "{color.palette.blue-30}",
+              "type": "color"
+            },
+            "05": {
+              "value": "{color.palette.pink-30}",
+              "type": "color"
+            },
+            "06": {
+              "value": "{color.palette.brown-30}",
+              "type": "color"
+            },
+            "07": {
+              "value": "{color.palette.teal-30}",
+              "type": "color"
+            },
+            "08": {
+              "value": "{color.palette.red-30}",
+              "type": "color"
+            },
+            "09": {
+              "value": "{color.palette.grey-40}",
               "type": "color"
             }
           }
