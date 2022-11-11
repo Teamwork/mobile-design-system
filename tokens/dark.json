@@ -196,59 +196,63 @@
             "type": "color"
           }
         },
-        "on-action": {
-          "value": "#000",
-          "type": "color"
-        },
-        "on-success": {
-          "value": "#000",
-          "type": "color"
-        },
-        "on-critical": {
-          "value": "#000",
-          "type": "color"
-        },
-        "on-info": {
-          "value": "#000",
-          "type": "color"
-        },
-        "on-palette": {
-          "value": "#000",
-          "type": "color"
-        },
-        "on-warning": {
-          "value": "#000",
-          "type": "color"
+        "on-context": {
+          "on-action": {
+            "value": "#000",
+            "type": "color"
+          },
+          "on-success": {
+            "value": "#000",
+            "type": "color"
+          },
+          "on-critical": {
+            "value": "#000",
+            "type": "color"
+          },
+          "on-info": {
+            "value": "#000",
+            "type": "color"
+          },
+          "on-palette": {
+            "value": "#000",
+            "type": "color"
+          },
+          "on-warning": {
+            "value": "#000",
+            "type": "color"
+          }
         }
       },
       "icon": {
-        "on-palette": {
-          "value": "#ffffff",
-          "type": "color"
-        },
-        "on-success": {
-          "value": "#ffffff",
-          "type": "color"
-        },
-        "on-warning": {
-          "value": "#ffffff",
-          "type": "color"
-        },
-        "on-critical": {
-          "value": "#ffffff",
-          "type": "color"
-        },
-        "on-interaction": {
-          "value": "#ffffff",
-          "type": "color"
-        },
-        "disabled": {
-          "value": "#edeff5",
-          "type": "color"
-        },
-        "on-info": {
-          "value": "#ffffff",
-          "type": "color"
+        "on-context": {
+          "on-palette": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "on-success": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "on-warning": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "on-critical": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "on-interaction": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "disabled": {
+            "value": "#edeff5",
+            "type": "color"
+          },
+          "on-info": {
+            "value": "#ffffff",
+            "type": "color"
+          }
         },
         "action": {
           "selected": {
