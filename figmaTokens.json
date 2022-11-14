@@ -2277,11 +2277,27 @@
               "default": {
                 "value": "{color.palette.green-30}",
                 "type": "color"
+              },
+              "lighter": {
+                "value": "{color.palette.green-20}",
+                "type": "color"
+              },
+              "darker": {
+                "value": "{color.palette.green-50}",
+                "type": "color"
               }
             },
             "d11": {
               "default": {
                 "value": "{color.palette.orange-30}",
+                "type": "color"
+              },
+              "lighter": {
+                "value": "{color.palette.orange-20}",
+                "type": "color"
+              },
+              "darker": {
+                "value": "{color.palette.orange-50}",
                 "type": "color"
               }
             },
@@ -2289,11 +2305,27 @@
               "default": {
                 "value": "{color.palette.grey-40}",
                 "type": "color"
+              },
+              "lighter": {
+                "value": "{color.palette.grey-20}",
+                "type": "color"
+              },
+              "darker": {
+                "value": "{color.palette.grey-50}",
+                "type": "color"
               }
             },
             "d08": {
               "default": {
                 "value": "{color.palette.red-30}",
+                "type": "color"
+              },
+              "lighter": {
+                "value": "{color.palette.red-20}",
+                "type": "color"
+              },
+              "darker": {
+                "value": "{color.palette.red-50}",
                 "type": "color"
               }
             },
@@ -2301,11 +2333,27 @@
               "default": {
                 "value": "{color.palette.teal-30}",
                 "type": "color"
+              },
+              "lighter": {
+                "value": "{color.palette.teal-20}",
+                "type": "color"
+              },
+              "darker": {
+                "value": "{color.palette.teal-50}",
+                "type": "color"
               }
             },
             "d06": {
               "default": {
                 "value": "{color.palette.brown-30}",
+                "type": "color"
+              },
+              "lighter": {
+                "value": "{color.palette.brown-20}",
+                "type": "color"
+              },
+              "darker": {
+                "value": "{color.palette.brown-50}",
                 "type": "color"
               }
             },
@@ -2313,11 +2361,27 @@
               "default": {
                 "value": "{color.palette.pink-30}",
                 "type": "color"
+              },
+              "lighter": {
+                "value": "{color.palette.pink-20}",
+                "type": "color"
+              },
+              "darker": {
+                "value": "{color.palette.pink-50}",
+                "type": "color"
               }
             },
             "d04": {
               "default": {
                 "value": "{color.palette.blue-30}",
+                "type": "color"
+              },
+              "lighter": {
+                "value": "{color.palette.blue-20}",
+                "type": "color"
+              },
+              "darker": {
+                "value": "{color.palette.blue-50}",
                 "type": "color"
               }
             },
@@ -2325,17 +2389,41 @@
               "default": {
                 "value": "{color.palette.yellow-30}",
                 "type": "color"
+              },
+              "lighter": {
+                "value": "{color.palette.yellow-20}",
+                "type": "color"
+              },
+              "darker": {
+                "value": "{color.palette.yellow-50}",
+                "type": "color"
               }
             },
             "d02": {
               "default": {
                 "value": "{color.palette.purple-30}",
                 "type": "color"
+              },
+              "lighter": {
+                "value": "{color.palette.purple-20}",
+                "type": "color"
+              },
+              "darker": {
+                "value": "{color.palette.purple-50}",
+                "type": "color"
               }
             },
             "d01": {
               "default": {
                 "value": "{color.palette.indigo-30}",
+                "type": "color"
+              },
+              "lighter": {
+                "value": "{color.palette.indigo-20}",
+                "type": "color"
+              },
+              "darker": {
+                "value": "{color.palette.indigo-50}",
                 "type": "color"
               }
             },
