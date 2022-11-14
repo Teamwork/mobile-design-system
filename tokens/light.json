@@ -178,29 +178,31 @@
             }
           }
         },
-        "on-action": {
-          "value": "#ffffff",
-          "type": "color"
-        },
-        "on-critical": {
-          "value": "#ffffff",
-          "type": "color"
-        },
-        "on-success": {
-          "value": "#fff",
-          "type": "color"
-        },
-        "on-warning": {
-          "value": "#fff",
-          "type": "color"
-        },
-        "on-palette": {
-          "value": "#fff",
-          "type": "color"
-        },
-        "on-info": {
-          "value": "#fff",
-          "type": "color"
+        "on-context": {
+          "on-action": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "on-critical": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "on-success": {
+            "value": "#fff",
+            "type": "color"
+          },
+          "on-warning": {
+            "value": "#fff",
+            "type": "color"
+          },
+          "on-palette": {
+            "value": "#fff",
+            "type": "color"
+          },
+          "on-info": {
+            "value": "#fff",
+            "type": "color"
+          }
         },
         "inverted": {
           "primary": {
@@ -219,36 +221,84 @@
             "value": "#ebebf52e",
             "type": "color"
           }
+        },
+        "decorative": {
+          "10": {
+            "value": "#4ecd97",
+            "type": "color"
+          },
+          "11": {
+            "value": "#ff7641",
+            "type": "color"
+          },
+          "01": {
+            "value": "#4461d7",
+            "type": "color"
+          },
+          "02": {
+            "value": "#895ef7",
+            "type": "color"
+          },
+          "03": {
+            "value": "#ffc63c",
+            "type": "color"
+          },
+          "04": {
+            "value": "#4da2f8",
+            "type": "color"
+          },
+          "05": {
+            "value": "#ff61c7",
+            "type": "color"
+          },
+          "06": {
+            "value": "#ca6419",
+            "type": "color"
+          },
+          "07": {
+            "value": "#4cd5e3",
+            "type": "color"
+          },
+          "08": {
+            "value": "#e12d42",
+            "type": "color"
+          },
+          "09": {
+            "value": "#a7acc5",
+            "type": "color"
+          }
         }
       },
       "icon": {
-        "on-palette": {
-          "value": "#ffffff",
-          "type": "color"
-        },
-        "on-success": {
-          "value": "#ffffff",
-          "type": "color"
-        },
-        "on-warning": {
-          "value": "#ffffff",
-          "type": "color"
-        },
-        "on-critical": {
-          "value": "#ffffff",
-          "type": "color"
-        },
-        "on-interaction": {
-          "value": "#ffffff",
-          "type": "color"
-        },
-        "disabled": {
-          "value": "#edeff5",
-          "type": "color"
-        },
-        "on-info": {
-          "value": "#ffffff",
-          "type": "color"
+        "on-context": {
+          "on-palette": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "on-success": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "on-warning": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "on-critical": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "on-interaction": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "disabled": {
+            "value": "#edeff5",
+            "type": "color"
+          },
+          "on-info": {
+            "value": "#ffffff",
+            "type": "color"
+          }
         },
         "action": {
           "selected": {
