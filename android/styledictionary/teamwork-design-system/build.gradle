@@ -3,11 +3,15 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 apply from: '../dependencies.gradle'
+apply from: 'library-version.gradle'
 apply from: '../publish-library.gradle'
 
-project.ext.libraryVersion = "0.0.1-alpha03"
+// defined by `library-version.gradle` so we can update it on CI
+project.ext.libraryVersion = library_version
 project.ext.libraryArtifactId = 'teamwork-design-system'
 project.ext.javadocTitle = "Teamwork Design System " + libraryVersion
+
+System.out.println("LIBRARY_VERSION = ${library_version}")
 
 android {
     namespace 'com.teamwork.mobile.design'

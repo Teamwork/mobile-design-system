@@ -354,38 +354,38 @@ extension Color {
   public static var colorSurfaceSelectSelected: Color {
     return Color.init("colorSurfaceSelectSelected", bundle: .module)
   }
-  public static var colorSurfaceDecorative10: Color {
-    return Color.init("colorSurfaceDecorative10", bundle: .module)
+  public static var colorSurfaceDecorativeD10Default: Color {
+    return Color.init("colorSurfaceDecorativeD10Default", bundle: .module)
   }
-  public static var colorSurfaceDecorative11: Color {
-    return Color.init("colorSurfaceDecorative11", bundle: .module)
+  public static var colorSurfaceDecorativeD11Default: Color {
+    return Color.init("colorSurfaceDecorativeD11Default", bundle: .module)
   }
-  public static var colorSurfaceDecorative09: Color {
-    return Color.init("colorSurfaceDecorative09", bundle: .module)
+  public static var colorSurfaceDecorativeD09Default: Color {
+    return Color.init("colorSurfaceDecorativeD09Default", bundle: .module)
   }
-  public static var colorSurfaceDecorative08: Color {
-    return Color.init("colorSurfaceDecorative08", bundle: .module)
+  public static var colorSurfaceDecorativeD08Default: Color {
+    return Color.init("colorSurfaceDecorativeD08Default", bundle: .module)
   }
-  public static var colorSurfaceDecorative07: Color {
-    return Color.init("colorSurfaceDecorative07", bundle: .module)
+  public static var colorSurfaceDecorativeD07Default: Color {
+    return Color.init("colorSurfaceDecorativeD07Default", bundle: .module)
   }
-  public static var colorSurfaceDecorative06: Color {
-    return Color.init("colorSurfaceDecorative06", bundle: .module)
+  public static var colorSurfaceDecorativeD06Default: Color {
+    return Color.init("colorSurfaceDecorativeD06Default", bundle: .module)
   }
-  public static var colorSurfaceDecorative05: Color {
-    return Color.init("colorSurfaceDecorative05", bundle: .module)
+  public static var colorSurfaceDecorativeD05Default: Color {
+    return Color.init("colorSurfaceDecorativeD05Default", bundle: .module)
   }
-  public static var colorSurfaceDecorative04: Color {
-    return Color.init("colorSurfaceDecorative04", bundle: .module)
+  public static var colorSurfaceDecorativeD04Default: Color {
+    return Color.init("colorSurfaceDecorativeD04Default", bundle: .module)
   }
-  public static var colorSurfaceDecorative03: Color {
-    return Color.init("colorSurfaceDecorative03", bundle: .module)
+  public static var colorSurfaceDecorativeD03Default: Color {
+    return Color.init("colorSurfaceDecorativeD03Default", bundle: .module)
   }
-  public static var colorSurfaceDecorative02: Color {
-    return Color.init("colorSurfaceDecorative02", bundle: .module)
+  public static var colorSurfaceDecorativeD02Default: Color {
+    return Color.init("colorSurfaceDecorativeD02Default", bundle: .module)
   }
-  public static var colorSurfaceDecorative01: Color {
-    return Color.init("colorSurfaceDecorative01", bundle: .module)
+  public static var colorSurfaceDecorativeD01Default: Color {
+    return Color.init("colorSurfaceDecorativeD01Default", bundle: .module)
   }
   public static var colorSurfaceDecorativeSubtle10: Color {
     return Color.init("colorSurfaceDecorativeSubtle10", bundle: .module)

@@ -1,0 +1,3 @@
+// This file will be overwritten by the CI to update the library version automatically
+// the version should be set by the CI to the latest Git tag version
+ext.library_version = "0.0.1"

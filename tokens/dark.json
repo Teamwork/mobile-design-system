@@ -537,49 +537,71 @@
           }
         },
         "decorative": {
-          "10": {
-            "value": "#95e1c1",
-            "type": "color"
+          "d10": {
+            "default": {
+              "value": "#95e1c1",
+              "type": "color"
+            }
           },
-          "11": {
-            "value": "#ffa785",
-            "type": "color"
+          "d11": {
+            "default": {
+              "value": "#ffa785",
+              "type": "color"
+            }
           },
-          "09": {
-            "value": "#cacddc",
-            "type": "color"
+          "d09": {
+            "default": {
+              "value": "#cacddc",
+              "type": "color"
+            }
           },
-          "08": {
-            "value": "#ed7987",
-            "type": "color"
+          "d08": {
+            "default": {
+              "value": "#ed7987",
+              "type": "color"
+            }
           },
-          "07": {
-            "value": "#97E8F0",
-            "type": "color"
+          "d07": {
+            "default": {
+              "value": "#97E8F0",
+              "type": "color"
+            }
           },
-          "06": {
-            "value": "#dfa275",
-            "type": "color"
+          "d06": {
+            "default": {
+              "value": "#dfa275",
+              "type": "color"
+            }
           },
-          "05": {
-            "value": "#ffa0dd",
-            "type": "color"
+          "d05": {
+            "default": {
+              "value": "#ffa0dd",
+              "type": "color"
+            }
           },
-          "04": {
-            "value": "#94c7fb",
-            "type": "color"
+          "d04": {
+            "default": {
+              "value": "#94c7fb",
+              "type": "color"
+            }
           },
-          "03": {
-            "value": "#ffdc87",
-            "type": "color"
+          "d03": {
+            "default": {
+              "value": "#ffdc87",
+              "type": "color"
+            }
           },
-          "02": {
-            "value": "#bba1ff",
-            "type": "color"
+          "d02": {
+            "default": {
+              "value": "#bba1ff",
+              "type": "color"
+            }
           },
-          "01": {
-            "value": "#abb7ed",
-            "type": "color"
+          "d01": {
+            "default": {
+              "value": "#abb7ed",
+              "type": "color"
+            }
           },
           "subtle": {
             "10": {

@@ -537,49 +537,159 @@
           }
         },
         "decorative": {
-          "10": {
-            "value": "#4ecd97",
-            "type": "color"
+          "d10": {
+            "default": {
+              "value": "#4ecd97",
+              "type": "color"
+            },
+            "lighter": {
+              "value": "#95e1c1",
+              "type": "color"
+            },
+            "darker": {
+              "value": "#318160",
+              "type": "color"
+            }
           },
-          "11": {
-            "value": "#ff7641",
-            "type": "color"
+          "d11": {
+            "default": {
+              "value": "#ff7641",
+              "type": "color"
+            },
+            "lighter": {
+              "value": "#ffa785",
+              "type": "color"
+            },
+            "darker": {
+              "value": "#ce5f34",
+              "type": "color"
+            }
           },
-          "09": {
-            "value": "#a7acc5",
-            "type": "color"
+          "d09": {
+            "default": {
+              "value": "#a7acc5",
+              "type": "color"
+            },
+            "lighter": {
+              "value": "#cacddc",
+              "type": "color"
+            },
+            "darker": {
+              "value": "#969bb1",
+              "type": "color"
+            }
           },
-          "08": {
-            "value": "#e12d42",
-            "type": "color"
+          "d08": {
+            "default": {
+              "value": "#e12d42",
+              "type": "color"
+            },
+            "lighter": {
+              "value": "#ed7987",
+              "type": "color"
+            },
+            "darker": {
+              "value": "#b42435",
+              "type": "color"
+            }
           },
-          "07": {
-            "value": "#4cd5e3",
-            "type": "color"
+          "d07": {
+            "default": {
+              "value": "#4cd5e3",
+              "type": "color"
+            },
+            "lighter": {
+              "value": "#97E8F0",
+              "type": "color"
+            },
+            "darker": {
+              "value": "#3dadb8",
+              "type": "color"
+            }
           },
-          "06": {
-            "value": "#ca6419",
-            "type": "color"
+          "d06": {
+            "default": {
+              "value": "#ca6419",
+              "type": "color"
+            },
+            "lighter": {
+              "value": "#dfa275",
+              "type": "color"
+            },
+            "darker": {
+              "value": "#9b4d13",
+              "type": "color"
+            }
           },
-          "05": {
-            "value": "#ff61c7",
-            "type": "color"
+          "d05": {
+            "default": {
+              "value": "#ff61c7",
+              "type": "color"
+            },
+            "lighter": {
+              "value": "#ffa0dd",
+              "type": "color"
+            },
+            "darker": {
+              "value": "#c43692",
+              "type": "color"
+            }
           },
-          "04": {
-            "value": "#4da2f8",
-            "type": "color"
+          "d04": {
+            "default": {
+              "value": "#4da2f8",
+              "type": "color"
+            },
+            "lighter": {
+              "value": "#94c7fb",
+              "type": "color"
+            },
+            "darker": {
+              "value": "#3578bb",
+              "type": "color"
+            }
           },
-          "03": {
-            "value": "#ffc63c",
-            "type": "color"
+          "d03": {
+            "default": {
+              "value": "#ffc63c",
+              "type": "color"
+            },
+            "lighter": {
+              "value": "#ffdc87",
+              "type": "color"
+            },
+            "darker": {
+              "value": "#cb9f34",
+              "type": "color"
+            }
           },
-          "02": {
-            "value": "#895ef7",
-            "type": "color"
+          "d02": {
+            "default": {
+              "value": "#895ef7",
+              "type": "color"
+            },
+            "lighter": {
+              "value": "#bba1ff",
+              "type": "color"
+            },
+            "darker": {
+              "value": "#6848bd",
+              "type": "color"
+            }
           },
-          "01": {
-            "value": "#4461d7",
-            "type": "color"
+          "d01": {
+            "default": {
+              "value": "#4461d7",
+              "type": "color"
+            },
+            "lighter": {
+              "value": "#abb7ed",
+              "type": "color"
+            },
+            "darker": {
+              "value": "#364daa",
+              "type": "color"
+            }
           },
           "subtle": {
             "10": {
