@@ -357,35 +357,101 @@ extension Color {
   public static var colorSurfaceDecorativeD10Default: Color {
     return Color.init("colorSurfaceDecorativeD10Default", bundle: .module)
   }
+  public static var colorSurfaceDecorativeD10Lighter: Color {
+    return Color.init("colorSurfaceDecorativeD10Lighter", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD10Darker: Color {
+    return Color.init("colorSurfaceDecorativeD10Darker", bundle: .module)
+  }
   public static var colorSurfaceDecorativeD11Default: Color {
     return Color.init("colorSurfaceDecorativeD11Default", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD11Lighter: Color {
+    return Color.init("colorSurfaceDecorativeD11Lighter", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD11Darker: Color {
+    return Color.init("colorSurfaceDecorativeD11Darker", bundle: .module)
   }
   public static var colorSurfaceDecorativeD09Default: Color {
     return Color.init("colorSurfaceDecorativeD09Default", bundle: .module)
   }
+  public static var colorSurfaceDecorativeD09Lighter: Color {
+    return Color.init("colorSurfaceDecorativeD09Lighter", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD09Darker: Color {
+    return Color.init("colorSurfaceDecorativeD09Darker", bundle: .module)
+  }
   public static var colorSurfaceDecorativeD08Default: Color {
     return Color.init("colorSurfaceDecorativeD08Default", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD08Lighter: Color {
+    return Color.init("colorSurfaceDecorativeD08Lighter", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD08Darker: Color {
+    return Color.init("colorSurfaceDecorativeD08Darker", bundle: .module)
   }
   public static var colorSurfaceDecorativeD07Default: Color {
     return Color.init("colorSurfaceDecorativeD07Default", bundle: .module)
   }
+  public static var colorSurfaceDecorativeD07Lighter: Color {
+    return Color.init("colorSurfaceDecorativeD07Lighter", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD07Darker: Color {
+    return Color.init("colorSurfaceDecorativeD07Darker", bundle: .module)
+  }
   public static var colorSurfaceDecorativeD06Default: Color {
     return Color.init("colorSurfaceDecorativeD06Default", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD06Lighter: Color {
+    return Color.init("colorSurfaceDecorativeD06Lighter", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD06Darker: Color {
+    return Color.init("colorSurfaceDecorativeD06Darker", bundle: .module)
   }
   public static var colorSurfaceDecorativeD05Default: Color {
     return Color.init("colorSurfaceDecorativeD05Default", bundle: .module)
   }
+  public static var colorSurfaceDecorativeD05Lighter: Color {
+    return Color.init("colorSurfaceDecorativeD05Lighter", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD05Darker: Color {
+    return Color.init("colorSurfaceDecorativeD05Darker", bundle: .module)
+  }
   public static var colorSurfaceDecorativeD04Default: Color {
     return Color.init("colorSurfaceDecorativeD04Default", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD04Lighter: Color {
+    return Color.init("colorSurfaceDecorativeD04Lighter", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD04Darker: Color {
+    return Color.init("colorSurfaceDecorativeD04Darker", bundle: .module)
   }
   public static var colorSurfaceDecorativeD03Default: Color {
     return Color.init("colorSurfaceDecorativeD03Default", bundle: .module)
   }
+  public static var colorSurfaceDecorativeD03Lighter: Color {
+    return Color.init("colorSurfaceDecorativeD03Lighter", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD03Darker: Color {
+    return Color.init("colorSurfaceDecorativeD03Darker", bundle: .module)
+  }
   public static var colorSurfaceDecorativeD02Default: Color {
     return Color.init("colorSurfaceDecorativeD02Default", bundle: .module)
   }
+  public static var colorSurfaceDecorativeD02Lighter: Color {
+    return Color.init("colorSurfaceDecorativeD02Lighter", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD02Darker: Color {
+    return Color.init("colorSurfaceDecorativeD02Darker", bundle: .module)
+  }
   public static var colorSurfaceDecorativeD01Default: Color {
     return Color.init("colorSurfaceDecorativeD01Default", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD01Lighter: Color {
+    return Color.init("colorSurfaceDecorativeD01Lighter", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD01Darker: Color {
+    return Color.init("colorSurfaceDecorativeD01Darker", bundle: .module)
   }
   public static var colorSurfaceDecorativeSubtle10: Color {
     return Color.init("colorSurfaceDecorativeSubtle10", bundle: .module)
