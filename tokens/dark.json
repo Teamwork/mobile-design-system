@@ -541,11 +541,27 @@
             "default": {
               "value": "#95e1c1",
               "type": "color"
+            },
+            "accent02": {
+              "value": "#d2fde8",
+              "type": "color"
+            },
+            "accent01": {
+              "value": "#46b988",
+              "type": "color"
             }
           },
           "d11": {
             "default": {
               "value": "#ffa785",
+              "type": "color"
+            },
+            "accent02": {
+              "value": "#ffe4d9",
+              "type": "color"
+            },
+            "accent01": {
+              "value": "#e56a3a",
               "type": "color"
             }
           },
@@ -553,11 +569,27 @@
             "default": {
               "value": "#cacddc",
               "type": "color"
+            },
+            "accent02": {
+              "value": "#eef1f5",
+              "type": "color"
+            },
+            "accent01": {
+              "value": "#a7acc5",
+              "type": "color"
             }
           },
           "d08": {
             "default": {
               "value": "#ed7987",
+              "type": "color"
+            },
+            "accent02": {
+              "value": "#ffd0da",
+              "type": "color"
+            },
+            "accent01": {
+              "value": "#cb283b",
               "type": "color"
             }
           },
@@ -565,11 +597,27 @@
             "default": {
               "value": "#97E8F0",
               "type": "color"
+            },
+            "accent02": {
+              "value": "#c5f2f2",
+              "type": "color"
+            },
+            "accent01": {
+              "value": "#44c0cc",
+              "type": "color"
             }
           },
           "d06": {
             "default": {
               "value": "#dfa275",
+              "type": "color"
+            },
+            "accent02": {
+              "value": "#f4e0d1",
+              "type": "color"
+            },
+            "accent01": {
+              "value": "#ac5515",
               "type": "color"
             }
           },
@@ -577,11 +625,27 @@
             "default": {
               "value": "#ffa0dd",
               "type": "color"
+            },
+            "accent02": {
+              "value": "#f1cce6",
+              "type": "color"
+            },
+            "accent01": {
+              "value": "#e557b3",
+              "type": "color"
             }
           },
           "d04": {
             "default": {
               "value": "#94c7fb",
+              "type": "color"
+            },
+            "accent02": {
+              "value": "#c2e9ff",
+              "type": "color"
+            },
+            "accent01": {
+              "value": "#4592df",
               "type": "color"
             }
           },
@@ -589,17 +653,41 @@
             "default": {
               "value": "#ffdc87",
               "type": "color"
+            },
+            "accent02": {
+              "value": "#fff0ca",
+              "type": "color"
+            },
+            "accent01": {
+              "value": "#e2b13a",
+              "type": "color"
             }
           },
           "d02": {
             "default": {
               "value": "#bba1ff",
               "type": "color"
+            },
+            "accent02": {
+              "value": "#e2daff",
+              "type": "color"
+            },
+            "accent01": {
+              "value": "#7450d2",
+              "type": "color"
             }
           },
           "d01": {
             "default": {
               "value": "#abb7ed",
+              "type": "color"
+            },
+            "accent02": {
+              "value": "#d8e0ff",
+              "type": "color"
+            },
+            "accent01": {
+              "value": "#3c55bd",
               "type": "color"
             }
           },

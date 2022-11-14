@@ -542,11 +542,11 @@
               "value": "#4ecd97",
               "type": "color"
             },
-            "lighter": {
+            "accent01": {
               "value": "#95e1c1",
               "type": "color"
             },
-            "darker": {
+            "accent02": {
               "value": "#318160",
               "type": "color"
             }
@@ -556,11 +556,11 @@
               "value": "#ff7641",
               "type": "color"
             },
-            "lighter": {
+            "accent01": {
               "value": "#ffa785",
               "type": "color"
             },
-            "darker": {
+            "accent02": {
               "value": "#ce5f34",
               "type": "color"
             }
@@ -570,11 +570,11 @@
               "value": "#a7acc5",
               "type": "color"
             },
-            "lighter": {
+            "accent01": {
               "value": "#cacddc",
               "type": "color"
             },
-            "darker": {
+            "accent02": {
               "value": "#969bb1",
               "type": "color"
             }
@@ -584,11 +584,11 @@
               "value": "#e12d42",
               "type": "color"
             },
-            "lighter": {
+            "accent01": {
               "value": "#ed7987",
               "type": "color"
             },
-            "darker": {
+            "accent02": {
               "value": "#b42435",
               "type": "color"
             }
@@ -598,11 +598,11 @@
               "value": "#4cd5e3",
               "type": "color"
             },
-            "lighter": {
+            "accent01": {
               "value": "#97E8F0",
               "type": "color"
             },
-            "darker": {
+            "accent02": {
               "value": "#3dadb8",
               "type": "color"
             }
@@ -612,11 +612,11 @@
               "value": "#ca6419",
               "type": "color"
             },
-            "lighter": {
+            "accent01": {
               "value": "#dfa275",
               "type": "color"
             },
-            "darker": {
+            "accent02": {
               "value": "#9b4d13",
               "type": "color"
             }
@@ -626,11 +626,11 @@
               "value": "#ff61c7",
               "type": "color"
             },
-            "lighter": {
+            "accent01": {
               "value": "#ffa0dd",
               "type": "color"
             },
-            "darker": {
+            "accent02": {
               "value": "#c43692",
               "type": "color"
             }
@@ -640,11 +640,11 @@
               "value": "#4da2f8",
               "type": "color"
             },
-            "lighter": {
+            "accent01": {
               "value": "#94c7fb",
               "type": "color"
             },
-            "darker": {
+            "accent02": {
               "value": "#3578bb",
               "type": "color"
             }
@@ -654,11 +654,11 @@
               "value": "#ffc63c",
               "type": "color"
             },
-            "lighter": {
+            "accent01": {
               "value": "#ffdc87",
               "type": "color"
             },
-            "darker": {
+            "accent02": {
               "value": "#cb9f34",
               "type": "color"
             }
@@ -668,11 +668,11 @@
               "value": "#895ef7",
               "type": "color"
             },
-            "lighter": {
+            "accent01": {
               "value": "#bba1ff",
               "type": "color"
             },
-            "darker": {
+            "accent02": {
               "value": "#6848bd",
               "type": "color"
             }
@@ -682,11 +682,11 @@
               "value": "#4461d7",
               "type": "color"
             },
-            "lighter": {
+            "accent01": {
               "value": "#abb7ed",
               "type": "color"
             },
-            "darker": {
+            "accent02": {
               "value": "#364daa",
               "type": "color"
             }

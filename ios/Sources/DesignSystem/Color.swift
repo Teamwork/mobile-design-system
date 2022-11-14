@@ -357,35 +357,101 @@ extension Color {
   public static var colorSurfaceDecorativeD10Default: Color {
     return Color.init("colorSurfaceDecorativeD10Default", bundle: .module)
   }
+  public static var colorSurfaceDecorativeD10Accent02: Color {
+    return Color.init("colorSurfaceDecorativeD10Accent02", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD10Accent01: Color {
+    return Color.init("colorSurfaceDecorativeD10Accent01", bundle: .module)
+  }
   public static var colorSurfaceDecorativeD11Default: Color {
     return Color.init("colorSurfaceDecorativeD11Default", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD11Accent02: Color {
+    return Color.init("colorSurfaceDecorativeD11Accent02", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD11Accent01: Color {
+    return Color.init("colorSurfaceDecorativeD11Accent01", bundle: .module)
   }
   public static var colorSurfaceDecorativeD09Default: Color {
     return Color.init("colorSurfaceDecorativeD09Default", bundle: .module)
   }
+  public static var colorSurfaceDecorativeD09Accent02: Color {
+    return Color.init("colorSurfaceDecorativeD09Accent02", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD09Accent01: Color {
+    return Color.init("colorSurfaceDecorativeD09Accent01", bundle: .module)
+  }
   public static var colorSurfaceDecorativeD08Default: Color {
     return Color.init("colorSurfaceDecorativeD08Default", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD08Accent02: Color {
+    return Color.init("colorSurfaceDecorativeD08Accent02", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD08Accent01: Color {
+    return Color.init("colorSurfaceDecorativeD08Accent01", bundle: .module)
   }
   public static var colorSurfaceDecorativeD07Default: Color {
     return Color.init("colorSurfaceDecorativeD07Default", bundle: .module)
   }
+  public static var colorSurfaceDecorativeD07Accent02: Color {
+    return Color.init("colorSurfaceDecorativeD07Accent02", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD07Accent01: Color {
+    return Color.init("colorSurfaceDecorativeD07Accent01", bundle: .module)
+  }
   public static var colorSurfaceDecorativeD06Default: Color {
     return Color.init("colorSurfaceDecorativeD06Default", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD06Accent02: Color {
+    return Color.init("colorSurfaceDecorativeD06Accent02", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD06Accent01: Color {
+    return Color.init("colorSurfaceDecorativeD06Accent01", bundle: .module)
   }
   public static var colorSurfaceDecorativeD05Default: Color {
     return Color.init("colorSurfaceDecorativeD05Default", bundle: .module)
   }
+  public static var colorSurfaceDecorativeD05Accent02: Color {
+    return Color.init("colorSurfaceDecorativeD05Accent02", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD05Accent01: Color {
+    return Color.init("colorSurfaceDecorativeD05Accent01", bundle: .module)
+  }
   public static var colorSurfaceDecorativeD04Default: Color {
     return Color.init("colorSurfaceDecorativeD04Default", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD04Accent02: Color {
+    return Color.init("colorSurfaceDecorativeD04Accent02", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD04Accent01: Color {
+    return Color.init("colorSurfaceDecorativeD04Accent01", bundle: .module)
   }
   public static var colorSurfaceDecorativeD03Default: Color {
     return Color.init("colorSurfaceDecorativeD03Default", bundle: .module)
   }
+  public static var colorSurfaceDecorativeD03Accent02: Color {
+    return Color.init("colorSurfaceDecorativeD03Accent02", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD03Accent01: Color {
+    return Color.init("colorSurfaceDecorativeD03Accent01", bundle: .module)
+  }
   public static var colorSurfaceDecorativeD02Default: Color {
     return Color.init("colorSurfaceDecorativeD02Default", bundle: .module)
   }
+  public static var colorSurfaceDecorativeD02Accent02: Color {
+    return Color.init("colorSurfaceDecorativeD02Accent02", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD02Accent01: Color {
+    return Color.init("colorSurfaceDecorativeD02Accent01", bundle: .module)
+  }
   public static var colorSurfaceDecorativeD01Default: Color {
     return Color.init("colorSurfaceDecorativeD01Default", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD01Accent02: Color {
+    return Color.init("colorSurfaceDecorativeD01Accent02", bundle: .module)
+  }
+  public static var colorSurfaceDecorativeD01Accent01: Color {
+    return Color.init("colorSurfaceDecorativeD01Accent01", bundle: .module)
   }
   public static var colorSurfaceDecorativeSubtle10: Color {
     return Color.init("colorSurfaceDecorativeSubtle10", bundle: .module)
