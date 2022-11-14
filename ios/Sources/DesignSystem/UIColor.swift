@@ -133,77 +133,44 @@ extension UIColor {
   public static var colorTextInvertedQuaternary: UIColor {
     return UIColor(named: "colorTextInvertedQuaternary", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
-  public static var colorTextOnContextOnAction: UIColor {
-    return UIColor(named: "colorTextOnContextOnAction", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  public static var colorTextOnAction: UIColor {
+    return UIColor(named: "colorTextOnAction", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
-  public static var colorTextOnContextOnSuccess: UIColor {
-    return UIColor(named: "colorTextOnContextOnSuccess", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  public static var colorTextOnSuccess: UIColor {
+    return UIColor(named: "colorTextOnSuccess", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
-  public static var colorTextOnContextOnCritical: UIColor {
-    return UIColor(named: "colorTextOnContextOnCritical", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  public static var colorTextOnCritical: UIColor {
+    return UIColor(named: "colorTextOnCritical", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
-  public static var colorTextOnContextOnInfo: UIColor {
-    return UIColor(named: "colorTextOnContextOnInfo", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  public static var colorTextOnInfo: UIColor {
+    return UIColor(named: "colorTextOnInfo", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
-  public static var colorTextOnContextOnPalette: UIColor {
-    return UIColor(named: "colorTextOnContextOnPalette", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  public static var colorTextOnPalette: UIColor {
+    return UIColor(named: "colorTextOnPalette", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
-  public static var colorTextOnContextOnWarning: UIColor {
-    return UIColor(named: "colorTextOnContextOnWarning", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  public static var colorTextOnWarning: UIColor {
+    return UIColor(named: "colorTextOnWarning", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
-  public static var colorTextDecorative10: UIColor {
-    return UIColor(named: "colorTextDecorative10", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  public static var colorIconOnPalette: UIColor {
+    return UIColor(named: "colorIconOnPalette", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
-  public static var colorTextDecorative11: UIColor {
-    return UIColor(named: "colorTextDecorative11", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  public static var colorIconOnSuccess: UIColor {
+    return UIColor(named: "colorIconOnSuccess", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
-  public static var colorTextDecorative01: UIColor {
-    return UIColor(named: "colorTextDecorative01", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  public static var colorIconOnWarning: UIColor {
+    return UIColor(named: "colorIconOnWarning", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
-  public static var colorTextDecorative02: UIColor {
-    return UIColor(named: "colorTextDecorative02", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  public static var colorIconOnCritical: UIColor {
+    return UIColor(named: "colorIconOnCritical", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
-  public static var colorTextDecorative03: UIColor {
-    return UIColor(named: "colorTextDecorative03", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  public static var colorIconOnInteraction: UIColor {
+    return UIColor(named: "colorIconOnInteraction", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
-  public static var colorTextDecorative04: UIColor {
-    return UIColor(named: "colorTextDecorative04", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  public static var colorIconDisabled: UIColor {
+    return UIColor(named: "colorIconDisabled", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
-  public static var colorTextDecorative05: UIColor {
-    return UIColor(named: "colorTextDecorative05", in: .module, compatibleWith: nil).unsafelyUnwrapped
-  }
-  public static var colorTextDecorative06: UIColor {
-    return UIColor(named: "colorTextDecorative06", in: .module, compatibleWith: nil).unsafelyUnwrapped
-  }
-  public static var colorTextDecorative07: UIColor {
-    return UIColor(named: "colorTextDecorative07", in: .module, compatibleWith: nil).unsafelyUnwrapped
-  }
-  public static var colorTextDecorative08: UIColor {
-    return UIColor(named: "colorTextDecorative08", in: .module, compatibleWith: nil).unsafelyUnwrapped
-  }
-  public static var colorTextDecorative09: UIColor {
-    return UIColor(named: "colorTextDecorative09", in: .module, compatibleWith: nil).unsafelyUnwrapped
-  }
-  public static var colorIconOnContextOnPalette: UIColor {
-    return UIColor(named: "colorIconOnContextOnPalette", in: .module, compatibleWith: nil).unsafelyUnwrapped
-  }
-  public static var colorIconOnContextOnSuccess: UIColor {
-    return UIColor(named: "colorIconOnContextOnSuccess", in: .module, compatibleWith: nil).unsafelyUnwrapped
-  }
-  public static var colorIconOnContextOnWarning: UIColor {
-    return UIColor(named: "colorIconOnContextOnWarning", in: .module, compatibleWith: nil).unsafelyUnwrapped
-  }
-  public static var colorIconOnContextOnCritical: UIColor {
-    return UIColor(named: "colorIconOnContextOnCritical", in: .module, compatibleWith: nil).unsafelyUnwrapped
-  }
-  public static var colorIconOnContextOnInteraction: UIColor {
-    return UIColor(named: "colorIconOnContextOnInteraction", in: .module, compatibleWith: nil).unsafelyUnwrapped
-  }
-  public static var colorIconOnContextDisabled: UIColor {
-    return UIColor(named: "colorIconOnContextDisabled", in: .module, compatibleWith: nil).unsafelyUnwrapped
-  }
-  public static var colorIconOnContextOnInfo: UIColor {
-    return UIColor(named: "colorIconOnContextOnInfo", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  public static var colorIconOnInfo: UIColor {
+    return UIColor(named: "colorIconOnInfo", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
   public static var colorIconActionSelected: UIColor {
     return UIColor(named: "colorIconActionSelected", in: .module, compatibleWith: nil).unsafelyUnwrapped
@@ -385,38 +352,38 @@ extension UIColor {
   public static var colorSurfaceSelectSelected: UIColor {
     return UIColor(named: "colorSurfaceSelectSelected", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
-  public static var colorSurfaceDecorative10: UIColor {
-    return UIColor(named: "colorSurfaceDecorative10", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  public static var colorSurfaceDecorativeD10Default: UIColor {
+    return UIColor(named: "colorSurfaceDecorativeD10Default", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
-  public static var colorSurfaceDecorative11: UIColor {
-    return UIColor(named: "colorSurfaceDecorative11", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  public static var colorSurfaceDecorativeD11Default: UIColor {
+    return UIColor(named: "colorSurfaceDecorativeD11Default", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
-  public static var colorSurfaceDecorative09: UIColor {
-    return UIColor(named: "colorSurfaceDecorative09", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  public static var colorSurfaceDecorativeD09Default: UIColor {
+    return UIColor(named: "colorSurfaceDecorativeD09Default", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
-  public static var colorSurfaceDecorative08: UIColor {
-    return UIColor(named: "colorSurfaceDecorative08", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  public static var colorSurfaceDecorativeD08Default: UIColor {
+    return UIColor(named: "colorSurfaceDecorativeD08Default", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
-  public static var colorSurfaceDecorative07: UIColor {
-    return UIColor(named: "colorSurfaceDecorative07", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  public static var colorSurfaceDecorativeD07Default: UIColor {
+    return UIColor(named: "colorSurfaceDecorativeD07Default", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
-  public static var colorSurfaceDecorative06: UIColor {
-    return UIColor(named: "colorSurfaceDecorative06", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  public static var colorSurfaceDecorativeD06Default: UIColor {
+    return UIColor(named: "colorSurfaceDecorativeD06Default", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
-  public static var colorSurfaceDecorative05: UIColor {
-    return UIColor(named: "colorSurfaceDecorative05", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  public static var colorSurfaceDecorativeD05Default: UIColor {
+    return UIColor(named: "colorSurfaceDecorativeD05Default", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
-  public static var colorSurfaceDecorative04: UIColor {
-    return UIColor(named: "colorSurfaceDecorative04", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  public static var colorSurfaceDecorativeD04Default: UIColor {
+    return UIColor(named: "colorSurfaceDecorativeD04Default", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
-  public static var colorSurfaceDecorative03: UIColor {
-    return UIColor(named: "colorSurfaceDecorative03", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  public static var colorSurfaceDecorativeD03Default: UIColor {
+    return UIColor(named: "colorSurfaceDecorativeD03Default", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
-  public static var colorSurfaceDecorative02: UIColor {
-    return UIColor(named: "colorSurfaceDecorative02", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  public static var colorSurfaceDecorativeD02Default: UIColor {
+    return UIColor(named: "colorSurfaceDecorativeD02Default", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
-  public static var colorSurfaceDecorative01: UIColor {
-    return UIColor(named: "colorSurfaceDecorative01", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  public static var colorSurfaceDecorativeD01Default: UIColor {
+    return UIColor(named: "colorSurfaceDecorativeD01Default", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
   public static var colorSurfaceDecorativeSubtle10: UIColor {
     return UIColor(named: "colorSurfaceDecorativeSubtle10", in: .module, compatibleWith: nil).unsafelyUnwrapped

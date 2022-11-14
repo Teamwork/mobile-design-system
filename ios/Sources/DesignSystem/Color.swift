@@ -135,77 +135,44 @@ extension Color {
   public static var colorTextInvertedQuaternary: Color {
     return Color.init("colorTextInvertedQuaternary", bundle: .module)
   }
-  public static var colorTextOnContextOnAction: Color {
-    return Color.init("colorTextOnContextOnAction", bundle: .module)
+  public static var colorTextOnAction: Color {
+    return Color.init("colorTextOnAction", bundle: .module)
   }
-  public static var colorTextOnContextOnSuccess: Color {
-    return Color.init("colorTextOnContextOnSuccess", bundle: .module)
+  public static var colorTextOnSuccess: Color {
+    return Color.init("colorTextOnSuccess", bundle: .module)
   }
-  public static var colorTextOnContextOnCritical: Color {
-    return Color.init("colorTextOnContextOnCritical", bundle: .module)
+  public static var colorTextOnCritical: Color {
+    return Color.init("colorTextOnCritical", bundle: .module)
   }
-  public static var colorTextOnContextOnInfo: Color {
-    return Color.init("colorTextOnContextOnInfo", bundle: .module)
+  public static var colorTextOnInfo: Color {
+    return Color.init("colorTextOnInfo", bundle: .module)
   }
-  public static var colorTextOnContextOnPalette: Color {
-    return Color.init("colorTextOnContextOnPalette", bundle: .module)
+  public static var colorTextOnPalette: Color {
+    return Color.init("colorTextOnPalette", bundle: .module)
   }
-  public static var colorTextOnContextOnWarning: Color {
-    return Color.init("colorTextOnContextOnWarning", bundle: .module)
+  public static var colorTextOnWarning: Color {
+    return Color.init("colorTextOnWarning", bundle: .module)
   }
-  public static var colorTextDecorative10: Color {
-    return Color.init("colorTextDecorative10", bundle: .module)
+  public static var colorIconOnPalette: Color {
+    return Color.init("colorIconOnPalette", bundle: .module)
   }
-  public static var colorTextDecorative11: Color {
-    return Color.init("colorTextDecorative11", bundle: .module)
+  public static var colorIconOnSuccess: Color {
+    return Color.init("colorIconOnSuccess", bundle: .module)
   }
-  public static var colorTextDecorative01: Color {
-    return Color.init("colorTextDecorative01", bundle: .module)
+  public static var colorIconOnWarning: Color {
+    return Color.init("colorIconOnWarning", bundle: .module)
   }
-  public static var colorTextDecorative02: Color {
-    return Color.init("colorTextDecorative02", bundle: .module)
+  public static var colorIconOnCritical: Color {
+    return Color.init("colorIconOnCritical", bundle: .module)
   }
-  public static var colorTextDecorative03: Color {
-    return Color.init("colorTextDecorative03", bundle: .module)
+  public static var colorIconOnInteraction: Color {
+    return Color.init("colorIconOnInteraction", bundle: .module)
   }
-  public static var colorTextDecorative04: Color {
-    return Color.init("colorTextDecorative04", bundle: .module)
+  public static var colorIconDisabled: Color {
+    return Color.init("colorIconDisabled", bundle: .module)
   }
-  public static var colorTextDecorative05: Color {
-    return Color.init("colorTextDecorative05", bundle: .module)
-  }
-  public static var colorTextDecorative06: Color {
-    return Color.init("colorTextDecorative06", bundle: .module)
-  }
-  public static var colorTextDecorative07: Color {
-    return Color.init("colorTextDecorative07", bundle: .module)
-  }
-  public static var colorTextDecorative08: Color {
-    return Color.init("colorTextDecorative08", bundle: .module)
-  }
-  public static var colorTextDecorative09: Color {
-    return Color.init("colorTextDecorative09", bundle: .module)
-  }
-  public static var colorIconOnContextOnPalette: Color {
-    return Color.init("colorIconOnContextOnPalette", bundle: .module)
-  }
-  public static var colorIconOnContextOnSuccess: Color {
-    return Color.init("colorIconOnContextOnSuccess", bundle: .module)
-  }
-  public static var colorIconOnContextOnWarning: Color {
-    return Color.init("colorIconOnContextOnWarning", bundle: .module)
-  }
-  public static var colorIconOnContextOnCritical: Color {
-    return Color.init("colorIconOnContextOnCritical", bundle: .module)
-  }
-  public static var colorIconOnContextOnInteraction: Color {
-    return Color.init("colorIconOnContextOnInteraction", bundle: .module)
-  }
-  public static var colorIconOnContextDisabled: Color {
-    return Color.init("colorIconOnContextDisabled", bundle: .module)
-  }
-  public static var colorIconOnContextOnInfo: Color {
-    return Color.init("colorIconOnContextOnInfo", bundle: .module)
+  public static var colorIconOnInfo: Color {
+    return Color.init("colorIconOnInfo", bundle: .module)
   }
   public static var colorIconActionSelected: Color {
     return Color.init("colorIconActionSelected", bundle: .module)
@@ -387,38 +354,38 @@ extension Color {
   public static var colorSurfaceSelectSelected: Color {
     return Color.init("colorSurfaceSelectSelected", bundle: .module)
   }
-  public static var colorSurfaceDecorative10: Color {
-    return Color.init("colorSurfaceDecorative10", bundle: .module)
+  public static var colorSurfaceDecorativeD10Default: Color {
+    return Color.init("colorSurfaceDecorativeD10Default", bundle: .module)
   }
-  public static var colorSurfaceDecorative11: Color {
-    return Color.init("colorSurfaceDecorative11", bundle: .module)
+  public static var colorSurfaceDecorativeD11Default: Color {
+    return Color.init("colorSurfaceDecorativeD11Default", bundle: .module)
   }
-  public static var colorSurfaceDecorative09: Color {
-    return Color.init("colorSurfaceDecorative09", bundle: .module)
+  public static var colorSurfaceDecorativeD09Default: Color {
+    return Color.init("colorSurfaceDecorativeD09Default", bundle: .module)
   }
-  public static var colorSurfaceDecorative08: Color {
-    return Color.init("colorSurfaceDecorative08", bundle: .module)
+  public static var colorSurfaceDecorativeD08Default: Color {
+    return Color.init("colorSurfaceDecorativeD08Default", bundle: .module)
   }
-  public static var colorSurfaceDecorative07: Color {
-    return Color.init("colorSurfaceDecorative07", bundle: .module)
+  public static var colorSurfaceDecorativeD07Default: Color {
+    return Color.init("colorSurfaceDecorativeD07Default", bundle: .module)
   }
-  public static var colorSurfaceDecorative06: Color {
-    return Color.init("colorSurfaceDecorative06", bundle: .module)
+  public static var colorSurfaceDecorativeD06Default: Color {
+    return Color.init("colorSurfaceDecorativeD06Default", bundle: .module)
   }
-  public static var colorSurfaceDecorative05: Color {
-    return Color.init("colorSurfaceDecorative05", bundle: .module)
+  public static var colorSurfaceDecorativeD05Default: Color {
+    return Color.init("colorSurfaceDecorativeD05Default", bundle: .module)
   }
-  public static var colorSurfaceDecorative04: Color {
-    return Color.init("colorSurfaceDecorative04", bundle: .module)
+  public static var colorSurfaceDecorativeD04Default: Color {
+    return Color.init("colorSurfaceDecorativeD04Default", bundle: .module)
   }
-  public static var colorSurfaceDecorative03: Color {
-    return Color.init("colorSurfaceDecorative03", bundle: .module)
+  public static var colorSurfaceDecorativeD03Default: Color {
+    return Color.init("colorSurfaceDecorativeD03Default", bundle: .module)
   }
-  public static var colorSurfaceDecorative02: Color {
-    return Color.init("colorSurfaceDecorative02", bundle: .module)
+  public static var colorSurfaceDecorativeD02Default: Color {
+    return Color.init("colorSurfaceDecorativeD02Default", bundle: .module)
   }
-  public static var colorSurfaceDecorative01: Color {
-    return Color.init("colorSurfaceDecorative01", bundle: .module)
+  public static var colorSurfaceDecorativeD01Default: Color {
+    return Color.init("colorSurfaceDecorativeD01Default", bundle: .module)
   }
   public static var colorSurfaceDecorativeSubtle10: Color {
     return Color.init("colorSurfaceDecorativeSubtle10", bundle: .module)
