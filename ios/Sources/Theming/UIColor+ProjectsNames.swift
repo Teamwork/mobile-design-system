@@ -68,6 +68,17 @@ public extension UIColor {
     static var brandRedBase: UIColor { colors.brandSecondary04.base }
     static var brandYellowBase: UIColor { colors.brandSecondary08.base }
     static var brandIndigoBase: UIColor { colors.brandSecondary06.base }
+
+    static var feedbackAccentBase: UIColor { colors.feedbackAccent.base }
+    // swiftlint:disable:next force_unwrapping
+    static var feedbackAccent10 = UIColor(named: "default-feedback-accent-10", in: .module, compatibleWith: nil)!
+    static var feedbackAccent20: UIColor { colors.feedbackAccent.child20 }
+
+    static var feedbackErrorBase: UIColor { colors.feedbackError.base }
+
+    static var feedbackWarningBase: UIColor { colors.feedbackWarning.base }
+
+    static var feedbackSuccessBase: UIColor { colors.feedbackSuccess.base }
     
     // Cell selection
     static var backgroundSelected: UIColor { .systemGray3 }
