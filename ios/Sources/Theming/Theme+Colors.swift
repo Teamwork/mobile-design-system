@@ -24,10 +24,5 @@ public extension Theme {
         public let brandSecondary06: DynamicColor
         public let brandSecondary07: DynamicColor
         public let brandSecondary08: DynamicColor
-
-        public let feedbackAccent: DynamicColor
-        public let feedbackError: DynamicColor
-        public let feedbackWarning: DynamicColor
-        public let feedbackSuccess: DynamicColor
     }
 }
