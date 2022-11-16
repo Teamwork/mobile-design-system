@@ -223,31 +223,31 @@
       },
       "icon": {
         "on-palette": {
-          "value": "#ffffff",
+          "value": "#000",
           "type": "color"
         },
         "on-success": {
-          "value": "#ffffff",
+          "value": "#000",
           "type": "color"
         },
         "on-warning": {
-          "value": "#ffffff",
+          "value": "#000",
           "type": "color"
         },
         "on-critical": {
-          "value": "#ffffff",
+          "value": "#000",
           "type": "color"
         },
         "on-interaction": {
-          "value": "#ffffff",
+          "value": "#000",
           "type": "color"
         },
         "disabled": {
-          "value": "#edeff5",
+          "value": "#000",
           "type": "color"
         },
         "on-info": {
-          "value": "#ffffff",
+          "value": "#000",
           "type": "color"
         },
         "action": {

@@ -3,3 +3,4 @@ node_modules
 # Mac specific ignores
 .DS_STORE
 **/.DS_Store
+.swiftpm/xcode/package.xcworkspace/xcuserdata/andrea.agudo.xcuserdatad/UserInterfaceState.xcuserstate
