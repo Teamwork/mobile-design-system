@@ -151,6 +151,39 @@ extension UIColor {
   public static var colorTextOnWarning: UIColor {
     return UIColor(named: "colorTextOnWarning", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
+  public static var colorTextDecorative10: UIColor {
+    return UIColor(named: "colorTextDecorative10", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextDecorative11: UIColor {
+    return UIColor(named: "colorTextDecorative11", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextDecorative01: UIColor {
+    return UIColor(named: "colorTextDecorative01", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextDecorative02: UIColor {
+    return UIColor(named: "colorTextDecorative02", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextDecorative03: UIColor {
+    return UIColor(named: "colorTextDecorative03", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextDecorative04: UIColor {
+    return UIColor(named: "colorTextDecorative04", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextDecorative05: UIColor {
+    return UIColor(named: "colorTextDecorative05", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextDecorative06: UIColor {
+    return UIColor(named: "colorTextDecorative06", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextDecorative07: UIColor {
+    return UIColor(named: "colorTextDecorative07", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextDecorative08: UIColor {
+    return UIColor(named: "colorTextDecorative08", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorTextDecorative09: UIColor {
+    return UIColor(named: "colorTextDecorative09", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
   public static var colorIconOnPalette: UIColor {
     return UIColor(named: "colorIconOnPalette", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
@@ -252,6 +285,39 @@ extension UIColor {
   }
   public static var colorBorderCriticalSelected: UIColor {
     return UIColor(named: "colorBorderCriticalSelected", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorBorderDecorative10: UIColor {
+    return UIColor(named: "colorBorderDecorative10", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorBorderDecorative11: UIColor {
+    return UIColor(named: "colorBorderDecorative11", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorBorderDecorative01: UIColor {
+    return UIColor(named: "colorBorderDecorative01", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorBorderDecorative02: UIColor {
+    return UIColor(named: "colorBorderDecorative02", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorBorderDecorative03: UIColor {
+    return UIColor(named: "colorBorderDecorative03", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorBorderDecorative04: UIColor {
+    return UIColor(named: "colorBorderDecorative04", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorBorderDecorative05: UIColor {
+    return UIColor(named: "colorBorderDecorative05", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorBorderDecorative06: UIColor {
+    return UIColor(named: "colorBorderDecorative06", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorBorderDecorative07: UIColor {
+    return UIColor(named: "colorBorderDecorative07", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorBorderDecorative08: UIColor {
+    return UIColor(named: "colorBorderDecorative08", in: .module, compatibleWith: nil).unsafelyUnwrapped
+  }
+  public static var colorBorderDecorative09: UIColor {
+    return UIColor(named: "colorBorderDecorative09", in: .module, compatibleWith: nil).unsafelyUnwrapped
   }
   public static var colorSurfaceSuccessDefault: UIColor {
     return UIColor(named: "colorSurfaceSuccessDefault", in: .module, compatibleWith: nil).unsafelyUnwrapped
