@@ -153,6 +153,39 @@ extension Color {
   public static var colorTextOnWarning: Color {
     return Color.init("colorTextOnWarning", bundle: .module)
   }
+  public static var colorTextDecorative10: Color {
+    return Color.init("colorTextDecorative10", bundle: .module)
+  }
+  public static var colorTextDecorative11: Color {
+    return Color.init("colorTextDecorative11", bundle: .module)
+  }
+  public static var colorTextDecorative01: Color {
+    return Color.init("colorTextDecorative01", bundle: .module)
+  }
+  public static var colorTextDecorative02: Color {
+    return Color.init("colorTextDecorative02", bundle: .module)
+  }
+  public static var colorTextDecorative03: Color {
+    return Color.init("colorTextDecorative03", bundle: .module)
+  }
+  public static var colorTextDecorative04: Color {
+    return Color.init("colorTextDecorative04", bundle: .module)
+  }
+  public static var colorTextDecorative05: Color {
+    return Color.init("colorTextDecorative05", bundle: .module)
+  }
+  public static var colorTextDecorative06: Color {
+    return Color.init("colorTextDecorative06", bundle: .module)
+  }
+  public static var colorTextDecorative07: Color {
+    return Color.init("colorTextDecorative07", bundle: .module)
+  }
+  public static var colorTextDecorative08: Color {
+    return Color.init("colorTextDecorative08", bundle: .module)
+  }
+  public static var colorTextDecorative09: Color {
+    return Color.init("colorTextDecorative09", bundle: .module)
+  }
   public static var colorIconOnPalette: Color {
     return Color.init("colorIconOnPalette", bundle: .module)
   }
@@ -254,6 +287,39 @@ extension Color {
   }
   public static var colorBorderCriticalSelected: Color {
     return Color.init("colorBorderCriticalSelected", bundle: .module)
+  }
+  public static var colorBorderDecorative10: Color {
+    return Color.init("colorBorderDecorative10", bundle: .module)
+  }
+  public static var colorBorderDecorative11: Color {
+    return Color.init("colorBorderDecorative11", bundle: .module)
+  }
+  public static var colorBorderDecorative01: Color {
+    return Color.init("colorBorderDecorative01", bundle: .module)
+  }
+  public static var colorBorderDecorative02: Color {
+    return Color.init("colorBorderDecorative02", bundle: .module)
+  }
+  public static var colorBorderDecorative03: Color {
+    return Color.init("colorBorderDecorative03", bundle: .module)
+  }
+  public static var colorBorderDecorative04: Color {
+    return Color.init("colorBorderDecorative04", bundle: .module)
+  }
+  public static var colorBorderDecorative05: Color {
+    return Color.init("colorBorderDecorative05", bundle: .module)
+  }
+  public static var colorBorderDecorative06: Color {
+    return Color.init("colorBorderDecorative06", bundle: .module)
+  }
+  public static var colorBorderDecorative07: Color {
+    return Color.init("colorBorderDecorative07", bundle: .module)
+  }
+  public static var colorBorderDecorative08: Color {
+    return Color.init("colorBorderDecorative08", bundle: .module)
+  }
+  public static var colorBorderDecorative09: Color {
+    return Color.init("colorBorderDecorative09", bundle: .module)
   }
   public static var colorSurfaceSuccessDefault: Color {
     return Color.init("colorSurfaceSuccessDefault", bundle: .module)

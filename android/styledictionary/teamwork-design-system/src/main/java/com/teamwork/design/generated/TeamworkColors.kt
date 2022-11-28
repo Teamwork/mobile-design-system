@@ -57,6 +57,17 @@ data class TeamworkColors(
 		textOnInfo = Color(0xFF000000),
 		textOnPalette = Color(0xFF000000),
 		textOnWarning = Color(0xFF000000),
+		textDecorative10 = Color(0xFF95E1C1),
+		textDecorative11 = Color(0xFFFFA785),
+		textDecorative01 = Color(0xFFABB7ED),
+		textDecorative02 = Color(0xFFBBA1FF),
+		textDecorative03 = Color(0xFFFFDC87),
+		textDecorative04 = Color(0xFF94C7FB),
+		textDecorative05 = Color(0xFFFFA0DD),
+		textDecorative06 = Color(0xFFDFA275),
+		textDecorative07 = Color(0xFF97E8F0),
+		textDecorative08 = Color(0xFFED7987),
+		textDecorative09 = Color(0xFFCACDDC),
 	),
 
 	val icon: Icon = Icon(
@@ -97,6 +108,17 @@ data class TeamworkColors(
 		borderCriticalDefault = Color(0xFFED7987),
 		borderCriticalHover = Color(0xFFE54659),
 		borderCriticalSelected = Color(0xFFE75768),
+		borderDecorative10 = Color(0xFF95E1C1),
+		borderDecorative11 = Color(0xFFFFA785),
+		borderDecorative01 = Color(0xFFABB7ED),
+		borderDecorative02 = Color(0xFFBBA1FF),
+		borderDecorative03 = Color(0xFFFFDC87),
+		borderDecorative04 = Color(0xFF94C7FB),
+		borderDecorative05 = Color(0xFFFFA0DD),
+		borderDecorative06 = Color(0xFFDFA275),
+		borderDecorative07 = Color(0xFF97E8F0),
+		borderDecorative08 = Color(0xFFED7987),
+		borderDecorative09 = Color(0xFFE8EAF1),
 	),
 
 	val surface: Surface = Surface(
@@ -234,6 +256,17 @@ data class TeamworkColors(
 		val textOnInfo: Color = Color(0xFF000000),
 		val textOnPalette: Color = Color(0xFF000000),
 		val textOnWarning: Color = Color(0xFF000000),
+		val textDecorative10: Color = Color(0xFF95E1C1),
+		val textDecorative11: Color = Color(0xFFFFA785),
+		val textDecorative01: Color = Color(0xFFABB7ED),
+		val textDecorative02: Color = Color(0xFFBBA1FF),
+		val textDecorative03: Color = Color(0xFFFFDC87),
+		val textDecorative04: Color = Color(0xFF94C7FB),
+		val textDecorative05: Color = Color(0xFFFFA0DD),
+		val textDecorative06: Color = Color(0xFFDFA275),
+		val textDecorative07: Color = Color(0xFF97E8F0),
+		val textDecorative08: Color = Color(0xFFED7987),
+		val textDecorative09: Color = Color(0xFFCACDDC),
 	)
 
 	data class Icon(
@@ -274,6 +307,17 @@ data class TeamworkColors(
 		val borderCriticalDefault: Color = Color(0xFFED7987),
 		val borderCriticalHover: Color = Color(0xFFE54659),
 		val borderCriticalSelected: Color = Color(0xFFE75768),
+		val borderDecorative10: Color = Color(0xFF95E1C1),
+		val borderDecorative11: Color = Color(0xFFFFA785),
+		val borderDecorative01: Color = Color(0xFFABB7ED),
+		val borderDecorative02: Color = Color(0xFFBBA1FF),
+		val borderDecorative03: Color = Color(0xFFFFDC87),
+		val borderDecorative04: Color = Color(0xFF94C7FB),
+		val borderDecorative05: Color = Color(0xFFFFA0DD),
+		val borderDecorative06: Color = Color(0xFFDFA275),
+		val borderDecorative07: Color = Color(0xFF97E8F0),
+		val borderDecorative08: Color = Color(0xFFED7987),
+		val borderDecorative09: Color = Color(0xFFE8EAF1),
 	)
 
 	data class Surface(
