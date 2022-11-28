@@ -24,8 +24,7 @@ let package = Package(
             dependencies: [],
             path: "ios/Sources",
             resources: [
-                .process("DesignSystem/Colors.xcassets"),
-                .process("InApp/InAppColors.xcassets")
+                .process("DesignSystem/Colors.xcassets")
             ]
         ),
         .testTarget(
