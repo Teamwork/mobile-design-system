@@ -15,14 +15,5 @@ public extension Theme {
     struct Colors: Hashable {
 
         public let brandPrimary02: DynamicColor
-
-        public let brandSecondary01: DynamicColor
-        public let brandSecondary02: DynamicColor
-        public let brandSecondary03: DynamicColor
-        public let brandSecondary04: DynamicColor
-        public let brandSecondary05: DynamicColor
-        public let brandSecondary06: DynamicColor
-        public let brandSecondary07: DynamicColor
-        public let brandSecondary08: DynamicColor
     }
 }
