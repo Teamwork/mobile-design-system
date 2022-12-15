@@ -19,20 +19,20 @@ function getTextStyleForToken(token) {
   <style name="${token.name}">
     <item name="android:fontFamily">${token.value.fontFamily}</item>
     <item name="android:textSize">${token.value.fontSize}sp</item>
-    <item name="android:letterSpacing">${calculateLetterSpacing(token.value.letterSpacing)}</item>
+    <item name="android:letterSpacing">${calculateLetterSpacing(token.value.fontSize, token.value.letterSpacing)}</item>
     ${getLineHeightTag(token)}
   </style>`;
 }
 
-function calculateLetterSpacing(letterSpacing) {
+function calculateLetterSpacing(fontSize, letterSpacing) {
   if (indexOf(letterSpacing, "%") != -1) {
-    // We treat percentages as em units. Eg: -2% -> 0.98
+    // We treat percentages as em units. Eg: -2% -> -0.02
     const letterSpacingNumber = parseInt(letterSpacing.replace("%", ""));
 
-    return (100 + letterSpacingNumber) / 100.0;
+    return letterSpacingNumber / 100.0;
   }
-  // No percentage will be treated as sp units
-  return `${letterSpacing}`;
+  // No percentage means we need to calculate it ourselves
+  return `${letterSpacing / fontSize}`;
 }
 
 function getLineHeightTag(token) {
