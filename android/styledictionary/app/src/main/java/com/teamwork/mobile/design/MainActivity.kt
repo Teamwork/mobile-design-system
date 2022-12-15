@@ -1,6 +1,8 @@
 package com.teamwork.mobile.design
 
 import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.ViewGroup
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.BorderStroke
@@ -12,6 +14,8 @@ import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalView
+import androidx.compose.ui.viewinterop.AndroidView
 import com.teamwork.design.TeamworkTheme
 
 class MainActivity : ComponentActivity() {
@@ -26,11 +30,11 @@ class MainActivity : ComponentActivity() {
                 ) {
                     Column {
                         Text(
-                            text = "headlineLarge",
+                            text = "Headline Large",
                             style = TeamworkTheme.typography.headlineLarge
                         )
                         Text(
-                            text = "headlineMedium",
+                            text = "Headline Medium",
                             style = TeamworkTheme.typography.headlineMedium
                         )
                         Text(
@@ -40,15 +44,15 @@ class MainActivity : ComponentActivity() {
                                     color = TeamworkTheme.color.border.borderSuccessHover
                                 )
                             ),
-                            text = "headlineSmall",
+                            text = "Headline Small",
                             style = TeamworkTheme.typography.headlineSmall
                         )
                         Text(
-                            text = "bodyMedium",
+                            text = "Body Medium",
                             style = TeamworkTheme.typography.bodyMedium
                         )
                         Text(
-                            text = "bodySmall",
+                            text = "Body Small",
                             style = TeamworkTheme.typography.bodySmall
                         )
 
@@ -72,6 +76,11 @@ class MainActivity : ComponentActivity() {
                                 text = "colorSurfaceCriticalDefault"
                             )
                         }
+
+                        val viewParent = LocalView.current.rootView
+                        AndroidView(factory = {
+                            LayoutInflater.from(it).inflate(R.layout.android_views_typography, viewParent as ViewGroup, false)
+                        })
                     }
                 }
             }
