@@ -14,7 +14,7 @@
 	textDecoration => none
   -->
   <style name="typography_display_small">
-    <item name="android:fontFamily">Poppins</item>
+    <item name="android:fontFamily">@font/poppins_regular</item>
     <item name="android:textSize">36sp</item>
     <item name="android:letterSpacing">-0.03</item>
     <item name="android:lineSpacingExtra">8sp</item>
@@ -34,7 +34,7 @@
 	textDecoration => none
   -->
   <style name="typography_display_medium">
-    <item name="android:fontFamily">Poppins</item>
+    <item name="android:fontFamily">@font/poppins_regular</item>
     <item name="android:textSize">45sp</item>
     <item name="android:letterSpacing">-0.03</item>
     <item name="android:lineSpacingExtra">7sp</item>
@@ -54,7 +54,7 @@
 	textDecoration => none
   -->
   <style name="typography_display_large">
-    <item name="android:fontFamily">Poppins</item>
+    <item name="android:fontFamily">@font/poppins_regular</item>
     <item name="android:textSize">57sp</item>
     <item name="android:letterSpacing">-0.04</item>
     <item name="android:lineSpacingExtra">7sp</item>
@@ -74,7 +74,7 @@
 	textDecoration => none
   -->
   <style name="typography_headline_small">
-    <item name="android:fontFamily">Poppins</item>
+    <item name="android:fontFamily">@font/poppins_regular</item>
     <item name="android:textSize">24sp</item>
     <item name="android:letterSpacing">-0.03</item>
     <item name="android:lineSpacingExtra">8sp</item>
@@ -94,7 +94,7 @@
 	textDecoration => none
   -->
   <style name="typography_headline_medium">
-    <item name="android:fontFamily">Poppins</item>
+    <item name="android:fontFamily">@font/poppins_regular</item>
     <item name="android:textSize">28sp</item>
     <item name="android:letterSpacing">-0.03</item>
     <item name="android:lineSpacingExtra">8sp</item>
@@ -114,7 +114,7 @@
 	textDecoration => none
   -->
   <style name="typography_headline_large">
-    <item name="android:fontFamily">Poppins</item>
+    <item name="android:fontFamily">@font/poppins_regular</item>
     <item name="android:textSize">32sp</item>
     <item name="android:letterSpacing">-0.02</item>
     <item name="android:lineSpacingExtra">8sp</item>
@@ -134,7 +134,7 @@
 	textDecoration => none
   -->
   <style name="typography_title_small">
-    <item name="android:fontFamily">Poppins</item>
+    <item name="android:fontFamily">@font/poppins_medium</item>
     <item name="android:textSize">14sp</item>
     <item name="android:letterSpacing">-0.02</item>
     <item name="android:lineSpacingExtra">6sp</item>
@@ -154,7 +154,7 @@
 	textDecoration => none
   -->
   <style name="typography_title_medium">
-    <item name="android:fontFamily">Poppins</item>
+    <item name="android:fontFamily">@font/poppins_medium</item>
     <item name="android:textSize">16sp</item>
     <item name="android:letterSpacing">-0.03</item>
     <item name="android:lineSpacingExtra">8sp</item>
@@ -174,7 +174,7 @@
 	textDecoration => none
   -->
   <style name="typography_title_large">
-    <item name="android:fontFamily">Poppins</item>
+    <item name="android:fontFamily">@font/poppins_regular</item>
     <item name="android:textSize">22sp</item>
     <item name="android:letterSpacing">-0.02</item>
     <item name="android:lineSpacingExtra">6sp</item>
@@ -194,7 +194,7 @@
 	textDecoration => none
   -->
   <style name="typography_label_small">
-    <item name="android:fontFamily">Poppins</item>
+    <item name="android:fontFamily">@font/poppins_medium</item>
     <item name="android:textSize">11sp</item>
     <item name="android:letterSpacing">0</item>
     <item name="android:lineSpacingExtra">5sp</item>
@@ -214,7 +214,7 @@
 	textDecoration => none
   -->
   <style name="typography_label_medium">
-    <item name="android:fontFamily">Poppins</item>
+    <item name="android:fontFamily">@font/poppins_medium</item>
     <item name="android:textSize">12sp</item>
     <item name="android:letterSpacing">-0.01</item>
     <item name="android:lineSpacingExtra">4sp</item>
@@ -234,7 +234,7 @@
 	textDecoration => none
   -->
   <style name="typography_label_large">
-    <item name="android:fontFamily">Poppins</item>
+    <item name="android:fontFamily">@font/poppins_medium</item>
     <item name="android:textSize">14sp</item>
     <item name="android:letterSpacing">-0.03</item>
     <item name="android:lineSpacingExtra">6sp</item>
@@ -254,7 +254,7 @@
 	textDecoration => none
   -->
   <style name="typography_body_small">
-    <item name="android:fontFamily">Roboto</item>
+    <!-- no fontFamily specified as we want to use the default Roboto -->
     <item name="android:textSize">12sp</item>
     <item name="android:letterSpacing">0.03333333333333333</item>
     <item name="android:lineSpacingExtra">4sp</item>
@@ -274,7 +274,7 @@
 	textDecoration => none
   -->
   <style name="typography_body_medium">
-    <item name="android:fontFamily">Roboto</item>
+    <!-- no fontFamily specified as we want to use the default Roboto -->
     <item name="android:textSize">14sp</item>
     <item name="android:letterSpacing">0.017857142857142856</item>
     <item name="android:lineSpacingExtra">6sp</item>
@@ -294,7 +294,7 @@
 	textDecoration => none
   -->
   <style name="typography_body_large">
-    <item name="android:fontFamily">Roboto</item>
+    <!-- no fontFamily specified as we want to use the default Roboto -->
     <item name="android:textSize">16sp</item>
     <item name="android:letterSpacing">0.03125</item>
     <item name="android:lineSpacingExtra">8sp</item>
