@@ -42,6 +42,7 @@ const composeColorsClassName = "TeamworkColors";
       swiftSize: require('./formats/swiftSize'),
       //android
       androidColor: require('./formats/androidColor'),
+      androidSize: require('./formats/androidSize'),
       androidTypography: require('./formats/androidTypography'),
       composeColor: require('./formats/composeColor'),
       composeColorPalette: require('./formats/composeColorPalette'),
@@ -186,9 +187,8 @@ const composeColorsClassName = "TeamworkColors";
           format: `androidTypography`
         },{
           destination: `values/dimens.xml`,
-          filter: (token) => token.type === `size` &&
-            token.type !== `custom-fontStyle`,
-          format: `android/resources`
+          filter: (token) => token.type !== `color`,
+          format: `androidSize`
         }]
       }
     }
