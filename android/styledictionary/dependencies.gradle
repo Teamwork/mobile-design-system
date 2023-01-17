@@ -3,7 +3,7 @@
 ext {
 
     // build constants
-    sharedCompileSdkVersion = 32
+    sharedCompileSdkVersion = 33
     sharedMinSdkVersion = 23
     sharedTargetSdkVersion = 32
     sharedBuildToolsVersion = "32.0.0"
@@ -12,80 +12,31 @@ ext {
 
     // dependency versions (sorted alphabetically)
     versions += [
-            // Teamwork internal dependencies
-            androidComponents    : '5.27.5',
-            emoji                : '2.6.6',
-            launchpadEntity      : '4.10.5',
-            multiautocomplete    : '0.4.0',
-            teamworkComponents   : '3.13.7',
-            teamworkData         : '4.11.2',
-            teamworkDataRepo     : '3.6.6',
-            teamworkInjection    : '4.4.5',
-            teamworkUiComponents : '1.1.4',
-            teamworkUtils        : '2.19.1',
-
-            // Google dependencies
-            dagger             : '2.44', // https://github.com/google/dagger/releases
-
-            // https://firebase.google.com/support/release-notes/android
-            firebaseCrashlytics: '18.2.13',
-            firebaseAnalytics  : '21.1.1',
-
             // AndroidX
             // https://developer.android.com/jetpack/androidx/versions
             androidx           : [
-                    activity              : '1.5.1', // https://developer.android.com/jetpack/androidx/releases/activity TODO: requires API 33 #20518708
-                    annotation            : '1.4.0', // https://developer.android.com/jetpack/androidx/releases/annotation TODO update to Kotlin 1.7.* #20279934
-                    appCompat             : '1.5.1', // https://developer.android.com/jetpack/androidx/releases/appcompat
+                    activity              : '1.6.1', // https://developer.android.com/jetpack/androidx/releases/activity
+                    annotation            : '1.5.0', // https://developer.android.com/jetpack/androidx/releases/annotation
+                    appCompat             : '1.6.0', // https://developer.android.com/jetpack/androidx/releases/appcompat
 
                     // Check Kotlin version is compatible before updating Compose version (they need to match)
-                    compose               : '1.3.0-alpha01', // https://developer.android.com/jetpack/androidx/releases/compose
-                    // TODO #20279933 Update when Kotlin 1.7.* is used
-                    composeCompiler       : '1.2.0-rc02', // https://developer.android.com/jetpack/androidx/releases/compose
-                    composeMaterial3      : '1.0.0-alpha14', // https://developer.android.com/jetpack/androidx/releases/compose-material3
+                    compose               : '1.3.3', // https://developer.android.com/jetpack/androidx/releases/compose
+                    composeCompiler       : '1.3.2', // https://developer.android.com/jetpack/androidx/releases/compose
+                    composeMaterial3      : '1.0.1', // https://developer.android.com/jetpack/androidx/releases/compose-material3
 
-                    core                  : '1.8.0', // https://developer.android.com/jetpack/androidx/releases/core TODO: requires API 33 #20518708
-                    coreUtils             : '1.0.0',
-                    fragment              : '1.5.3', // https://developer.android.com/jetpack/androidx/releases/fragment
-                    lifecycleCommon       : '2.5.1', // https://developer.android.com/jetpack/androidx/releases/lifecycle
-                    lifecycleProcess      : '2.5.1', // https://developer.android.com/jetpack/androidx/releases/lifecycle
-                    material              : '1.6.1', // https://github.com/material-components/material-components-android/releases
-                    navigation            : '2.5.2', // https://developer.android.com/jetpack/androidx/releases/navigation
-                    sqlite                : '2.2.0', // https://developer.android.com/jetpack/androidx/releases/sqlite
-                    supportCoreUi         : '1.0.0',
-                    supportV4             : '1.0.0',
-                    recyclerview          : '1.2.1', // https://developer.android.com/jetpack/androidx/releases/recyclerview
-                    room                  : '2.4.3', // https://developer.android.com/jetpack/androidx/releases/room
-                    vectordrawableAnimated: '1.1.0', // https://developer.android.com/jetpack/androidx/releases/vectordrawable
+                    core                  : '1.9.0', // https://developer.android.com/jetpack/androidx/releases/core
+                    material              : '1.7.0', // https://github.com/material-components/material-components-android/releases
 
                     // AndroidX test dependencies
-                    test                  : '1.4.0', // https://developer.android.com/jetpack/androidx/releases/test
-                    testExt               : '1.1.3' // https://developer.android.com/jetpack/androidx/releases/test
+                    test                  : '1.5.0', // https://developer.android.com/jetpack/androidx/releases/test
+                    testExt               : '1.1.5' // https://developer.android.com/jetpack/androidx/releases/test
             ],
 
             // production dependencies
-            commonmark         : '0.19.0', // https://github.com/commonmark/commonmark-java/blob/main/CHANGELOG.md
-            coroutines         : '1.6.4', // https://github.com/Kotlin/kotlinx.coroutines/blob/master/CHANGES.md
-            fresco             : '2.6.0', // https://github.com/facebook/fresco/releases
-            frescoTranformers  : '1.0.6', // https://github.com/wasabeef/transformers/tags
-            jsrAnnotations     : '3.0.2', // https://mvnrepository.com/artifact/com.google.code.findbugs/jsr305
-            lottie             : '5.2.0', // https://github.com/airbnb/lottie-android/blob/master/CHANGELOG.md
-            moshi              : '1.14.0', // https://github.com/square/moshi/blob/master/CHANGELOG.md
-            retrofitMoshi      : '2.9.0', // https://github.com/square/retrofit/blob/master/CHANGELOG.md
-            okhttp             : '4.10.0', // https://square.github.io/okhttp/changelog/
-            okio               : '3.2.0', // https://square.github.io/okio/changelog/
-            retrofit           : '2.9.0', // https://github.com/square/retrofit/blob/master/CHANGELOG.md
-            rxandroid          : '2.1.1', // https://github.com/ReactiveX/RxAndroid/blob/2.x/CHANGES.md
-            rxjava             : '2.2.21', // https://github.com/ReactiveX/RxJava/releases
-            stream             : '1.2.2', // https://github.com/aNNiMON/Lightweight-Stream-API/releases
             timber             : '5.0.1', // https://github.com/JakeWharton/timber/blob/trunk/CHANGELOG.md
 
             // Test dependencies
-            gson               : '2.9.1', // https://github.com/google/gson/blob/master/CHANGELOG.md
-            json               : '20220924', // https://mvnrepository.com/artifact/org.json/json
             junit              : '4.13.2', // https://github.com/junit-team/junit4/releases
-            mockito            : '4.8.0', // https://github.com/mockito/mockito/releases
-            mockk              : '1.13.2', // https://github.com/mockk/mockk/releases
-            robolectric        : '4.9', // https://github.com/robolectric/robolectric/releases
+            mockk              : '1.13.3', // https://github.com/mockk/mockk/releases
     ]
 }
