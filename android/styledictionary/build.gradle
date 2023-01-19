@@ -1,7 +1,7 @@
 buildscript {
      ext.versions = [
              // Check Compose version is compatible before updating Kotlin version (they need to match)
-             kotlin   : '1.7.20', // https://github.com/JetBrains/kotlin/blob/master/ChangeLog.md
+             kotlin   : '1.8.0', // https://github.com/JetBrains/kotlin/blob/master/ChangeLog.md
 
              ktlint   : '0.45.2', // https://github.com/pinterest/ktlint/releases TODO #20279549
      ]
@@ -11,7 +11,7 @@ buildscript {
 plugins {
     id 'com.android.application' version '7.4.0' apply false
     id 'com.android.library' version '7.4.0' apply false
-    id 'org.jetbrains.kotlin.android' version '1.7.20' apply false
+    id 'org.jetbrains.kotlin.android' version '1.8.0' apply false
     id 'com.jfrog.artifactory' version '4.31.0'
 }
 
