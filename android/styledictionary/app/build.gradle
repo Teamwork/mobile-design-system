@@ -40,7 +40,7 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion "1.3.0"
+        kotlinCompilerExtensionVersion versions.androidx.composeCompiler
     }
 }
 
@@ -51,7 +51,7 @@ dependencies {
     api "androidx.compose.ui:ui:${versions.androidx.compose}"
     api "androidx.compose.ui:ui-tooling-preview:${versions.androidx.compose}"
 
-    // Material TODO update when using Kotlin 1.7.* #20279933
+    // Material
     api "androidx.compose.material3:material3:${versions.androidx.composeMaterial3}"
 
     implementation "androidx.core:core-ktx:${versions.androidx.core}"
