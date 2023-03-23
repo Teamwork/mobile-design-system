@@ -319,7 +319,7 @@
           "type": "color"
         },
         "brown-70": {
-          "value": "#4E270A",
+          "value": "#3F3127",
           "type": "color"
         },
         "brown-80": {
@@ -327,7 +327,7 @@
           "type": "color"
         },
         "pink-70": {
-          "value": "#621B49",
+          "value": "#4E3646",
           "type": "color"
         },
         "pink-80": {
@@ -343,7 +343,7 @@
           "type": "color"
         },
         "teal-70": {
-          "value": "#1F565C",
+          "value": "#1D373A",
           "type": "color"
         },
         "teal-80": {
@@ -351,7 +351,7 @@
           "type": "color"
         },
         "red-70": {
-          "value": "#5A121B",
+          "value": "#512F33",
           "type": "color"
         },
         "red-80": {
@@ -359,7 +359,7 @@
           "type": "color"
         },
         "grey-80": {
-          "value": "#363636",
+          "value": "#2C2C30",
           "type": "color"
         },
         "grey90": {
@@ -367,7 +367,7 @@
           "type": "color"
         },
         "orange-70": {
-          "value": "#67301A",
+          "value": "#462F25",
           "type": "color"
         },
         "orange-80": {
@@ -375,7 +375,7 @@
           "type": "color"
         },
         "green-70": {
-          "value": "#184030",
+          "value": "#20372D",
           "type": "color"
         },
         "green-80": {
