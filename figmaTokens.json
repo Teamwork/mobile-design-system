@@ -2668,7 +2668,6 @@
       "name": "dark",
       "selectedTokenSets": {
         "global": "enabled",
-        "light": "disabled",
         "dark": "enabled"
       },
       "$figmaStyleReferences": {
@@ -2955,8 +2954,7 @@
       "name": "light",
       "selectedTokenSets": {
         "global": "enabled",
-        "light": "enabled",
-        "dark": "disabled"
+        "light": "enabled"
       },
       "$figmaStyleReferences": {
         "typography.display.small": "S:46c4c9acf8a1c16b98fcca3e2d55e9adf5ce5f3b,",
