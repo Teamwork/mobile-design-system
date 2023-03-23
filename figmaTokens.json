@@ -243,7 +243,7 @@
           "type": "color"
         },
         "indigo-70": {
-          "value": "#1b2755",
+          "value": "#272D49",
           "type": "color"
         },
         "indigo-80": {
@@ -303,7 +303,7 @@
           "type": "color"
         },
         "purple-70": {
-          "value": "#34245F",
+          "value": "#2E273F",
           "type": "color"
         },
         "purple-80": {
@@ -311,7 +311,7 @@
           "type": "color"
         },
         "yellow-70": {
-          "value": "#65501A",
+          "value": "#4E442C",
           "type": "color"
         },
         "yellow-80": {
@@ -335,7 +335,7 @@
           "type": "color"
         },
         "blue-70": {
-          "value": "#1B3C5E",
+          "value": "#1D273A",
           "type": "color"
         },
         "blue-80": {
@@ -2668,7 +2668,6 @@
       "name": "dark",
       "selectedTokenSets": {
         "global": "enabled",
-        "light": "disabled",
         "dark": "enabled"
       },
       "$figmaStyleReferences": {
@@ -2955,8 +2954,7 @@
       "name": "light",
       "selectedTokenSets": {
         "global": "enabled",
-        "light": "enabled",
-        "dark": "disabled"
+        "light": "enabled"
       },
       "$figmaStyleReferences": {
         "typography.display.small": "S:46c4c9acf8a1c16b98fcca3e2d55e9adf5ce5f3b,",
