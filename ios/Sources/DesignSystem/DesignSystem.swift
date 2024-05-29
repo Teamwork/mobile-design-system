@@ -1,9 +1,9 @@
 import Foundation
 import UIKit
 
-enum DesignSystem {
+public enum DesignSystem {
 
- enum BorderWidth {
+public enum BorderWidth {
 
   public static let xs = CGFloat(0.5)
   public static let sm = CGFloat(1)
@@ -11,7 +11,7 @@ enum DesignSystem {
   public static let lg = CGFloat(3)
  }
 
- enum BorderRadius {
+public enum BorderRadius {
 
   public static let none = CGFloat(0)
   public static let xxs = CGFloat(4)
@@ -23,7 +23,7 @@ enum DesignSystem {
   public static let full = CGFloat(100)
  }
 
- enum LineHeights {
+public enum LineHeights {
 
   public static let leading01 = CGFloat(16)
   public static let leading02 = CGFloat(20)
@@ -37,7 +37,7 @@ enum DesignSystem {
   public static let leading10 = CGFloat(64)
  }
 
- enum FontSizes {
+public enum FontSizes {
 
   public static let fontSize01 = CGFloat(11)
   public static let fontSize02 = CGFloat(12)
@@ -52,14 +52,14 @@ enum DesignSystem {
   public static let fontSize11 = CGFloat(57)
  }
 
- enum LetterSpacing {
+public enum LetterSpacing {
 
   public static let tracking06 = CGFloat(0.4)
   public static let tracking07 = CGFloat(0.25)
   public static let tracking08 = CGFloat(0.5)
  }
 
- enum Spacing {
+public enum Spacing {
 
   public static let space01 = CGFloat(2)
   public static let space02 = CGFloat(4)

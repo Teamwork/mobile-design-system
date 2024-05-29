@@ -9,9 +9,9 @@ module.exports = function({ dictionary, options }) {
   return `import Foundation
 import UIKit
 
-enum DesignSystem {\n\n` +
+public enum DesignSystem {\n\n` +
 types.map(type => {
-  return ` enum ${capitalizeFirstLetter(type)} {\n\n` +
+  return `public enum ${capitalizeFirstLetter(type)} {\n\n` +
   dictionary.allProperties
   .filter(token => token.type === type)
   .map(token => {
